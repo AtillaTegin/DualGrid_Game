@@ -1,0 +1,3866 @@
+{
+  "date": "2026-11-09",
+  "status": "desktop checkpoint, provisional difficulty, not final art",
+  "mainCampaign": 28,
+  "chapter": 49,
+  "totalActive": 77,
+  "retired": [
+    "V3",
+    "S6"
+  ],
+  "levels": [
+    {
+      "id": "V1",
+      "title": "Yuxarıdakı kilid, aşağıdakı çıxış",
+      "difficulty": "intro",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        }
+      ],
+      "states": 53,
+      "status": "solved"
+    },
+    {
+      "id": "V2",
+      "title": "İki liftin qarşılıqlı icazəsi",
+      "difficulty": "intro",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "interact",
+          "actor": 1
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        }
+      ],
+      "states": 277,
+      "status": "solved"
+    },
+    {
+      "id": "S1",
+      "title": "Bir kubdan dörd kontakt",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 4,
+      "status": "solved"
+    },
+    {
+      "id": "S2",
+      "title": "Tağın altından yalnız kiçik",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        }
+      ],
+      "states": 18,
+      "status": "solved"
+    },
+    {
+      "id": "S3",
+      "title": "Dörd kontakt, bir uzaq səfər",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "interact",
+          "actor": 1
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 106,
+      "status": "solved"
+    },
+    {
+      "id": "S4",
+      "title": "Geniş izlə keç, dar yoldan çıx",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        }
+      ],
+      "states": 20,
+      "status": "solved"
+    },
+    {
+      "id": "S5",
+      "title": "Liftin yükü deyil, eni",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        }
+      ],
+      "states": 38,
+      "status": "solved"
+    },
+    {
+      "id": "H1",
+      "title": "Qayıdış haqqını saxla",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        }
+      ],
+      "states": 39,
+      "status": "solved"
+    },
+    {
+      "id": "H2",
+      "title": "İki dövrə, əks qapılar",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 119,
+      "status": "solved"
+    },
+    {
+      "id": "H3",
+      "title": "İki tokenin birini saxla",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "deposit",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 25,
+      "status": "solved"
+    },
+    {
+      "id": "H4",
+      "title": "Dolu get, boş qayıt",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "deposit",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "give",
+          "actor": 0
+        },
+        {
+          "type": "give",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        }
+      ],
+      "states": 1622,
+      "status": "solved"
+    },
+    {
+      "id": "H5",
+      "title": "Görünən ünvan, bağlı dönüş",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        }
+      ],
+      "states": 42,
+      "status": "solved"
+    },
+    {
+      "id": "H6",
+      "title": "Üç adanın enerji müqaviləsi",
+      "difficulty": "EKSPERT",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "give",
+          "actor": 0
+        },
+        {
+          "type": "give",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "deposit",
+          "actor": 0
+        },
+        {
+          "type": "deposit",
+          "actor": 0
+        },
+        {
+          "type": "deposit",
+          "actor": 1
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "portal",
+          "actor": 1
+        },
+        {
+          "type": "withdraw",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "give",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "interact",
+          "actor": 1
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        }
+      ],
+      "states": 14728,
+      "status": "solved"
+    },
+    {
+      "id": "F1",
+      "title": "Eyni xana, başqa alt üz",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 21,
+      "status": "solved"
+    },
+    {
+      "id": "F2",
+      "title": "Divara baxan imza",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        }
+      ],
+      "states": 809,
+      "status": "solved"
+    },
+    {
+      "id": "F3",
+      "title": "Qorunan üzü yerə gətir",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 115,
+      "status": "solved"
+    },
+    {
+      "id": "F4",
+      "title": "Üç möhür, bir düzgün sıra",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        }
+      ],
+      "states": 748,
+      "status": "solved"
+    },
+    {
+      "id": "F5",
+      "title": "Yuxarıda dönmək üçün yer yoxdur",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 379,
+      "status": "solved"
+    },
+    {
+      "id": "F6",
+      "title": "Möhürlər adalar arasında itməz",
+      "difficulty": "EKSPERT",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "deposit",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        }
+      ],
+      "states": 1486,
+      "status": "solved"
+    },
+    {
+      "id": "R1",
+      "title": "Ox və dünya eyni deyil",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 8,
+      "status": "solved"
+    },
+    {
+      "id": "R2",
+      "title": "Kompasın dörddəbir dönüşü",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        }
+      ],
+      "states": 9,
+      "status": "solved"
+    },
+    {
+      "id": "R3",
+      "title": "Zonadan çıxsan da qütb qalır",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        }
+      ],
+      "states": 28,
+      "status": "solved"
+    },
+    {
+      "id": "R4",
+      "title": "İki oxun estafeti",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        }
+      ],
+      "states": 251,
+      "status": "solved"
+    },
+    {
+      "id": "R5",
+      "title": "Tərs qalx, normal qayıt",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "deposit",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        }
+      ],
+      "states": 194,
+      "status": "solved"
+    },
+    {
+      "id": "R6",
+      "title": "Qütb, möhür və son böyük iz",
+      "difficulty": "EKSPERT",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "deposit",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        }
+      ],
+      "states": 5435,
+      "status": "solved"
+    },
+    {
+      "id": "W1",
+      "title": "Divarı çək, keçidi aç",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "panel",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 11,
+      "status": "solved"
+    },
+    {
+      "id": "W2",
+      "title": "Pistonun boş fazasını seç",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "wait",
+          "actor": 0
+        },
+        {
+          "type": "wait",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 27,
+      "status": "solved"
+    },
+    {
+      "id": "W3",
+      "title": "Bağlanmazdan əvvəl sol qolu bitir",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        }
+      ],
+      "states": 36,
+      "status": "solved"
+    },
+    {
+      "id": "W4",
+      "title": "Tavan keçir, böyük kub sığmır",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        }
+      ],
+      "states": 69,
+      "status": "solved"
+    },
+    {
+      "id": "W5",
+      "title": "Boş fazanı saxla, partnyoru burax",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "interact",
+          "actor": 1
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        }
+      ],
+      "states": 397,
+      "status": "solved"
+    },
+    {
+      "id": "W6",
+      "title": "Arxa pultdan açılan qayıdış",
+      "difficulty": "EKSPERT",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "panel",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "panel",
+          "actor": 0
+        },
+        {
+          "type": "deposit",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        }
+      ],
+      "states": 3167,
+      "status": "solved"
+    },
+    {
+      "id": "B1",
+      "title": "Şüanı qapıya uyğunlaşdır",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 59,
+      "status": "solved"
+    },
+    {
+      "id": "B2",
+      "title": "Birini qabağa çox göndərmə",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        }
+      ],
+      "states": 34,
+      "status": "solved"
+    },
+    {
+      "id": "B3",
+      "title": "Paralel deyil, perpendikulyar",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        }
+      ],
+      "states": 111,
+      "status": "solved"
+    },
+    {
+      "id": "B4",
+      "title": "Bir əmr, iki yoxlanılan yol",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "link",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 55,
+      "status": "solved"
+    },
+    {
+      "id": "B5",
+      "title": "Görüşdə bağı aç, enerjini paylaş",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "link",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "link",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "give",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        }
+      ],
+      "states": 53,
+      "status": "solved"
+    },
+    {
+      "id": "B6",
+      "title": "Qapıdan əvvəl partnyoru yerləşdir",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "panel",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "portal",
+          "actor": 1
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        }
+      ],
+      "states": 103,
+      "status": "solved"
+    },
+    {
+      "id": "T1",
+      "title": "Əvvəl çıxış ağzını boşalt",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        }
+      ],
+      "states": 77,
+      "status": "solved"
+    },
+    {
+      "id": "T2",
+      "title": "Eyni domino, yeni istiqamət",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        }
+      ],
+      "states": 3,
+      "status": "solved"
+    },
+    {
+      "id": "T3",
+      "title": "Sol kənar sağ sahilə bağlanır",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        }
+      ],
+      "states": 9,
+      "status": "solved"
+    },
+    {
+      "id": "T4",
+      "title": "Eyni giriş, iki ayrı ada",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        }
+      ],
+      "states": 480,
+      "status": "solved"
+    },
+    {
+      "id": "T5",
+      "title": "Kiçik sarın, böyük imza ilə bitir",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "resize",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "resize",
+          "actor": 0
+        }
+      ],
+      "states": 176,
+      "status": "solved"
+    },
+    {
+      "id": "T6",
+      "title": "Dönüşdən sonra enerji görüşü",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "give",
+          "actor": 0
+        },
+        {
+          "type": "give",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        }
+      ],
+      "states": 3373,
+      "status": "solved"
+    },
+    {
+      "id": "G1",
+      "title": "İkinci girişi qayıdışa saxla",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        }
+      ],
+      "states": 44,
+      "status": "solved"
+    },
+    {
+      "id": "G2",
+      "title": "Bir yolu aç, digərini saxla",
+      "difficulty": "ORTA",
+      "path": [
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        }
+      ],
+      "states": 43,
+      "status": "solved"
+    },
+    {
+      "id": "G3",
+      "title": "Yolu təkbaşına yarada bilməzsən",
+      "difficulty": "ASAN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        }
+      ],
+      "states": 18,
+      "status": "solved"
+    },
+    {
+      "id": "G4",
+      "title": "Mərkəzi üçüncü dəfə işlətmə",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        }
+      ],
+      "states": 53,
+      "status": "solved"
+    },
+    {
+      "id": "G5",
+      "title": "Portalın o biri tərəfində dayaq hazırla",
+      "difficulty": "ÇƏTİN",
+      "path": [
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "portal",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        }
+      ],
+      "states": 83,
+      "status": "solved"
+    },
+    {
+      "id": "G6",
+      "title": "Üç ehtiyatın son təhvili",
+      "difficulty": "EKSPERT",
+      "path": [
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "give",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "deposit",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "down"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "up"
+        },
+        {
+          "type": "interact",
+          "actor": 0
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 0,
+          "dir": "right"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "up"
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        },
+        {
+          "type": "portal",
+          "actor": 1
+        },
+        {
+          "type": "move",
+          "actor": 1,
+          "dir": "left"
+        }
+      ],
+      "states": 6181,
+      "status": "solved"
+    }
+  ]
+}

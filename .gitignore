@@ -1,0 +1,6 @@
+demo/node_modules/
+demo/runtime/node.exe
+demo/screenshots/
+demo/*.log
+demo/.server.pid
+dist/

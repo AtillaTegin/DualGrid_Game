@@ -1,0 +1,13 @@
+import {chromium} from 'playwright-core';import assert from 'node:assert/strict';import {certificates} from '../src/journey-solutions.js';
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+try{const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const health=await (await page.request.get('http://127.0.0.1:4173/health')).json();assert.equal(health.version,'0.7.0');
+ await page.goto('http://127.0.0.1:4173/campaign.html?test&release=0.7#66',{waitUntil:'networkidle'});await page.waitForFunction(()=>!!window.labTest);await page.evaluate(()=>{labTest.closeDialogs();labTest.scene.quality(false);labTest.scene.renderer.setPixelRatio(.7);});assert.equal(await page.evaluate(()=>labTest.state.blocks.length),2);assert.equal(await page.evaluate(()=>labTest.level.reverse.kind),'split');assert.equal(await page.evaluate(()=>labTest.state.clone),null);assert.equal(await page.evaluate(()=>labTest.level.collectibles?.length||0),0);
+ await page.goto('http://127.0.0.1:4173/campaign.html?test&release=0.7#69');await page.waitForFunction(()=>labTest.level.id==='69');await page.evaluate(()=>labTest.closeDialogs());const at=certificates['69'].findIndex(a=>a.type==='interact');await page.evaluate(({path,block})=>{for(const a of path)if(!labTest.perform(a))throw Error('prefix');labTest.select(block);},{path:certificates['69'].slice(0,at),block:certificates['69'][at].block});await page.keyboard.press('f');await page.waitForFunction(()=>!labTest.scene.motion);assert.equal(await page.evaluate(()=>labTest.state.levers),1);assert.deepEqual(await page.evaluate(()=>labTest.scene.doorViews.map(v=>v.target)),[0,1]);assert.equal(await page.evaluate(()=>labTest.scene.cloneMesh),null);await page.screenshot({path:'screenshots/release-curated-69.png'});
+ await page.evaluate(path=>{for(const a of path)if(!labTest.perform(a))throw Error('finish');},certificates['69'].slice(at+1));assert.equal(await page.evaluate(()=>labTest.state.won),true);
+ await page.goto('http://127.0.0.1:4173/?test&release=0.7',{waitUntil:'networkidle'});await page.click('#levels-menu');assert.equal(await page.locator('.level-card').count(),77);assert.equal(await page.locator('.journey-card').count(),9);assert.equal(await page.locator('.practice-card').count(),0);assert.deepEqual(errors,[]);console.log('PASS: packaged v0.7 distinct 66, real opposing-door switch 69, no pursuer, 28 selected campaign cards and 9 new combinations.');
+}finally{await browser.close();}
+
+
+
+

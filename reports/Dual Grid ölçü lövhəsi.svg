@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7" fill="none" stroke="#AFC1CD"/></marker><style>text{font-family:Segoe UI,Arial,sans-serif;fill:#DDE6EB;font-size:17px}.small{font-size:14px;fill:#AFC1CD}.dim{stroke:#AFC1CD;stroke-width:1;fill:none;marker-start:url(#arrow);marker-end:url(#arrow)}.guide{stroke:#67818E;stroke-width:1;stroke-dasharray:4 4;fill:none}.label{font-size:21px;font-weight:600}</style></defs>
+<rect width="1200" height="800" fill="#101A23"/>
+<text x="40" y="48" font-size="28" font-weight="600">DUAL GRID · Ölçü və görünüş lövhəsi</text>
+<text x="40" y="78" class="small">Texniki sxem · metr əsaslı geometriya · konsept renderi və hazır oyun səhnəsi deyil</text>
+<rect x="30" y="105" width="1140" height="375" rx="5" fill="#172630"/>
+<text x="55" y="143" class="label">A · Modul plitə</text>
+<text x="410" y="143" class="label">B · Dəyişməyən blok həcmi</text>
+<text x="820" y="143" class="label">C · Kamera və dəqiqlik</text>
+<path d="M190 300L246.569 332.660L190 365.320L133.431 332.660Z" fill="#53646E" stroke="#DDE6EB" stroke-width="1.5"/>
+<path d="M133.431 332.660L190 365.320L246.569 332.660L246.569 348.990L190 381.650L133.431 348.990Z" fill="#2B3C47" stroke="#6F8590"/>
+<path d="M190 300L246.569 332.660L190 365.320L133.431 332.660Z" fill="none" stroke="#DDE6EB"/>
+<path d="M196 288L253 321" class="dim"/><text x="210" y="280" class="small">1 m</text>
+<path d="M126 321L183 288" class="dim"/><text x="108" y="279" class="small">1 m</text>
+<text x="55" y="419">Grid addımı: 100 × 100 sm</text>
+<text x="55" y="447" class="small">Səth y = 0 · dekorativ qalınlıq 25 sm</text>
+<path d="M503.431 252.021L560 284.681L560 415.320L503.431 382.660Z" fill="#244F5A" stroke="#8CB1BA"/>
+<path d="M560 284.681L616.569 252.021L616.569 382.660L560 415.320Z" fill="#193B47" stroke="#8CB1BA"/>
+<path d="M560 219.361L616.569 252.021L560 284.681L503.431 252.021Z" fill="#3D7480" stroke="#C1E9E9"/>
+<path d="M560 350L616.569 382.660L560 415.320L503.431 382.660Z" class="guide"/>
+<path d="M560 219.361L560 350" class="guide"/>
+<path d="M638 252L638 383" class="dim"/><text x="651" y="321">2 m</text>
+<path d="M500 401L555 433" class="dim"/><text x="461" y="432" class="small">1 m</text>
+<path d="M566 433L623 400" class="dim"/><text x="603" y="440" class="small">1 m</text>
+<text x="410" y="177" class="small">Məntiqi ölçü: 1 × 1 × 2 m</text>
+<text x="410" y="201" class="small">Künc beveli: içəriyə 1,5 sm · ölçünü dəyişmir</text>
+<text x="820" y="183">Ortografik proyeksiya</text>
+<text x="820" y="215">Azimut: 45°</text>
+<text x="820" y="247">Üfüqdən yüksəliş: 35,264°</text>
+<text x="820" y="279" class="small">Blender: +Z yuxarı · Godot: +Y yuxarı</text>
+<text x="820" y="311" class="small">Sxem miqyası: 80 px / kamera metri</text>
+<text x="820" y="343" class="small">1 m plitə proyeksiyası: 113,14 × 65,32 px</text>
+<text x="820" y="375" class="small">30° yüksəliş seçilsə: dimetrik görünüş</text>
+<text x="820" y="407" class="small">Görünən həcm ölçü üçün sadələşdirilib.</text>
+<text x="820" y="439" class="small">Bevel bu sxemdə ayrıca mesh kimi çəkilməyib.</text>
+<text x="40" y="523" class="label">D · Material və siqnal palitrası — sRGB rəng başlanğıcları</text>
+<rect x="40" y="545" width="160" height="60" fill="#24333D" stroke="#617680"/><rect x="220" y="545" width="160" height="60" fill="#8C6846"/><rect x="400" y="545" width="160" height="60" fill="#69C5CE"/><rect x="580" y="545" width="160" height="60" fill="#D4954E"/><rect x="760" y="545" width="160" height="60" fill="#C4CBC8"/><rect x="940" y="545" width="220" height="60" fill="#151F29" stroke="#617680"/>
+<text x="40" y="631" class="small">Bazalt · #24333D</text><text x="220" y="631" class="small">Bürünc · #8C6846</text><text x="400" y="631" class="small">Siqnal A · #69C5CE</text><text x="580" y="631" class="small">Siqnal B · #D4954E</text><text x="760" y="631" class="small">Keramika · #C4CBC8</text><text x="940" y="631" class="small">Fon · #151F29</text>
+<text x="40" y="678" class="label">E · Oxunaqlılıq sırası</text>
+<text x="40" y="709">1 · Aktiv blok və tutacağı hüceyrələr → 2 · Təhlükə / düymə / çıxış → 3 · Səth → 4 · Dekor → 5 · Fon</text>
+<text x="40" y="744" class="small">Rəngə əlavə forma və nişan · oyun səthində fokus bulanıqlığı yoxdur · effektlər grid sərhədini örtməməlidir</text>
+<text x="40" y="777" class="small">Bütün material, işıq və performans rəqəmləri prototipdə yoxlanacaq başlanğıc fərziyyələridir.</text>
+</svg>

@@ -1,0 +1,1961 @@
+{
+  "scope": "Original 1–60 and archived v0.6 61–102. Current 65–73 are separately rewritten; this is not a current-release duplicate assertion.",
+  "method": "Occupied terrain normalized under translation, reflection and four rotations. Same geometry is a review flag, not proof of same solution. Mechanic necessity and solution-graph uniqueness need separate solver checks.",
+  "count": 102,
+  "repeatedGeometryGroups": [
+    [
+      7,
+      8,
+      11
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      14,
+      15,
+      16,
+      21
+    ],
+    [
+      17,
+      18,
+      71,
+      72
+    ],
+    [
+      20,
+      22
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      29,
+      30,
+      31
+    ],
+    [
+      32,
+      33,
+      34
+    ],
+    [
+      35,
+      36,
+      37
+    ],
+    [
+      38,
+      40,
+      43,
+      47,
+      50,
+      52,
+      58,
+      59
+    ],
+    [
+      39,
+      44,
+      45,
+      48,
+      53,
+      54,
+      55
+    ],
+    [
+      41,
+      42,
+      46
+    ],
+    [
+      49,
+      51,
+      56
+    ],
+    [
+      57,
+      60
+    ],
+    [
+      61,
+      62,
+      63,
+      64
+    ],
+    [
+      65,
+      66
+    ],
+    [
+      67,
+      68
+    ],
+    [
+      69,
+      70,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84
+    ],
+    [
+      73,
+      74
+    ],
+    [
+      85,
+      86,
+      87,
+      88
+    ],
+    [
+      89,
+      90
+    ],
+    [
+      91,
+      92
+    ],
+    [
+      93,
+      94
+    ],
+    [
+      95,
+      96
+    ],
+    [
+      97,
+      98,
+      99,
+      100,
+      101,
+      102
+    ]
+  ],
+  "levels": [
+    {
+      "id": 1,
+      "title": "İlk addım",
+      "board": "3×3",
+      "actors": 1,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Öz işarənə çat",
+      "board": "4×3",
+      "actors": 1,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Səhvdən qorxma",
+      "board": "4×3",
+      "actors": 1,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Küncü dön",
+      "board": "4×3",
+      "actors": 1,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Yolu oxu",
+      "board": "5×3",
+      "actors": 1,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Özün sına",
+      "board": "4×3",
+      "actors": 1,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "İkinci yaddaş",
+      "board": "5×4",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        8,
+        11
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "İki ayrı çıxış",
+      "board": "5×4",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        7,
+        11
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Bir-birinə yol ver",
+      "board": "5×3",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Sensor nə edir?",
+      "board": "6×3",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        12
+      ],
+      "mechanisms": [
+        "plates",
+        "specials"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Ağır və yüngül",
+      "board": "5×4",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        7,
+        8
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Ağırlığın işi",
+      "board": "6×3",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        10
+      ],
+      "mechanisms": [
+        "plates",
+        "specials"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "A böyüyür",
+      "board": "7×4",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Dik və uzanmış",
+      "board": "7×5",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        15,
+        16,
+        21
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Fərqli addımlar",
+      "board": "7×5",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        14,
+        16,
+        21
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Gələcək yeri saxla",
+      "board": "7×5",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        14,
+        15,
+        21
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Ağır və dik",
+      "board": "9×5",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        18,
+        71,
+        72
+      ],
+      "mechanisms": [
+        "plates",
+        "specials"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Yüngülün üstünlüyü",
+      "board": "9×5",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        17,
+        71,
+        72
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Köməkçi də yol açır",
+      "board": "10×5",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "plates",
+        "specials"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Görüşmədən keçin",
+      "board": "7×6",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        22
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "İkisi də uzundur",
+      "board": "7×5",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        14,
+        15,
+        16
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "İki yaddaş",
+      "board": "7×6",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        20
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Saxlayan tərəf",
+      "board": "9×5",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        24
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Dik qal, yolu saxla",
+      "board": "9×5",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        23
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Gücün ünvanı",
+      "board": "9×7",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        26
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Yeni rol, eyni kimlik",
+      "board": "9×7",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        25
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Qarşılıqlı borc",
+      "board": "10×7",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Canlı sərhəd",
+      "board": "11×7",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Dar boynun o biri tərəfi",
+      "board": "13×10",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        30,
+        31
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Soyuq aralıq",
+      "board": "13×10",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        29,
+        31
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Əyləci azad et",
+      "board": "13×10",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        29,
+        30
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Yaxın sensor, uzaq məqsəd",
+      "board": "11×7",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        33,
+        34
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Qarşı sahilin sözü",
+      "board": "11×7",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        32,
+        34
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Etibarı ötür",
+      "board": "11×7",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        32,
+        33
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Buzdan sonra görüş",
+      "board": "15×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        36,
+        37
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "İki donmuş xətt",
+      "board": "15×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        35,
+        37
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 37,
+      "title": "İkinci əyləc yeri",
+      "board": "15×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        35,
+        36
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Gücü vaxtında ötür",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        40,
+        43,
+        47,
+        50,
+        52,
+        58,
+        59
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Dövrənin qısa yolu",
+      "board": "12×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        44,
+        45,
+        48,
+        53,
+        54,
+        55
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Ağırlığın növbəsi",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        38,
+        43,
+        47,
+        50,
+        52,
+        58,
+        59
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Ayrılan yollar",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        42,
+        46
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Yolun iki üzü",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        41,
+        46
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 43,
+      "title": "İkinci sahildə növbə",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        38,
+        40,
+        47,
+        50,
+        52,
+        58,
+        59
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Üçüncü körpünün qarşılığı",
+      "board": "12×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        39,
+        45,
+        48,
+        53,
+        54,
+        55
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Üç tərəfli dövrə",
+      "board": "12×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        39,
+        44,
+        48,
+        53,
+        54,
+        55
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 46,
+      "title": "İki yolun qiyməti",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        41,
+        42
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Aşağıdakı görüş",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        38,
+        40,
+        43,
+        50,
+        52,
+        58,
+        59
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Son sensora tələsmə",
+      "board": "12×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        39,
+        44,
+        45,
+        53,
+        54,
+        55
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Görüşə aparan plan",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        51,
+        56
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Əvvəl aç, sonra dəyiş",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        38,
+        40,
+        43,
+        47,
+        52,
+        58,
+        59
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Uzaq çıxışın açarı",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        49,
+        56
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 52,
+      "title": "Təhvil zənciri",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        38,
+        40,
+        43,
+        47,
+        50,
+        58,
+        59
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 53,
+      "title": "Dəyişən məsuliyyət",
+      "board": "12×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        39,
+        44,
+        45,
+        48,
+        54,
+        55
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 54,
+      "title": "Gücün köçü",
+      "board": "12×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        39,
+        44,
+        45,
+        48,
+        53,
+        55
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Son yolu yüngülləşdir",
+      "board": "12×11",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        39,
+        44,
+        45,
+        48,
+        53,
+        54
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Gecikmiş görüş",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        49,
+        51
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Son görüşə hazırlıq",
+      "board": "14×12",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        60
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 58,
+      "title": "İki eşik",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        38,
+        40,
+        43,
+        47,
+        50,
+        52,
+        59
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 59,
+      "title": "İki adadan o tərəfə",
+      "board": "13×9",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        38,
+        40,
+        43,
+        47,
+        50,
+        52,
+        58
+      ],
+      "mechanisms": [
+        "specials",
+        "plates"
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Observatoriyanın ürəyi",
+      "board": "14×12",
+      "actors": 2,
+      "source": "legacy",
+      "sameGeometry": [
+        57
+      ],
+      "mechanisms": [
+        "specials",
+        "plates",
+        "pads"
+      ]
+    },
+    {
+      "id": 61,
+      "title": "Etibarlı keçid",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M1",
+      "sameGeometry": [
+        62,
+        63,
+        64
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Boşluğun o biri tərəfi",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M1",
+      "sameGeometry": [
+        61,
+        63,
+        64
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 63,
+      "title": "İki yol, bir həqiqət",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M1.1",
+      "sameGeometry": [
+        61,
+        62,
+        64
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 64,
+      "title": "Relay təhvili",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M1.1",
+      "sameGeometry": [
+        61,
+        62,
+        63
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Qırılan körpü və kilidli qayıdış",
+      "board": "9×6",
+      "actors": 1,
+      "source": "M1.2",
+      "sameGeometry": [
+        66
+      ],
+      "mechanisms": [
+        "fragile",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Şalterin o biri tərəfində",
+      "board": "9×6",
+      "actors": 1,
+      "source": "M1.2",
+      "sameGeometry": [
+        65
+      ],
+      "mechanisms": [
+        "fragile",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 67,
+      "title": "Kütləni bölüşdür",
+      "board": "10×6",
+      "actors": 1,
+      "source": "M1.3",
+      "sameGeometry": [
+        68
+      ],
+      "mechanisms": [
+        "shell",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Qabığın üstündə dövrə",
+      "board": "10×6",
+      "actors": 1,
+      "source": "M1.3",
+      "sameGeometry": [
+        67
+      ],
+      "mechanisms": [
+        "shell",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 69,
+      "title": "İşığı təhvil ver",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M1.4",
+      "sameGeometry": [
+        70,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 70,
+      "title": "Körpüdə ikinci növbə",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M1.4",
+      "sameGeometry": [
+        69,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "fragile",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 71,
+      "title": "Birlikdə görünən yol",
+      "board": "9×5",
+      "actors": 2,
+      "source": "M1.5",
+      "sameGeometry": [
+        17,
+        18,
+        72
+      ],
+      "mechanisms": [
+        "observer",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 72,
+      "title": "Müşahidə məsafəsi",
+      "board": "9×5",
+      "actors": 2,
+      "source": "M1.5",
+      "sameGeometry": [
+        17,
+        18,
+        71
+      ],
+      "mechanisms": [
+        "observer",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 73,
+      "title": "İki keçidlik yaddaş",
+      "board": "5×3",
+      "actors": 1,
+      "source": "M1.6",
+      "sameGeometry": [
+        74
+      ],
+      "mechanisms": [
+        "visitable",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 74,
+      "title": "Üç açar, iki imkan",
+      "board": "5×3",
+      "actors": 1,
+      "source": "M1.6",
+      "sameGeometry": [
+        73
+      ],
+      "mechanisms": [
+        "visitable",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 75,
+      "title": "Tərs keçid",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2",
+      "sameGeometry": [
+        69,
+        70,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 76,
+      "title": "Tərs keçiddə təhvil",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2",
+      "sameGeometry": [
+        69,
+        70,
+        75,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "fragile",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 77,
+      "title": "İki tərəfli inversiya",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2.1",
+      "sameGeometry": [
+        69,
+        70,
+        75,
+        76,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 78,
+      "title": "Qırılan inversiya yolu",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2.1",
+      "sameGeometry": [
+        69,
+        70,
+        75,
+        76,
+        77,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "fragile",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 79,
+      "title": "Dönən koordinatlar",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2.2",
+      "sameGeometry": [
+        69,
+        70,
+        75,
+        76,
+        77,
+        78,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 80,
+      "title": "Rotorun o biri üzü",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2.2",
+      "sameGeometry": [
+        69,
+        70,
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "fragile",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 81,
+      "title": "Yadda qalan polarite",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2.3",
+      "sameGeometry": [
+        69,
+        70,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        82,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 82,
+      "title": "Dönməyən yaddaş",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2.3",
+      "sameGeometry": [
+        69,
+        70,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        83,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "fragile",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 83,
+      "title": "İki ayrı kompas",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2.4",
+      "sameGeometry": [
+        69,
+        70,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        84
+      ],
+      "mechanisms": [
+        "gates",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 84,
+      "title": "Partnyorun çevirdiyi dünya",
+      "board": "7×4",
+      "actors": 2,
+      "source": "M2.4",
+      "sameGeometry": [
+        69,
+        70,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "mechanisms": [
+        "gates",
+        "fragile",
+        "reverse",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 85,
+      "title": "Kiçil, keç, yenə böyü",
+      "board": "9×5",
+      "actors": 1,
+      "source": "M3",
+      "sameGeometry": [
+        86,
+        87,
+        88
+      ],
+      "mechanisms": [
+        "ceilings",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 86,
+      "title": "Formanın düzgün yeri",
+      "board": "9×5",
+      "actors": 1,
+      "source": "M3",
+      "sameGeometry": [
+        85,
+        87,
+        88
+      ],
+      "mechanisms": [
+        "ceilings",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 87,
+      "title": "Tirin altından",
+      "board": "9×5",
+      "actors": 1,
+      "source": "M3.1",
+      "sameGeometry": [
+        85,
+        86,
+        88
+      ],
+      "mechanisms": [
+        "ceilings",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 88,
+      "title": "Alçaq keçidin həlli",
+      "board": "9×5",
+      "actors": 1,
+      "source": "M3.1",
+      "sameGeometry": [
+        85,
+        86,
+        87
+      ],
+      "mechanisms": [
+        "ceilings",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 89,
+      "title": "Dörd işıq bir açardır",
+      "board": "9×5",
+      "actors": 2,
+      "source": "M3.2",
+      "sameGeometry": [
+        90
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 90,
+      "title": "Plitə ilə yol aç",
+      "board": "9×5",
+      "actors": 2,
+      "source": "M3.2",
+      "sameGeometry": [
+        89
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 91,
+      "title": "Böyük addıma yer aç",
+      "board": "10×6",
+      "actors": 2,
+      "source": "M3.3",
+      "sameGeometry": [
+        92
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 92,
+      "title": "İki xanalıq keçid",
+      "board": "10×6",
+      "actors": 2,
+      "source": "M3.3",
+      "sameGeometry": [
+        91
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 93,
+      "title": "Dik forma kilidi",
+      "board": "9×5",
+      "actors": 1,
+      "source": "M3.4",
+      "sameGeometry": [
+        94
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 94,
+      "title": "Kiliddən sonra kiçil",
+      "board": "9×5",
+      "actors": 1,
+      "source": "M3.4",
+      "sameGeometry": [
+        93
+      ],
+      "mechanisms": [
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 95,
+      "title": "Sola böyüyən həll",
+      "board": "8×5",
+      "actors": 2,
+      "source": "M3.6",
+      "sameGeometry": [
+        96
+      ],
+      "mechanisms": [
+        "walls",
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 96,
+      "title": "Küncdən açılan körpü",
+      "board": "8×5",
+      "actors": 2,
+      "source": "M3.6",
+      "sameGeometry": [
+        95
+      ],
+      "mechanisms": [
+        "walls",
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 97,
+      "title": "Kölgə körpünü açır",
+      "board": "11×5",
+      "actors": 1,
+      "source": "M4",
+      "sameGeometry": [
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "mechanisms": [
+        "echo",
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 98,
+      "title": "Gecikməni hesabla",
+      "board": "11×5",
+      "actors": 1,
+      "source": "M4",
+      "sameGeometry": [
+        97,
+        99,
+        100,
+        101,
+        102
+      ],
+      "mechanisms": [
+        "echo",
+        "gates",
+        "walls",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 99,
+      "title": "Güzgünün verdiyi yol",
+      "board": "11×5",
+      "actors": 1,
+      "source": "M4.2",
+      "sameGeometry": [
+        97,
+        98,
+        100,
+        101,
+        102
+      ],
+      "mechanisms": [
+        "echo",
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 100,
+      "title": "Əks addımla açılan qapı",
+      "board": "11×5",
+      "actors": 1,
+      "source": "M4.2",
+      "sameGeometry": [
+        97,
+        98,
+        99,
+        101,
+        102
+      ],
+      "mechanisms": [
+        "echo",
+        "gates",
+        "walls",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 101,
+      "title": "Gözləmənin doğru anı",
+      "board": "11×5",
+      "actors": 1,
+      "source": "M4.3",
+      "sameGeometry": [
+        97,
+        98,
+        99,
+        100,
+        102
+      ],
+      "mechanisms": [
+        "echo",
+        "gates",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    },
+    {
+      "id": 102,
+      "title": "Növbədən yol qur",
+      "board": "11×5",
+      "actors": 1,
+      "source": "M4.3",
+      "sameGeometry": [
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "mechanisms": [
+        "echo",
+        "gates",
+        "walls",
+        "collectibles",
+        "levers",
+        "doors"
+      ]
+    }
+  ]
+}

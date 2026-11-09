@@ -1,0 +1,1618 @@
+{
+  "version": 1,
+  "status": "design proposals, not implemented levels",
+  "counts": {
+    "M1": 20,
+    "M2": 20,
+    "M3": 20,
+    "M4": 20,
+    "M5": 20,
+    "M6": 20,
+    "N1": 20,
+    "N2": 20,
+    "N3": 20,
+    "N4": 20
+  },
+  "ideas": [
+    {
+      "id": "M1-01",
+      "family": "M1",
+      "title": "İki sahilli bərə",
+      "layout": "U formalı körfəz, iki ayrı eniş",
+      "decision": "A tərk edəndə orta plitə sınır; B əvvəl alt sahilə keçib geri körpüsünü saxlamalıdır. Tək blokla iki sahilin sensorları eyni vaxtda tutulmur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-02",
+      "family": "M1",
+      "title": "Ehtiyat giriş",
+      "layout": "Üç qollu terminal, ortada iki girişlik xana",
+      "decision": "İlk girişlə qərb açarı çıxarılır, ikinci giriş son qayıdış üçün saxlanır. Şərq qolu açılmadan final qapısı bağlıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-03",
+      "family": "M1",
+      "title": "Yükün paylanması",
+      "layout": "Enli qabıq yolu ilə paralel yüngül cığır",
+      "decision": "A domino uzanaraq həddi keçmir, B dar cığırdan forma stansiyasını açır. Dik A qabığı çökdürür, B isə ağır final sensorunu işə sala bilmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-04",
+      "family": "M1",
+      "title": "Sökülən dairə",
+      "layout": "Halqa, dörd diş, bir mərkəzi boşluq",
+      "decision": "Üç kilidi açmaq üçün halqanın hansı hissəsini sonuncu tərk edəcəyini seç. Yanlış sökülmə qapını deyil, qayıdışın özünü kəsir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-05",
+      "family": "M1",
+      "title": "Müşahidə estafeti",
+      "layout": "Paralel əyri sahillər və şəffaf ara yol",
+      "decision": "A ilə B növbə ilə yaxınlıq dayağını qabağa daşıyır. Sahillərdə çıxıntılar olduğuna görə sabit məsafə ilə düz yerimək kifayət etmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-06",
+      "family": "M1",
+      "title": "Sahilsiz açar",
+      "layout": "T formalı asma budaq, ucunda açar",
+      "decision": "A açara gedərkən B dəstəyi yan qola ötürür; geri dönəndə A dəstəkçi olur. Sensorun özü çıxış deyil, iki mərhələli mübadilə lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-07",
+      "family": "M1",
+      "title": "Sonuncu keçən",
+      "layout": "Y formalı ayrıc və təkistifadəlik boğaz",
+      "decision": "İki blok boğazdan hansı ardıcıllıqla keçəcəyini seçir. Uzaq tərəfdə ağır və yüngül girişlər əks ardıcıllıq tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-08",
+      "family": "M1",
+      "title": "Çatın altında yol",
+      "layout": "Yuxarı qabıqla aşağı servis dövrəsi",
+      "decision": "A qəsdən müəyyən qabığı sındıraraq B-nin aşağı qapısına yük siqnalını kəsir. Sındırılacaq hissə final üçün lazım olan hissədən ayrıdır; yeni qırılma-trigger qaydası tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-09",
+      "family": "M1",
+      "title": "Üç körpü, iki can",
+      "layout": "Üç ada üçbucağı",
+      "decision": "Hər körpü bir dəfə istifadə olunur; başlanğıcdakı iki blok bütün sensorları bitirib eyni adada görüşməlidir. Körpü ardıcıllığı Euler gəzintisi deyil, iki marşrutun bölüşdürülməsidir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-10",
+      "family": "M1",
+      "title": "Yük karantini",
+      "layout": "İki meydanı bağlayan dama-dama zolaq",
+      "decision": "A yalnız uzanmış, B yalnız kub kimi müxtəlif təhlükəsiz xanaları seçir. Ortada forma dəyişmək mümkün olmadığı üçün giriş duruşu öncədən hazırlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-11",
+      "family": "M1",
+      "title": "Boşaldılmayan dayaq",
+      "layout": "Dar səkkiz şəkilli döngə",
+      "decision": "B keçənədək A bir dəfəlik xananı tam boşaltmamalıdır. Dominonun yarım izi saxlanır, sonra A digər istiqamətə yuvarlanıb çıxır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-12",
+      "family": "M1",
+      "title": "Qayıdış üçün bir haqq",
+      "layout": "İki mərtəbə hissi verən pilləli meydanlar",
+      "decision": "İki girişlik plitənin ilk istifadəsini B-yə yox, A-ya vermək lazımdır: A üst qolun kilidini açır. Son giriş B-ni aşağı finala qaytarır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-13",
+      "family": "M1",
+      "title": "Çəkilən xalça",
+      "layout": "Ziqzaq yol və üç təhlükəsiz dayanacaq",
+      "decision": "Arxa hissə hər çıxışda sökülür; dayanacaqlarda iki blokun yerini dəyişmək üçün yan ciblər lazımdır. Sonuncu kimin irəlilədiyi final nişanlarının tərəfi ilə məhdudlaşır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-14",
+      "family": "M1",
+      "title": "Qabıq anbarı",
+      "layout": "Dörd otaq, yük-həddi fərqli üç boğaz",
+      "decision": "A bir dəfə böyüyür, sonradan stansiyaya qayıda bilmir. Hansı boğazı hansı formada keçmək lazım olduğu bütün marşrutu müəyyən edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-15",
+      "family": "M1",
+      "title": "Bölünən müşahidə",
+      "layout": "Dairəvi xarici yol, içəridə iki qırıq diaqonal",
+      "decision": "B kənarda dayananda yalnız bir diaqonal realdır. A mərkəzə çatdıqdan sonra rollar dəyişir; birbaşa mərkəzə tələsmək B-ni dayağından məhrum edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-16",
+      "family": "M1",
+      "title": "Möhürlü adacıq",
+      "layout": "Beş yarpaqlı ada dəstəsi",
+      "decision": "Hər yarpaqdan çıxış plitəsi bir dəfəlikdir; yalnız iki yarpaqda daimi geri yol var. Açarların yığılma sırası gələcək sığınacağı qoruyur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-17",
+      "family": "M1",
+      "title": "İşıqdan asılı döşəmə",
+      "layout": "İki otaq və ortasında deşikli meydan",
+      "decision": "İki relay eyni zolağın müxtəlif yarılarını açır. B bütöv yolu açmağa çalışmır; A aralıq adada dayanıb ikinci yarını özü işə salır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-18",
+      "family": "M1",
+      "title": "Kütlə növbəsi",
+      "layout": "Əyri dar kanal, iki enli cib",
+      "decision": "Eyni qabıqdan yüngül B ilk keçib yük stansiyasını açır; A yüngülləşir, lakin B ağırlaşdığı üçün əvvəlki cığırdan qayıda bilmir. Qayıdış başqa cibdən qurulur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-19",
+      "family": "M1",
+      "title": "Giriş deyil, çıxış",
+      "layout": "Çarpaz körpülər, ortada saxlanılan blok",
+      "decision": "Plitə basanda deyil, son blok çıxanda qırılır. Bir blok ortada gözləyərək digərinin yan qol səfərini mümkün edir; ikisini də erkən çıxarmaq yolu kəsir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M1-20",
+      "family": "M1",
+      "title": "Sınmadan əvvəl möhür",
+      "layout": "Spiral xarici yol və qısa iç boğaz",
+      "decision": "İç boğazın üstündə dayanaraq uzaq qapını möhürlə, sonra boğazı qırıb xarici yoldan dön. Möhür əvvəl vurulmasa geri yol qapısı açılmır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-01",
+      "family": "M2",
+      "title": "İki kompaslı liman",
+      "layout": "Bir-birinə perpendikulyar iki dar yol",
+      "decision": "A x oxunda, B z oxunda çevrilir; relay təhvili ilə hər birinin çıxış duruşu dəyişir. Təhlükə sürət deyil, fərqli dünya hərəkətlərini planlamaqdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-02",
+      "family": "M2",
+      "title": "Rotordan sonra körpü",
+      "layout": "L formalı iki boğaz və geniş dönmə meydanı",
+      "decision": "Domino 90° zonaya hansı vəziyyətdə girdiyinə görə körpüyə dik və ya uzanmış çıxır. Körpü yalnız uzanmış girişi götürür.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-03",
+      "family": "M2",
+      "title": "Yadda qalan sərhəd",
+      "layout": "İki halqalı yol, bir polarite qapısı",
+      "decision": "Sərhədə yenidən tam giriş biti çevirir; sağ halqaya getməzdən əvvəl sol halqada biti hazırla. Qapı tələb olunan bit yoxdursa fiziki bağlıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-04",
+      "family": "M2",
+      "title": "Kompas mübadiləsi",
+      "layout": "Aşağı keçidli iki otaq",
+      "decision": "İki blokun polaritesini görüş terminalında dəyişmək olar. B dar çıxış üçün A-nın bitini götürür, A isə qayıdış rotorunu başqa bitlə keçir; yeni bit-mübadiləsi qaydasıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-05",
+      "family": "M2",
+      "title": "Buzda dönüş",
+      "layout": "Üç dayanacaqlı əyri buz kanalı",
+      "decision": "İdarə əvvəl dünya istiqamətinə çevrilir, sonra buz sürüşdürür. Dayanacağı partnyor tutaraq A-nın növbəti rotor girişini dəyişir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-06",
+      "family": "M2",
+      "title": "Yanlış tərəfdən doğru giriş",
+      "layout": "U şəkilli otaq və tək yönlü rotor girişi",
+      "decision": "Çıxışa yaxınlaşmaq əvəzinə arxa dövrədən girmək lazımdır; rotorun tam-iz şərti dominoya yan giriş vermir. Kub B qıfılı açıb həmin arxa dövrəni saxlayır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-07",
+      "family": "M2",
+      "title": "Sabit düymə, dəyişən xəritə",
+      "layout": "Ortası dönən kvadrat və dörd qol",
+      "decision": "Yerli oxları bir terminal dəyişir, dünya qapıları yerində qalır. Növbəti qolu açan niyyət cari transformda yalnız bir təhlükəsiz meydandan icra olunur; yeni yönlü-komanda sensorudur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-08",
+      "family": "M2",
+      "title": "İki sərhədin pariteti",
+      "layout": "Üçbucaq halqa içində ayrı iki zona",
+      "decision": "Birinci sərhəd x-i, ikinci z-ni çevirir. Final üçün hər ikisini yox, yalnız birini aktiv saxlayan dövrə seçilməlidir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-09",
+      "family": "M2",
+      "title": "Tərs tərəzi",
+      "layout": "Mərkəzdə ağır sensor, kənarda güzgülü dəhlizlər",
+      "decision": "A sensoru tərk edəndə B-nin idarəsi dərhal normallaşır. B əvvəl təhlükəsiz cibə girməsə növbəti düzgün görünən əmr onu boşluğa aparır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-10",
+      "family": "M2",
+      "title": "Rotasiya kilidi",
+      "layout": "Üç ayrı kompaslı otaq",
+      "decision": "Çıxış qapısı müəyyən orientasiya tələb edir, ancaq son otaqda dönüş üçün yer yoxdur. Həmin orientasiya əvvəlki otaqda hazırlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-11",
+      "family": "M2",
+      "title": "Bir blok, iki tarix",
+      "layout": "Qarmaqşəkilli yol və polariteyə bağlı körpü",
+      "decision": "Eyni yerə iki dəfə qayıtmaq lazımdır, lakin ikinci dəfə bit fərqlidir. Körpü yalnız ikinci vəziyyətdə real olduğundan koordinatın özü həll deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-12",
+      "family": "M2",
+      "title": "Kompası söndür",
+      "layout": "Xarici düzbucaqlı yol və daxili dar spiral",
+      "decision": "B kənardan generatoru saxlayır, A spirala girir; ortadakı relay təhvil alınanda generator sönür. A-nın qayıdışı artıq normal oxlarla planlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-13",
+      "family": "M2",
+      "title": "Dördüncü tərəf",
+      "layout": "Çıxışı üç tərəfdən divarlı rotor meydanı",
+      "decision": "Domino bir neçə yan yuvarlanma ilə qapının tələb etdiyi üzü hazırlayır. Sadəcə ox çevrilməsini bilmək kifayət etmir, N1 orientasiyası da tələb olunur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-14",
+      "family": "M2",
+      "title": "Sərhədi paylaşma",
+      "layout": "Daraqşəkilli iki paralel koridor",
+      "decision": "Sensor iki blok tam zonada olanda aktivdir. B dişlərdən birində gözləyir, A öz footprint-ini içəri tamamlayır; yarım giriş heç nə açmır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-15",
+      "family": "M2",
+      "title": "Əks istiqamətli enerji",
+      "layout": "İki enerji terminalı və arada çevrilən yol",
+      "decision": "Enerjili blokun idarəsi invers, boşunki normaldır. Enerji ötürməsi növbəti hərəkət xəritəsini də dəyişir; yeni enerji-transform bağlantısı tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-16",
+      "family": "M2",
+      "title": "Şalterin baxdığı tərəf",
+      "layout": "Pilləli üç balkon",
+      "decision": "Şalteri yalnız doğru yan üzü ilə yaxınlaşan domino aktivləşdirir. Rotor zəruri istiqaməti hazırlayır, aşağı balkonda təsadüfi F kifayət etmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-17",
+      "family": "M2",
+      "title": "Qapalı kompas dövrəsi",
+      "layout": "İki keçidli səkkiz otaq",
+      "decision": "Hər tam zona girişi növbəti körpünün istiqamətini seçir. Dörd mərhələli dövrəni tamamlamadan başlanğıc çıxışı açılmır; yeni görünən dövr sayğacı tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-18",
+      "family": "M2",
+      "title": "Sabit partnyor",
+      "layout": "Tək dayanacaqlı S kanalı",
+      "decision": "A-nın transformu B-nin hansı sətirdə olduğundan asılıdır. B-ni irəli aparmaq A-nın çıxışını kəsir; öncə A-nı aralıq sığınacağa çıxartmaq lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-19",
+      "family": "M2",
+      "title": "İki ayrı final əmri",
+      "layout": "Ayrılan çəngəl, hər ucda başqa sensor",
+      "decision": "Bloklar eyni giriş əmri ilə müxtəlif dünya istiqamətlərinə gedirlər. N4 cüt addımı hər ikisini eyni vaxtda sensorlara qoymalıdır, ayrı-ayrı qoymaq qapını saxlamır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M2-20",
+      "family": "M2",
+      "title": "Xəritəni deyil, yaddaşı dəyiş",
+      "layout": "İç-içə iki düzbucaqlı, bağlanan qısayol",
+      "decision": "Qısayol ilk istifadə zamanı polariteni möhürləyir. Son məqsəd üçün lazım olan bit əvvəlcədən hazırlanmalıdır; qısayoldan sonra əlavə çevrilmə imkanı yoxdur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-01",
+      "family": "M3",
+      "title": "Dörd kontaktlı təhvil",
+      "layout": "Aşağı tunel və yuxarı enli körpü",
+      "decision": "A 2×2 izi ilə dörd kontaktı tutur, B yuxarı keçir. B uzaq relay-i tutandan sonra A kiçilib aşağı tuneldən çıxır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-02",
+      "family": "M3",
+      "title": "Böyümə küncü",
+      "layout": "Sütunlu həyət və küncdə forma stansiyası",
+      "decision": "Böyümə sağa-aşağı iz açır; A düzgün küncə yanaşmalıdır. Yanlış küncdə divar genişlənməni bloklayır, final isə böyük kub istəyir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-03",
+      "family": "M3",
+      "title": "Hündürlük borcu",
+      "layout": "Üç alçaq darvaza və bir dik sensor",
+      "decision": "Kub alçaq darvazalardan keçir, domino ağır sensoru dik tutur. Son darvazadan əvvəl yenidən kiçilmək və çıxışdan sonra böyümək üçün stansiyalar fərqli qollardadır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-04",
+      "family": "M3",
+      "title": "Enli, amma alçaq",
+      "layout": "Yastı tavanlı meydan və iki kontakt cütü",
+      "decision": "2×2×1 plitə keçir, 2×2×2 kub tavana dəyir. A yastı formada kontaktları tutarkən B final yüksəldicisini açır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-05",
+      "family": "M3",
+      "title": "Ölçü anbarı",
+      "layout": "Üç qapılı servis otaqları",
+      "decision": "Bir stansiya yalnız kiçildir, digəri yalnız böyüdür. Yol seçimi ölçü dövrəsinin geri dönməz ardıcıllığı ilə məhdudlaşır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-06",
+      "family": "M3",
+      "title": "Uzanmaq üçün yer",
+      "layout": "İki enli meydanı bağlayan dar dirsək",
+      "decision": "Domino dirsəkdə dönə bilmir; əvvəl kuba çevrilir, o tərəfdə yenidən domino olur. Stansiyanı açan B isə dirsəyin əks tərəfində başlamalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-07",
+      "family": "M3",
+      "title": "Daşınan tavan kilidi",
+      "layout": "Açıq həyət, içində üç alçaq tağ",
+      "decision": "B şalterlə tavanlardan birini qaldırır. A böyük formada sensorun yükünü saxlayaraq yalnız qaldırılmış tağdan keçə bilər; kiçilmə kilidi yenidən bağlayır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-08",
+      "family": "M3",
+      "title": "Körpünün eni",
+      "layout": "İki paralel yol, biri dar, biri zəif",
+      "decision": "B dar yoldan keçir, A geniş izə yayılıb zəif yoldan keçir. Görüşdən sonra məqsədlər əks sahildə olduğuna görə relay təhvili lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-09",
+      "family": "M3",
+      "title": "Bir stansiyanın iki tərəfi",
+      "layout": "Divarla ayrılan iki yarım həyət",
+      "decision": "Stansiyanın iki yaxınlaşma küncü ayrı boş sahələrə böyüdür. A ortaq bir nöqtədə dayanıb ölçü dəyişməklə digər tərəfə qanunsuz keçə bilməz; tam footprint və swept collision yoxlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-10",
+      "family": "M3",
+      "title": "Üç forma, bir açar",
+      "layout": "U formalı qala, içində aşağı tunel",
+      "decision": "A kubla açarı alır, domino ilə körpünü keçir, plitə ilə final dövrəsini birləşdirir. Stansiyalar bu ardıcıllığı fiziki məsafələrlə məcbur edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-11",
+      "family": "M3",
+      "title": "Geri sığmayan",
+      "layout": "Dar girişdən geniş altıbucaqlı otağa keçid",
+      "decision": "B giriş şalterini bağladıqdan sonra A böyük qalır. Çıxış üçün digər tərəfdə kiçilmə stansiyasını B-yə açdırmaq lazımdır; girişdən geri dönmək həll deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-12",
+      "family": "M3",
+      "title": "Kütlə yox, iz",
+      "layout": "Həddli dörd plitə və ağır ayrıca düymə",
+      "decision": "Eyni kütlə müxtəlif izlə paylanır; qabıqda yastı, sensor üzərində dik forma lazımdır. Sadəcə böyük olmaq bütün şərtləri ödəmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-13",
+      "family": "M3",
+      "title": "Böyümənin açdığı yol",
+      "layout": "Aralı dayaq adaları və kontakt boşluğu",
+      "decision": "2×2 plitə dörd sensoru tutub ayrıca körpünü açır; özü boşluq üzərində körpü sayılmır. B bu açılan yoldan o tərəfə keçir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-14",
+      "family": "M3",
+      "title": "İki kiçikdən bir böyük",
+      "layout": "İki görüş meydanı, arada qapalı boğaz",
+      "decision": "A-nın böyümə icazəsi yalnız B yaxın terminalda olanda verilir. Böyüdükdən sonra B-nin qayıdışı üçün A başqa kontaktı tutmalıdır; yeni icazə-terminalı qaydasıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-15",
+      "family": "M3",
+      "title": "Forma möhürləri",
+      "layout": "Üç fərqli formalı nişanı olan qollar",
+      "decision": "Möhürlər kub→plitə→dik domino ardıcıllığında vurulur. Hər möhür başqa qolun qapısını açır, istənilən sırada toxunmaq nəticə vermir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-16",
+      "family": "M3",
+      "title": "Tərs ölçü seçimi",
+      "layout": "Biri qısa, biri uzun olan iki dövrə",
+      "decision": "Qısa yol böyük iz tələb edir, amma böyük iz çıxış tağına sığmır. Əvvəl uzun yoldakı kiçilmə stansiyasının kilidini açıb sonra qısayoldan istifadə etmək lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-17",
+      "family": "M3",
+      "title": "Sütunlar arasındakı diaqonal",
+      "layout": "Sərbəst həyət içində ofset sütunlar",
+      "decision": "Son iz boş olsa da yuvarlanmanın qövsü sütuna dəyir. A aralıq formada başqa tərəfdən yaxınlaşır; yalnız end-position yoxlaması qəbul edilmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-18",
+      "family": "M3",
+      "title": "Bir dəfə böyü",
+      "layout": "Spiral qapılar və biristifadəlik stansiya",
+      "decision": "Böyümə yalnız bir dəfə mümkündür; hansı otaqda etmək lazım olduğu son sensorla tunellərin sırası ilə müəyyənləşir. Yeni stansiya-istifadə biti undo-da saxlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-19",
+      "family": "M3",
+      "title": "Çıxışı saxlayan çəki",
+      "layout": "İki final platforması, ortada alçaq körpü",
+      "decision": "A finala böyük formada çatanda B-nin yolu açılır; sonra A-nın kiçilməsi B-ni sala bilər. Son yerləşmələr eyni vaxtda sabit olmalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M3-20",
+      "family": "M3",
+      "title": "Forma ilə portal",
+      "layout": "Dar portal önü və geniş çıxış meydanı",
+      "decision": "Portal tam çıxış footprint-ini yoxlayır. Kiçik keçib uzaqda böyümək lazımdır; dolu çıxışı zorla itələmək və ya divardan keçmək mümkün deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-01",
+      "family": "M4",
+      "title": "İki açarın eyni anı",
+      "layout": "Ayrı otaqlarda eyni anda tutulmalı düymələr",
+      "decision": "Əvvəl bir otaqda üç əmrlik kölgə proqramı yaz, sonra digər otaqda öz hərəkətini onunla uyğunlaşdır. Kölgə qapını açdığı üçün zəruridir, sadəcə arxadan gəlmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-02",
+      "family": "M4",
+      "title": "Tərs izlə keçid",
+      "layout": "Güzgülü yox, fərqli maneəli iki balkon",
+      "decision": "Yazılmış marşrutun güzgüsü ikinci balkonda relay-ə çatmalıdır. Orijinal marşrut həm öz yoluna, həm əks izdəki maneələrə uyğun seçilir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-03",
+      "family": "M4",
+      "title": "Gözlə düyməsi",
+      "layout": "Bir uzun və bir qısa yan yol",
+      "decision": "Əks-səda düyməni dörd gediş sonra tutur; A qısa yolun təhlükəsiz cibində WAIT ilə fazanı uyğunlaşdırır. Gözləmə görünən proqram addımıdır, gizli saniyə deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-04",
+      "family": "M4",
+      "title": "Yazını yarıda kəs",
+      "layout": "Üç qollu qeyd meydanı",
+      "decision": "Proqram uzunluğunu oyunçu seçir; çox uzun yazı kölgəni düymədən çıxarır. Doğru son nöqtə və uzunluq birlikdə tapılır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-05",
+      "family": "M4",
+      "title": "Qeyd edilən forma",
+      "layout": "Geniş qeyd həyəti, dar icra dəhlizi",
+      "decision": "Kölgə resize əmrlərini də icra edir. Proqram icra sahəsində sığmalı, orijinal blok isə həmin vaxt ayrı sensoru saxlamalıdır; yeni forma-qeyd dəstəyi tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-06",
+      "family": "M4",
+      "title": "Gecikən körpü",
+      "layout": "Pilləli üç ada",
+      "decision": "Kölgə keçmiş mövqedə dayaq relay-ni saxlayır, A növbəti adaya keçir. Gecikmə boyunca dayaqsız qalan aralıq üçün əvvəlcədən WAIT yazılır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-07",
+      "family": "M4",
+      "title": "İki yazıdan biri",
+      "layout": "İki proqram terminalı, bir dar boğaz",
+      "decision": "Sol proqram qapını açır, sağ proqram körpünü saxlayır; yalnız biri aktiv ola bilər. A aralıq adada proqram dəyişdirən fiziki terminala çatmalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-08",
+      "family": "M4",
+      "title": "Əks-sədanı park et",
+      "layout": "Dairəvi otaq və mərkəzi ağır sensor",
+      "decision": "Son əmrdən sonra kölgə yerində qalır. Qeyd sonu sensor üzərində hazırlanır, A isə boşalan xarici dövrədən çıxır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-09",
+      "family": "M4",
+      "title": "Söndürülən qeyd",
+      "layout": "Açılan divarların ayırdığı iki sektor",
+      "decision": "Kölgə birinci sektoru açır, ancaq finalda onun saxladığı qapı bağlı olmalıdır. A uzaq terminaldan kölgəni söndürüb başqa yolla qayıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-10",
+      "family": "M4",
+      "title": "Yaddaş releləri",
+      "layout": "Dörd otaqdan ibarət zəncir",
+      "decision": "Qeyd birinci düyməni saxlayır, A ikinciyə çatıb yeni qeydlə təhvil alır. Qeydləri sərhədsiz çoxaltmaq olmaz, yalnız bir aktiv yuva var.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-11",
+      "family": "M4",
+      "title": "Yazının kəsişməsi",
+      "layout": "Çarpaz iki koridor və iki yan cib",
+      "decision": "Kölgə ilə eyni xanaya eyni addımda girmək bloklanır. A cibi seçərək kəsişmənin vaxtını dəyişir; ölüm yox, əvvəlcədən görünən konflikt var.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-12",
+      "family": "M4",
+      "title": "Fərqli başlanğıc məsafəsi",
+      "layout": "İki uzunluğu bərabər olmayan sahil",
+      "decision": "Eyni proqram uzaq balkonda boşluğa düşməməlidir. Qeyd meydanında əlavə dolama proqramın sonunu düzgün relay-ə gətirir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-13",
+      "family": "M4",
+      "title": "Yaddaşın qapısı",
+      "layout": "Girişə bağlanan proqram otağı",
+      "decision": "Yazı ilk icra olunanda giriş kilidlənir. Proqram gələcək qayıdış düyməsini də əhatə etməlidir, yalnız çıxışı açan qısa yazı kifayət etmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-14",
+      "family": "M4",
+      "title": "Kölgənin yükü",
+      "layout": "Qabıq və ağır sensor arasında ayrıc",
+      "decision": "Əks-səda forma və kütlənin qeyd anındakı vəziyyətini saxlayır. Yüngül qeydlə qabıq keçilir, ağır final isə canlı bloka qalır; yeni snapshot-kütlə qaydasıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-15",
+      "family": "M4",
+      "title": "Tərs sırada lent",
+      "layout": "Bir girişli spiral və yan şalterlər",
+      "decision": "Terminal lentin əmrlərini tərs sıra ilə icra edir, istiqamətləri çevirmir. Proqram bu fərqə uyğun yazılır; UI hər iki yolu göstərir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-16",
+      "family": "M4",
+      "title": "Yarım sürətli lent",
+      "layout": "İki paralel cığır və aralı relay-lər",
+      "decision": "Kölgə hər iki qəbul edilmiş əmrdən bir addımlayır. A addım büdcəsi ilə relay pəncərələrini uyğunlaşdırır; saniyəlik yarış yoxdur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-17",
+      "family": "M4",
+      "title": "Qeyd və enerji",
+      "layout": "Terminal, enerji qapısı və uzaq sensor",
+      "decision": "Kölgəni işlədən batareya məhduddur; terminala geri qoyulan enerji ikinci mərhələ üçün saxlanır. Proqramı lüzumsuz uzun yazmaq resursu tükəndirir; yeni enerji xərci açıq göstərilir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-18",
+      "family": "M4",
+      "title": "Fazalı divardan keç",
+      "layout": "İki fazalı dar otaq və təhlükəsiz yan meydan",
+      "decision": "Kölgə növbəli divarın şalterini hər üçüncü addım tutur. A keçidə həmin mərhələdən əvvəl girib təhlükəsiz meydanda çıxmalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-19",
+      "family": "M4",
+      "title": "Yazı daşıyan portal",
+      "layout": "Ayrı qeyd adası və iki icra adası",
+      "decision": "Portal proqramı saxlayır, icra başlanğıcını dəyişir. Eyni proqramı iki adada işlətmək məcburidir, adaların maneələri fərqli rol bölüşdürməsi yaradır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M4-20",
+      "family": "M4",
+      "title": "Son yazını sil",
+      "layout": "Üç qapılı final meydanı",
+      "decision": "Qeyd bir qapını açır, eyni zamanda finalı kilidləyir. A əvvəl daxil olur, sonra içəridəki silmə terminalını işə salaraq əsl çıxışı açır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-01",
+      "family": "M5",
+      "title": "Üç fazalı pres",
+      "layout": "Üç təhlükəsiz ciblə bölünən uzun koridor",
+      "decision": "Divar hər qəbul edilmiş əmrdə bir faza dəyişir. A ciblər arasında planla keçir, B yan şalterlə bir fazanı saxlayır; düşünərkən saat işləmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-02",
+      "family": "M5",
+      "title": "Birini aç, birini daralt",
+      "layout": "İki alternativ dövrə və mərkəzi şalter",
+      "decision": "Şalter bir yolu açıb digərini daraldır. Blokları eyni tərəfdə saxlamaq çıxışı kəsir, əvvəl ayırmaq lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-03",
+      "family": "M5",
+      "title": "Sürüşən arakəsmə",
+      "layout": "Dörd otaqlı xaç planı",
+      "decision": "Arakəsmə mərkəzdən yalnız boş olanda keçir. A və B fərqli otaqlara əvvəlcədən yerləşərək keçid istiqamətini dəyişirlər.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-04",
+      "family": "M5",
+      "title": "Divarın arxasındakı şalter",
+      "layout": "Zəncirvari üç kilidli kamera",
+      "decision": "Birinci şalter ikinci kameranı, ikinci üçüncünü açır; üçüncü əvvəlki qayıdış yolunu azad edir. Başlanğıc finalı ən son kiliddən asılıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-05",
+      "family": "M5",
+      "title": "Hərəkətli tavan",
+      "layout": "İki hündür zal və arada enən tağ",
+      "decision": "B tavanı qaldıranda A domino keçir; B özü çıxmaq üçün A-nın uzaq düyməni tutmasını gözləyir. Ölçü və təhvil birlikdə işləyir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-06",
+      "family": "M5",
+      "title": "Daralan anbar",
+      "layout": "Kənarlardan deyil, seçilən sütundan gələn divar",
+      "decision": "Oyunçu divarın hansı kanala çəkiləcəyini seçir. Kanal seçimi sonrakı böyük footprint üçün boş meydanı saxlamalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-07",
+      "family": "M5",
+      "title": "Əks çəkili iki divar",
+      "layout": "Bir geniş otaqda bir-birinə bağlı iki panel",
+      "decision": "Biri sağa gedəndə digəri sola gedir. İki blok panel arxalarında ilişməmək üçün fərqli vaxtda cibi dəyişir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-08",
+      "family": "M5",
+      "title": "Yolu uzadan təhlükəsizlik",
+      "layout": "Qısa pres dəhlizi və uzun servis halqası",
+      "decision": "Uzun yoldakı şalter presi söndürür, amma servis çıxışını bağlayır. A presdən keçir, B servisə geri dönmədən ikinci kilidi açır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-09",
+      "family": "M5",
+      "title": "Sabitlənən faza",
+      "layout": "Üç fazalı dişli zal",
+      "decision": "Mərkəzi ağır sensor cari divar fazasını dondurur. A doğru fazada sensoru tutmalı, B qapıları keçəndən sonra onu buraxmalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-10",
+      "family": "M5",
+      "title": "Buzun son divarı",
+      "layout": "Buz xətti və sürüşdürülən stop paneli",
+      "decision": "Panelin mövqeyi sürüşmənin harada bitəcəyini müəyyən edir. Əvvəl uzaq şalteri, sonra yaxın finalı əldə etmək üçün iki müxtəlif stop lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-11",
+      "family": "M5",
+      "title": "Bağlanan pəncərə",
+      "layout": "Üst və alt yolu olan səkkizşəkilli plan",
+      "decision": "Pəncərə iki gediş açıq qalır. A yaxınlıqda əvvəlcədən dayanır, B açan kimi keçir; sonrakı mərhələdə rollar əksinədir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-12",
+      "family": "M5",
+      "title": "Bir istiqamətli arakəsmə",
+      "layout": "Daraq otaqlar və yalnız sağa sürüşən panel",
+      "decision": "Panel geri çəkilmir; hər hərəkət bir otağı itirib yenisini açır. Açarların yığılma sırası itiriləcək otaqlara görə seçilir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-13",
+      "family": "M5",
+      "title": "Kilidli dayaq sütunu",
+      "layout": "İki körpünün ortaq dayağı olan həyət",
+      "decision": "Panel çəkiləndə bir körpü açılır, o biri dayaq itirir. B uzaq dayaq sensorunu əvvəl tutmalıdır ki, A-nın yolu çökməsin.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-14",
+      "family": "M5",
+      "title": "Divarla çevrilən kompas",
+      "layout": "Asimmetrik rotor zalı",
+      "decision": "Panel rotor zonasının girişini dəyişir; domino eyni transforma başqa duruşda daxil olur. Panelin dəyişməsi həllə həndəsi təsir göstərir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-15",
+      "family": "M5",
+      "title": "İki səviyyəli icazə",
+      "layout": "Üç otaq və iki şalter nişi",
+      "decision": "Birinci şalter panel motorunu, ikinci onun hədəf mövqeyini açır. Sonuncu qapının arxasına blok göndərməzdən əvvəl geri idarə imkanı saxlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-16",
+      "family": "M5",
+      "title": "Boşluq yaradan divar",
+      "layout": "Dairəvi yolun sürüşən iki parçası",
+      "decision": "Panel bir tərəfi döşəmə ilə doldurub arxada boşluq yaradır. Son vəziyyət hər iki blok üçün dayaq verməlidir; üstündə blok varkən teleport yoxdur, yeni hərəkətli-döşəmə sistemi tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-17",
+      "family": "M5",
+      "title": "Sıxışma deyil, çeşidləmə",
+      "layout": "Üç enli cib və ölçüyə görə keçən boğazlar",
+      "decision": "Divar böyük A-nı geniş cibdə, kiçik B-ni dar cibdə saxlayır. Məqsəd ölməmək deyil, doğru blokları doğru tərəfə ayırmaqdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-18",
+      "family": "M5",
+      "title": "Geri qapının kilidi",
+      "layout": "Yuxarı çıxışlı U qala",
+      "decision": "İlk keçid qapını arxadan bağlayır; uzaq iki şalterdən biri divarı çəkir, o biri geri qapını açır. İkisini qarışdırmaq təhlükəsiz, amma həllsiz yerləşmə yaradır və undo tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-19",
+      "family": "M5",
+      "title": "Faza ötürən portal",
+      "layout": "Bir pres otağı və ayrı sakit ada",
+      "decision": "Portalın girişi də qəbul edilmiş addımdır, divarı bir faza irəlilədir. Çıxış meydanına doğru fazada qayıtmaq üçün sakit adada faza hazırlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M5-20",
+      "family": "M5",
+      "title": "Sonuncu boş cib",
+      "layout": "Sütunlu terminal və tək panel saxlama nişi",
+      "decision": "Paneli park etdiyin niş sonradan A-nın böyümə yeridir. B uzaq qıfılı açandan sonra paneli yenidən çəkmək lazımdır; bir şalterlə bitmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-01",
+      "family": "M6",
+      "title": "İcazəli final",
+      "layout": "İki final otağı və uzaq razılıq sensoru",
+      "decision": "B razılıq sensorunu tutmadan A-nın qapısı onu geri adaya göndərir. Razılıq açıq göstərilir, sürpriz cəza yox, qarşılıqlı yerləşmə tapmacasıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-02",
+      "family": "M6",
+      "title": "Üç ünvanlı seçim",
+      "layout": "Üç ada və ünvan indeksi olan portal",
+      "decision": "A ilk keçidlə B-nin adasını açır, B növbəti keçidlə finala gedir. Portalın qlobal indeksi final qayıdış üçün əvvəlcədən hazırlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-03",
+      "family": "M6",
+      "title": "Faydalı yanlış qapı",
+      "layout": "Başlanğıc meydanı və bağlı alt dövrə",
+      "decision": "Aralıq qapıdan keçmək geri yol kilidini açır. Həqiqi final əvvəlki meydandadır, amma kilid açılmadan ona daxil olmaq mümkün deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-04",
+      "family": "M6",
+      "title": "Dolu ünvan",
+      "layout": "İki kiçik portal adası və bir servis qolu",
+      "decision": "B çıxış xanasını tutur; A keçə bilmir. B-ni servis qoluna çıxarıb portalı boşaltmaq və sonra geri relay təhvili etmək lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-05",
+      "family": "M6",
+      "title": "Forma gömrüyü",
+      "layout": "Dar giriş adası və tavanlı çıxış",
+      "decision": "Portal ölçünü saxlayır. A böyük gedə bilmədiyi üçün əvvəl kiçilir, uzaqda yenidən böyüyüb ağır sensoru tutur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-06",
+      "family": "M6",
+      "title": "Bir dəfəlik bilet",
+      "layout": "Çarpaz dörd ada",
+      "decision": "İlk teleportdan sonra giriş sönür. A-nın yolu ilə B-nin bileti fərqli təyinatlara yönəldilməlidir; yeni biristifadəlik portal biti lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-07",
+      "family": "M6",
+      "title": "Geri ünvanı saxla",
+      "layout": "İki halqa və bir indeks terminalı",
+      "decision": "Qapını hər aktivləşdirmək indeksi dəyişir. Əvvəl çıxışa yaxınlaşmaq deyil, geri gəlmək üçün düzgün ünvanı ehtiyatda saxlamaq lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-08",
+      "family": "M6",
+      "title": "Sensorla seçilən liman",
+      "layout": "Uzaq iki ada, başlanğıcda iki sensor",
+      "decision": "B hansı sensoru tutursa A ora ötürülür. A birinci adadan B üçün başqa yol açır, B seçimi dəyişib A-nı ikinci adaya yönəldir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-09",
+      "family": "M6",
+      "title": "Qapı arxasında şalter",
+      "layout": "Bir-birinə portal ilə bağlanan üç kamera",
+      "decision": "Birinci portal şalterin arxasına, ikinci portal birinci qapının önünə çıxarır. Şalter zənciri tamamlanmadan son portal aktiv olmur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-10",
+      "family": "M6",
+      "title": "Güzgü çıxışlı qaçış",
+      "layout": "Asimmetrik iki zal",
+      "decision": "Portal giriş orientasiyasını dəyişmir, amma çıxış divarları yalnız bir duruşa yer verir. Orientasiya əvvəlki zaldakı dövrədə hazırlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-11",
+      "family": "M6",
+      "title": "Finalı söndürən razılıq",
+      "layout": "İki sensorlu yan cib və tək qapı",
+      "decision": "A-nın final bayrağı B sensoru buraxanda silinir. B öz çıxışına gedərkən alternativ sensoru A özü tutmalı və bayrağı bərpa etməlidir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-12",
+      "family": "M6",
+      "title": "İki keçid, bir dönüş",
+      "layout": "İki portal və aralarında qırılan boğaz",
+      "decision": "Bir portal irəli, digəri geri üçündür. Boğazı erkən qırmaq ikinci portalın icazə sensoruna yolu kəsir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-13",
+      "family": "M6",
+      "title": "Üzə görə ünvan",
+      "layout": "Altı kontaktlı başlanğıc zalı",
+      "decision": "Portalın ünvanı aşağı üz işarəsinə bağlıdır. Doğru adaya çatmaq üçün N1 dövrəsi lazımdır; yeni üz-ünvan bağlantısı tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-14",
+      "family": "M6",
+      "title": "Enerji bileti",
+      "layout": "Batareya anbarı və uzaq final adası",
+      "decision": "Teleport bir token xərcləyib çıxış deposuna ötürür, enerji itmir. B son səfər üçün depodan tokeni geri götürməlidir; xərc əvəzinə transfer qaydası açıqdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-15",
+      "family": "M6",
+      "title": "Eyni qapının ikinci işi",
+      "layout": "Geniş başlanğıc otağı və kiçik yan ada",
+      "decision": "İlk giriş portalı açır, ikinci giriş şəbəkə şalterini işə salır. Aralıq adada hazırlıq etmədən ikinci girişi aktivləşdirmək final yolunu açmır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-16",
+      "family": "M6",
+      "title": "Çıxış deyil, görüş",
+      "layout": "Ayrı başlayan iki blok üçün ortaq ada",
+      "decision": "İki saxta final hər bloku görüş yerinə gətirir. Görüşdə enerji dəyişilir, sonra hər biri fərqli həqiqi çıxışına yönəlir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-17",
+      "family": "M6",
+      "title": "Qayıdış möhürü",
+      "layout": "Dörd pilləli portal zənciri",
+      "decision": "Hər adada fərqli forma möhürü var; son qapı bütün möhürləri yoxlayır. Ünvanlar birbaşa finala qısayol vermir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-18",
+      "family": "M6",
+      "title": "Portalın çəkisi",
+      "layout": "İki ada, birində həddli döşəmə",
+      "decision": "Teleport olunmuş domino çıxışda dik qalırsa qabıq çökür. Yüngül rol və ya geniş forma hazırlanmadan keçmək mümkün deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-19",
+      "family": "M6",
+      "title": "Uzaqdan bağlanan final",
+      "layout": "İki platforma və arada növbəli divar",
+      "decision": "B final icazəsini verir, A keçir; A içəridən divar fazasını dondurub B-ni buraxır. Hər blokun finalı digərinin yerləşməsinə bağlıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "M6-20",
+      "family": "M6",
+      "title": "Son ünvan başlanğıcdır",
+      "layout": "Beş adalı, bir neçə istiqamətli portal qrafı",
+      "decision": "Başlanğıc çıxışı üç adadan icazə aldıqdan sonra açılır. Təkrar adaya getmək indeksi pozur, plan qraf üzərində qurulur, xal yerlərini dəyişmək deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-01",
+      "family": "N1",
+      "title": "Üç rəngin sırası",
+      "layout": "Üç qollu möhür zalı",
+      "decision": "A alt üzlə qırmızı→mavi→ağ kontaktları basır. Sadəcə xanaya çatmaq sayılmır, doğru fiziki üz aşağı olmalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-02",
+      "family": "N1",
+      "title": "Yan kontakt",
+      "layout": "Divar boyunca L formalı dəhliz",
+      "decision": "Düymə döşəmədə deyil, divardadır. Domino doğru yan üzü ilə yaxınlaşır; bunun üçün geniş başlanğıc meydanında dövrə vurulur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-03",
+      "family": "N1",
+      "title": "Eyni yerdə başqa üz",
+      "layout": "Ortası boş halqa",
+      "decision": "Tam dövrədən qayıdan blok eyni koordinatda fərqli orientasiyaya sahib olmalıdır. Final sensoru həmin üzü tələb edir; koordinat əsaslı həll yanlışdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-04",
+      "family": "N1",
+      "title": "İki blokun imzası",
+      "layout": "İki paralel niş meydanı",
+      "decision": "A və B eyni vaxtda fərqli üzləri göstərir. A hazır olanda B-nin dönüşü A-nın dayağını kəsməməlidir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-05",
+      "family": "N1",
+      "title": "Damğalı körpü",
+      "layout": "Dar körpüdən əvvəl geniş həyət",
+      "decision": "Körpü girişində müəyyən alt üz, çıxışda başqa yan üz tələb olunur. Giriş yolu orientasiya ilə seçilir, dar körpüdə düzəliş yeri yoxdur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-06",
+      "family": "N1",
+      "title": "Ölçüdə saxlanan üz",
+      "layout": "Forma stansiyası olan iki kamera",
+      "decision": "Resize üz etiketlərini qoruyur; kubda hazırlanan işarə domino finalında yan kontakt olur. Etiket çevrilməsi əvvəlcədən göstərilir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-07",
+      "family": "N1",
+      "title": "Dörd tərəfli prizma",
+      "layout": "Xaç zalı, hər qolda divar kontaktı",
+      "decision": "Dörd kontaktı eyni orientasiya ilə sırayla basmaq mümkün deyil. Hər qol arasında fərqli dövrə seçmək lazımdır, mərkəz möhür sayğacını saxlayır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-08",
+      "family": "N1",
+      "title": "Qütblü portal",
+      "layout": "Portal ilə ayrılmış iki tavanlı otaq",
+      "decision": "Üz işarəsi portalda qorunur. Uzaq otaqda dönmək üçün yer olmadığından girişdən əvvəl oriyentasiya tamamlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-09",
+      "family": "N1",
+      "title": "İzolyasiya üzü",
+      "layout": "Enerjili döşəmə ilə parçalanmış yol",
+      "decision": "Yalnız izolyasiya işarəli üz elektrik zolağına toxuna bilər. Digər üzü kontaktı açdığı üçün zolaqdan sonra yenidən dönüş lazımdır; yeni üz-təhlükə qaydasıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-10",
+      "family": "N1",
+      "title": "Yük və imza",
+      "layout": "Ağır kontakt, iki alçaq yan kanal",
+      "decision": "Doğru alt üz ilə dik qalmaq tələb olunur. Yüngül B yaxın yolu keçir, ağır A orientasiya üçün uzun xarici dövrədən gəlir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-11",
+      "family": "N1",
+      "title": "Üz təhvili",
+      "layout": "İki terminal və bir görüş meydanı",
+      "decision": "Terminal A-nın üst üz kodunu B üçün qapı icazəsi kimi yadda saxlayır. Sonra B həmin kodla başqa kontaktı basır; yeni yaddaş terminalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-12",
+      "family": "N1",
+      "title": "Əks nişanlar",
+      "layout": "Səkkizşəkilli zal, iki zidd kontakt",
+      "decision": "Bir kontakt yuxarı, digəri aşağı üz kodunu yoxlayır. İkisini tutmaq üçün eyni dövrəni təkrarlamaq yox, fərqli halqaları birləşdirmək lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-13",
+      "family": "N1",
+      "title": "Dik qapının imzası",
+      "layout": "Pilləli dar boğazlar",
+      "decision": "A yalnız dik halda və şimal üzü müəyyən kod olanda keçə bilir. Uzun tərəfə yatıb qıfıldan keçmək mümkün deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-14",
+      "family": "N1",
+      "title": "Fazaya görə üz",
+      "layout": "Növbəli divarlı üç cib",
+      "decision": "Hər faza başqa kontaktı əlçatan edir. Orientasiya planı ilə faza planı birlikdə uyğunlaşdırılır, WAIT özü orientasiyanı dəyişmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-15",
+      "family": "N1",
+      "title": "Unudulmayan möhür",
+      "layout": "Şalterlə bağlanan iki dönmə meydanı",
+      "decision": "İlk möhürdən sonra birinci meydan bağlanır. İkinci möhür üçün lazım olan üz əvvəlki dövrənin sonunda hazırlanmalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-16",
+      "family": "N1",
+      "title": "Kontakt cütü",
+      "layout": "Enli plitə izi olan son zal",
+      "decision": "2×2 plitənin altındakı iki fərqli işarə iki sensorla uyğun gəlir. Sadəcə dörd xananı örtmək kifayət deyil; yeni hüceyrə-kontakt etiketləri tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-17",
+      "family": "N1",
+      "title": "Buzdan sonra yan üz",
+      "layout": "İki buz xətti, arada quru dönmə cibi",
+      "decision": "Sürüşmə roll yox, tərcümə kimi orientasiyanı saxlayır. Quru cibi seçmək final yan kontaktını hazırlayır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-18",
+      "family": "N1",
+      "title": "İki imzalı açar",
+      "layout": "Bir mərkəzi qapı və iki uzaq möhür",
+      "decision": "A bir möhürü, B digərini doğru üzlə vurur; hər biri yalnız öz roluna icazə verir. Bir blokla hər ikisini tamamlamaq olmaz.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-19",
+      "family": "N1",
+      "title": "Orientasiya karantini",
+      "layout": "Əyri xarici yol və kiçik iç meydan",
+      "decision": "İç meydana düşəndə oriyentasiya dəyişdirmək üçün yer yoxdur. Portal çıxışında lazımi alt üz yoxlanır; xarici yol uyğun hazırlıq üçündür.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N1-20",
+      "family": "N1",
+      "title": "Son üç toxunuş",
+      "layout": "Fərqli istiqamətli üç dar son qol",
+      "decision": "Möhür ardıcıllığı yalnız son üç düzgün toxunuşu saxlayır. Artıq yanlış kontakt əvvəldən hazırlanmış sıranı pozur; görünən sürüşən yaddaş tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-01",
+      "family": "N2",
+      "title": "İki qapının büdcəsi",
+      "layout": "İki enerji qapılı qollar və ortaq depo",
+      "decision": "Cəmi üç token var, qapılar iki və bir istəyir. Tokenləri qapılarda itirmədən uzaq depoya köçürüb son bölgünü qurmaq lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-02",
+      "family": "N2",
+      "title": "Boş qayıdan",
+      "layout": "Bir ağır enerji körpüsü və dar yüngül yol",
+      "decision": "A enerjini uzağa daşıyır, B onu götürür. A boşalıb yüngül yoldan qayıdır, B dolu halda ağır finalı açır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-03",
+      "family": "N2",
+      "title": "Enerji lifti",
+      "layout": "Üç ayrı ada və tək transfer nöqtəsi",
+      "decision": "Transfer yalnız qonşu bloklar arasında mümkündür. Adaların ölçüsü hər görüşü fərqli yerdə təşkil etməyə məcbur edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-04",
+      "family": "N2",
+      "title": "Son token depozitdə",
+      "layout": "Dairəvi yol, üç terminal",
+      "decision": "Finalda A və B boş, depo dolu olmalıdır. Əvvəlki qapılar dolu blok istədiyi üçün hər şeyi erkən depoya qoymaq olmaz.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-05",
+      "family": "N2",
+      "title": "İki bərabər pay",
+      "layout": "Paralel iki koridor və ayrı çıxışlar",
+      "decision": "Hər çıxış iki token istəyir, görüşdən sonra transfer yoxdur. Bölüşdürmə son ayrıcda düzgün tamamlanmalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-06",
+      "family": "N2",
+      "title": "Ödənişsiz daşınma",
+      "layout": "Biristifadəlik portal və uzaq depo",
+      "decision": "Token portal keçidində yox olmur, çıxış deposuna köçürülür. B onu geri dövrədən götürür; bir blok öz enerjisini özü geri ala bilmir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-07",
+      "family": "N2",
+      "title": "Yük həddində batareya",
+      "layout": "Qabıq yol və enli servis həyəti",
+      "decision": "Token kütləyə əlavə olunur. Körpüdən boş keçmək, uzaqda doldurulmaq və finala ağır çatmaq lazımdır; yeni token-kütlə əlaqəsidir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-08",
+      "family": "N2",
+      "title": "İki terminalın kilidi",
+      "layout": "Zəncirvari üç otaq",
+      "decision": "Birinci depoda bir token saxlananda ikinci qapı açılır. Depodan hamısını götürmək A-nı üçüncü otaqda tələyə salır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-09",
+      "family": "N2",
+      "title": "Tərs icazə",
+      "layout": "Şarjlı yol və yalnız boş bloku keçirən tunel",
+      "decision": "A doldurulub şalteri açır, sonra enerjini B-yə verməlidir. B-nin keçidi dolu, A-nın çıxışı boş vəziyyət tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-10",
+      "family": "N2",
+      "title": "Fazanın yanacağı",
+      "layout": "Növbəli divar zalı və iki depo",
+      "decision": "Motorun enerjisi terminalda saxlanır; tokeni çıxarmaq divarı cari fazada dondurur. Doğru faza həm A, həm B üçün yol saxlamalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-11",
+      "family": "N2",
+      "title": "Körpü üçün ortaq ehtiyat",
+      "layout": "Üç ada və iki enerji körpüsü",
+      "decision": "İki körpünü eyni anda işlətməyə enerji çatmır. Aralıq adada ehtiyatı bir körpüdən digərinə köçürmək üçün relay təhvili qurulur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-12",
+      "family": "N2",
+      "title": "Üzlə açılan batareya",
+      "layout": "Möhür otağı və enerji saxlanan yan qol",
+      "decision": "Enerjini yalnız doğru kontakt üzü terminala toxunanda götürmək olar. N1 orientasiyası daşınma ardıcıllığını məhdudlaşdırır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-13",
+      "family": "N2",
+      "title": "Bir transferlik görüş",
+      "layout": "Çökən görüş körpüsü",
+      "decision": "Bloklar yalnız bir dəfə görüşə bilirlər. Sonrakı iki qapının enerji tələbi əvvəlcədən hesablanıb həmin görüşdə bölünür.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-14",
+      "family": "N2",
+      "title": "Enerji valfi",
+      "layout": "Bir halqa üzərində istiqamətli üç depo",
+      "decision": "Token bir terminaldan yalnız növbətiyə ötürülür. Blokun özünə götürməsi üçün fiziki həmin terminala çatması lazımdır; yeni istiqamətli depo sistemi tələb edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-15",
+      "family": "N2",
+      "title": "Minimum və maksimum",
+      "layout": "Geniş otaqdan ayrılan üç dar qol",
+      "decision": "Bir qapı ən az iki, digəri ən çox bir tokenə icazə verir. Sadəcə maksimum doldurmaq həll deyil, yol boyu bölgü dəyişir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-16",
+      "family": "N2",
+      "title": "Finalı saxlayan depo",
+      "layout": "İki çıxış arasında mərkəzi anbar",
+      "decision": "Depo bir token saxladıqca körpü realdır. B çıxışa çatana qədər A son tokeni götürə bilməz, sonra başqa qapı üçün götürməlidir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-17",
+      "family": "N2",
+      "title": "Uzaq şarj",
+      "layout": "Yaxınlıq dayaqlı əyri adalar",
+      "decision": "B A-nı müşayiət edir, amma enerji transferi üçün bir xana yaxınlaşmaq lazımdır. Dar sahədə həm dayaq, həm görüş məsafəsini saxlamaq tələb olunur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-18",
+      "family": "N2",
+      "title": "Enerjinin kompası",
+      "layout": "İki rotor və bir görüş cibi",
+      "decision": "Dolanda idarə 90° çevrilir. Görüşdə enerjini ötürmək növbəti yolun koordinat sistemini də dəyişir; N2+M2 bağlantısı açıq öyrədilir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-19",
+      "family": "N2",
+      "title": "Anbarın arxa qapısı",
+      "layout": "Üç qapılı U plan",
+      "decision": "Bir depo həm qapının ehtiyatıdır, həm B-nin son yüküdür. A içəridən mexaniki kilidi açmadan B həmin ehtiyatı götürə bilməz.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N2-20",
+      "family": "N2",
+      "title": "Heç nə itmir",
+      "layout": "Dörd adalı son bölgü tapmacası",
+      "decision": "Altı token üç depo və iki blok arasında bölünür. Hər final fərqli pay istəyir; qapı ehtiyatları da ümumi altıya daxildir, gizli enerji yaranmır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-01",
+      "family": "N3",
+      "title": "Qatlanmış halqa",
+      "layout": "İki ayrı yarımdairə, iki açıq tikiş",
+      "decision": "Bir tikiş çıxışını dəyişəndə qrafın dövrəsi qırılır. A bir tərəfdə qalaraq B-yə yeni bağlantını açır; ünvanlar həmişə görünür.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-02",
+      "family": "N3",
+      "title": "Dörd limanlı keçid",
+      "layout": "Mərkəzi terminal və dörd ada",
+      "decision": "Terminal eyni anda yalnız iki adanı birləşdirir. Blokları ayırıb sonra yenidən görüşdürmək üçün bağlantılar fərqli sırada dəyişir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-03",
+      "family": "N3",
+      "title": "Tək yönlü dairə",
+      "layout": "Üç ada üzərində yönlü portal qrafı",
+      "decision": "Əks qayıdış yoxdur. Bir blok qapını açır, digəri dövrəni tamamlayıb onun arxa sensoruna gəlir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-04",
+      "family": "N3",
+      "title": "Tikişin iki üzü",
+      "layout": "İki tavanlı otaq, bir döndərilən bağlantı",
+      "decision": "Bağlantı çıxış orientasiyasını seçilmiş 90° çevirir. Tavan və yan kontaktlar düzgün orientasiya seçimini zəruri edir; yeni orientasiya-tikişi qaydasıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-05",
+      "family": "N3",
+      "title": "Boş liman siyasəti",
+      "layout": "İki kiçik ada və saxlama platforması",
+      "decision": "Dolu çıxış portalı bütöv bloklayır. B-ni saxlama platformasına aparmadan A-nın bağlantısını dəyişmək mümkün deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-06",
+      "family": "N3",
+      "title": "Ada körpüsünün mübadiləsi",
+      "layout": "Üç ada, bir daşınan bağlantı cütü",
+      "decision": "Bir keçidi açmaq o birini bağlayır. Ortada blok saxlayaraq bağlantını ona arxa tərəfdən təhvil vermək lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-07",
+      "family": "N3",
+      "title": "Yarım xəritə",
+      "layout": "İki ayrı labirint hissəsi",
+      "decision": "Bir hissənin şimal kənarı digərinin şərqinə bağlanır. Eyni koordinat kimi düşünmək olmaz, çıxış markerləri və yerli duruş birlikdə hesablanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-08",
+      "family": "N3",
+      "title": "Qayıdışsız açar",
+      "layout": "İki yarpaqlı ağac qrafı",
+      "decision": "A açarı götürəndə bir istiqamətli kənarı keçir. B kökdən ayrı şalter açıb yeni geri kənar yaradır; açar yeri yox, əlaqə dəyişir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-09",
+      "family": "N3",
+      "title": "İki nəfərlik tikiş",
+      "layout": "Paralel ada cütləri",
+      "decision": "Bağlantı yalnız hər iki başlanğıc sensoru tutulanda açılır. A keçəndə sensor buraxılır, ona görə uzaq relay əvvəlcədən başqa yol ilə hazırlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-10",
+      "family": "N3",
+      "title": "Topoloji kilid",
+      "layout": "Dörd otaqdan ibarət çevrilən qraf",
+      "decision": "Finala gedən kənar ancaq üç fiziki şalter birlikdə açıldıqda yaranır. Şalterlərə çatmaq üçün qrafı aralıq vəziyyətlərdə dəyişmək lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-11",
+      "family": "N3",
+      "title": "Böyük cismin limanı",
+      "layout": "Bir dar, bir enli çıxışı olan portal",
+      "decision": "A böyükdürsə dar çıxış seçimi qadağandır. B terminalı uzaqdan enli limana yönəldir, A keçəndən sonra kiçik B üçün başqa əlaqə açılır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-12",
+      "family": "N3",
+      "title": "Enerji şəbəkəsi",
+      "layout": "Üç terminal adası və enerji ilə açılan kənarlar",
+      "decision": "Enerji depozitləri bağlantıları açır. Tokenləri köçürəndə arxadakı kənar bağlanır; hər ikisinin qayıdışını saxlamaq şərtdir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-13",
+      "family": "N3",
+      "title": "Düyün əvəzetməsi",
+      "layout": "Dörd girişli mərkəzi ada",
+      "decision": "Şalter girişlərin cütləşməsini dəyişir: şimal–şərq və cənub–qərb əvəzinə başqa cütlər. Blokların hansı girişdə gözləməsi gələcək yolu müəyyən edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-14",
+      "family": "N3",
+      "title": "Bir addım uzaqda, çox yol aralı",
+      "layout": "Vizual yaxın iki ada, əlaqəli uzaq dövrə",
+      "decision": "Yaxınlıq sensoru dünya məsafəsi ilə işləyir, portal məsafəsi ilə deyil. B yaxın adada A-ya dayaq verir, özü ora uzun qraf yolundan gəlməlidir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-15",
+      "family": "N3",
+      "title": "Görüşün xəritəsi",
+      "layout": "Beş düyünlü yönlü şəbəkə",
+      "decision": "Bloklar əvvəl ayrı düyünlərdədir; enerji ötürməsi üçün eyni görüş düyününə çatmalıdır. Görüşdən sonra çıxış istiqamətləri qıfıllarla dəyişir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-16",
+      "family": "N3",
+      "title": "Sönən tikiş",
+      "layout": "İlk istifadə sonrası bağlanan iki əlaqə",
+      "decision": "Hansı blokun hansı əlaqəni işlədəcəyi final rollarına görə seçilir. Eyni adaya çatmaq kifayət etmir, digər blok üçün qalan qraf da keçilən olmalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-17",
+      "family": "N3",
+      "title": "Tikişin kənarındakı üz",
+      "layout": "Divar kontaktı olan uzaq otaq",
+      "decision": "Portal orientasiyanı qoruyur, uzun roll marşrutu isə dəyişir. İki yol eyni nöqtəyə gətirsə də yalnız biri lazımi üzü hazırlayır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-18",
+      "family": "N3",
+      "title": "Yolun arxasındakı idarə",
+      "layout": "Bir idarə adası, üç oyun adası",
+      "decision": "B idarədə bağlantı seçir, A adalarda açar zəncirini açır. Son mərhələdə A idarə adasını B üçün əlçatan etməlidir, B orada əbədi qalmır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-19",
+      "family": "N3",
+      "title": "Saatlı əlaqə",
+      "layout": "Üç fazada dəyişən iki tikiş",
+      "decision": "Faza qəbul edilmiş gedişlə irəliləyir. Portalın özü də fazanı dəyişdirdiyi üçün giriş anı ilə çıxışdan sonrakı qraf fərqlənir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N3-20",
+      "family": "N3",
+      "title": "Tam dövrənin sübutu",
+      "layout": "Altı düyünlü, iki qısayollu qraf",
+      "decision": "Hər vacib düyün mexaniki kilid açır, sadəcə “hamısını gəz” yazısı yoxdur. Qısayollar erkən final vermir, yalnız geri dönüşün səmərəsini dəyişir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-01",
+      "family": "N4",
+      "title": "Məsafə nərdivanı",
+      "layout": "Pilləli iki paralel sahil",
+      "decision": "Körpülər məsafə 2, sonra 3, sonra 1 olanda açılır. Bloklar sabit aralıqla gedə bilmir, hər pillədə münasibəti yenidən qurur.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-02",
+      "family": "N4",
+      "title": "Eyni sətir, ayrı yol",
+      "layout": "Ortası boş iki U dəhliz",
+      "decision": "Qapı eyni sətirdə olanda açıqdır. B xarici yoldan sətiri saxlayır, A iç yoldan keçir; sonra uzaq alternativ kontaktla təhvil edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-03",
+      "family": "N4",
+      "title": "Diaqonal razılaşma",
+      "layout": "Dörd künclü həyət, ortada divar",
+      "decision": "Sensorlar eyni diaqonalı tələb edir, amma ortadan keçmək olmaz. Bir blokun dolanması zamanı digərinin təhlükəsiz dayanacağı seçilir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-04",
+      "family": "N4",
+      "title": "İp uzunluğu",
+      "layout": "İki qarmaqşəkilli yol",
+      "decision": "Manhattan məsafəsi maksimum dörddür. Birini qabağa çox göndərmək o birinin hərəkətini bloklayır; yan cibdən mərhələli yaxınlaşma lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-05",
+      "family": "N4",
+      "title": "Gərginlik körpüsü",
+      "layout": "İki ada arası şəffaf zolaq",
+      "decision": "Körpü yalnız məsafə dəqiq üç olanda realdır. A irəlilədikcə B başqa sahildə eyni ritmdə geri çəkilir, son relay bu şərti əvəz edir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-06",
+      "family": "N4",
+      "title": "Cüt addım kilidi",
+      "layout": "İki asimmetrik dar kanal",
+      "decision": "Eyni anda verilən iki niyyət birlikdə validasiya olunur. Bir tərəfdə divar varsa hər ikisi yerində qalır; iki yolun uyğun addım cütləri tapılır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-07",
+      "family": "N4",
+      "title": "Formaların rezonansı",
+      "layout": "Bir enli, bir dar final meydanı",
+      "decision": "Qapı A plitə və B dik domino olanda açılır. Bloklar stansiyalara fərqli vaxtda çatıb eyni anda uyğun formaları saxlamalıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-08",
+      "family": "N4",
+      "title": "Üzlərin qarşılaşması",
+      "layout": "Yan kontaktlı iki balkon",
+      "decision": "A-nın şərq üzü B-nin qərb üzü ilə uyğun kod daşımalıdır. Dəqiq orientasiya ilə nisbi yerləşmə birlikdə yoxlanır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-09",
+      "family": "N4",
+      "title": "Bir-birinə baxmadan",
+      "layout": "Xarici halqa və daxili spiral",
+      "decision": "Qapı bloklar fərqli sətir və sütunda olanda açılır. Son dar boğazdan keçərkən həmin münasibəti qorumaq üçün B-nin cib seçimi vacibdir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-10",
+      "family": "N4",
+      "title": "Yaxınlaşıb ayrıl",
+      "layout": "Üç geniş görüş meydanı",
+      "decision": "Birinci kilid yaxınlıq, ikinci uzaqlıq, üçüncü eyni sətir tələb edir. Hər kilid növbətinin yolunu açır, dəyişiklik dekorativ deyil.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-11",
+      "family": "N4",
+      "title": "Enerji bərabərliyi",
+      "layout": "Ayrı depoları olan iki otaq",
+      "decision": "Körpü yalnız blokların enerjisi bərabər olanda açılır. Uzaq qapı fərqli pay istədiyi üçün körpünü keçəndən sonra yenidən transfer lazımdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-12",
+      "family": "N4",
+      "title": "Çəkinin fərqi",
+      "layout": "Həddli döşəmələr və ağır düymələr",
+      "decision": "Rezonans ümumi kütlə fərqi bir olanda açılır. Ölçü izi yükü dəyişir, amma kütləni dəyişmir; enerji ilə kütlə artırma qaydası ayrıca göstərilir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-13",
+      "family": "N4",
+      "title": "Bir xəttin iki ucu",
+      "layout": "Uzun qırıq kanal və paralel servis yolu",
+      "decision": "Qapı blokların eyni sütunda və aralarında maneəsiz xətt olanda açılır. Xəttin qarşısındakı panel əvvəl uzaq şalterlə çəkilir; yeni line-of-sight qaydasıdır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-14",
+      "family": "N4",
+      "title": "Qırılan bağ",
+      "layout": "Biristifadəlik boğaz və iki yaxınlıq sensoru",
+      "decision": "A boğazı tərk edəndə qayıdış kəsilir. B əvvəl aralıq müşahidə nöqtəsinə yerləşməsə uzaqdakı A-nın dayağı sönür.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-15",
+      "family": "N4",
+      "title": "İki fərqli miqyas",
+      "layout": "Geniş A meydanı və dar B cığırı",
+      "decision": "Məsafə anchorla yox, ən yaxın footprint xanası ilə hesablanır. A böyüyərək rezonans məsafəsini azaldır; yeni ölçü-məsafə semantikası ayrıca öyrədilir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-16",
+      "family": "N4",
+      "title": "Güzgü yox, tamamlayıcı",
+      "layout": "Asimmetrik iki yarım labirint",
+      "decision": "A sağa gedəndə B eyni istiqamət yox, seçilən perpendikulyar istiqamətdə hərəkət edir. Cüt addımlar hər iki maneə sisteminə uyğun gəlməlidir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-17",
+      "family": "N4",
+      "title": "Rezonansı park et",
+      "layout": "Dörd dayaq cibi olan meydan",
+      "decision": "A sabit nöqtədə qalaraq yalnız iki cibi B üçün təhlükəsiz edir. B uzaq relay-i açdıqdan sonra A-nın park yeri dəyişir və digər iki cib açılır.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-18",
+      "family": "N4",
+      "title": "İki finalın ortası",
+      "layout": "Final platformaları müxtəlif yüksəklik görünüşlü adalarda",
+      "decision": "Hər iki final dolu olanda məsafə şərti də ödənməlidir. İlk yaxın görünən nişan aralıq relay-dir, əsl məqsədlər açıq fərqli işarələnir.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-19",
+      "family": "N4",
+      "title": "Bağın kompası",
+      "layout": "İki rotor və ofset aralıq ada",
+      "decision": "Eyni sütunda olanda idarə dəyişir, uzaqlaşanda normallaşır. A çıxışa yaxınlaşdıqca B-ni fərqli sətirə çəkmək lazımdır ki, növbəti dünya hərəkəti mümkün olsun.",
+      "status": "concept-not-playable-not-solver-certified"
+    },
+    {
+      "id": "N4-20",
+      "family": "N4",
+      "title": "Beş münasibətin finalı",
+      "layout": "Şaxələnmiş böyük meydan, beş mexaniki kilid",
+      "decision": "Yaxınlıq, eyni sətir, fərqli sütun, forma cütü və üz uyğunluğu ayrı kilidlər açır. Kilidlərin ardıcıllığını xəritə məcbur edir; hamısını eyni vaxtda tələb edib həllsiz qoymaq olmaz.",
+      "status": "concept-not-playable-not-solver-certified"
+    }
+  ]
+}

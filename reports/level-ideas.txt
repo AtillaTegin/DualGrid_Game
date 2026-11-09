@@ -1,0 +1,211 @@
+[M1] Zəmin, yük və yol yaddaşı
+İki sahilli bərə|U formalı körfəz, iki ayrı eniş|A tərk edəndə orta plitə sınır; B əvvəl alt sahilə keçib geri körpüsünü saxlamalıdır. Tək blokla iki sahilin sensorları eyni vaxtda tutulmur.
+Ehtiyat giriş|Üç qollu terminal, ortada iki girişlik xana|İlk girişlə qərb açarı çıxarılır, ikinci giriş son qayıdış üçün saxlanır. Şərq qolu açılmadan final qapısı bağlıdır.
+Yükün paylanması|Enli qabıq yolu ilə paralel yüngül cığır|A domino uzanaraq həddi keçmir, B dar cığırdan forma stansiyasını açır. Dik A qabığı çökdürür, B isə ağır final sensorunu işə sala bilmir.
+Sökülən dairə|Halqa, dörd diş, bir mərkəzi boşluq|Üç kilidi açmaq üçün halqanın hansı hissəsini sonuncu tərk edəcəyini seç. Yanlış sökülmə qapını deyil, qayıdışın özünü kəsir.
+Müşahidə estafeti|Paralel əyri sahillər və şəffaf ara yol|A ilə B növbə ilə yaxınlıq dayağını qabağa daşıyır. Sahillərdə çıxıntılar olduğuna görə sabit məsafə ilə düz yerimək kifayət etmir.
+Sahilsiz açar|T formalı asma budaq, ucunda açar|A açara gedərkən B dəstəyi yan qola ötürür; geri dönəndə A dəstəkçi olur. Sensorun özü çıxış deyil, iki mərhələli mübadilə lazımdır.
+Sonuncu keçən|Y formalı ayrıc və təkistifadəlik boğaz|İki blok boğazdan hansı ardıcıllıqla keçəcəyini seçir. Uzaq tərəfdə ağır və yüngül girişlər əks ardıcıllıq tələb edir.
+Çatın altında yol|Yuxarı qabıqla aşağı servis dövrəsi|A qəsdən müəyyən qabığı sındıraraq B-nin aşağı qapısına yük siqnalını kəsir. Sındırılacaq hissə final üçün lazım olan hissədən ayrıdır; yeni qırılma-trigger qaydası tələb edir.
+Üç körpü, iki can|Üç ada üçbucağı|Hər körpü bir dəfə istifadə olunur; başlanğıcdakı iki blok bütün sensorları bitirib eyni adada görüşməlidir. Körpü ardıcıllığı Euler gəzintisi deyil, iki marşrutun bölüşdürülməsidir.
+Yük karantini|İki meydanı bağlayan dama-dama zolaq|A yalnız uzanmış, B yalnız kub kimi müxtəlif təhlükəsiz xanaları seçir. Ortada forma dəyişmək mümkün olmadığı üçün giriş duruşu öncədən hazırlanır.
+Boşaldılmayan dayaq|Dar səkkiz şəkilli döngə|B keçənədək A bir dəfəlik xananı tam boşaltmamalıdır. Dominonun yarım izi saxlanır, sonra A digər istiqamətə yuvarlanıb çıxır.
+Qayıdış üçün bir haqq|İki mərtəbə hissi verən pilləli meydanlar|İki girişlik plitənin ilk istifadəsini B-yə yox, A-ya vermək lazımdır: A üst qolun kilidini açır. Son giriş B-ni aşağı finala qaytarır.
+Çəkilən xalça|Ziqzaq yol və üç təhlükəsiz dayanacaq|Arxa hissə hər çıxışda sökülür; dayanacaqlarda iki blokun yerini dəyişmək üçün yan ciblər lazımdır. Sonuncu kimin irəlilədiyi final nişanlarının tərəfi ilə məhdudlaşır.
+Qabıq anbarı|Dörd otaq, yük-həddi fərqli üç boğaz|A bir dəfə böyüyür, sonradan stansiyaya qayıda bilmir. Hansı boğazı hansı formada keçmək lazım olduğu bütün marşrutu müəyyən edir.
+Bölünən müşahidə|Dairəvi xarici yol, içəridə iki qırıq diaqonal|B kənarda dayananda yalnız bir diaqonal realdır. A mərkəzə çatdıqdan sonra rollar dəyişir; birbaşa mərkəzə tələsmək B-ni dayağından məhrum edir.
+Möhürlü adacıq|Beş yarpaqlı ada dəstəsi|Hər yarpaqdan çıxış plitəsi bir dəfəlikdir; yalnız iki yarpaqda daimi geri yol var. Açarların yığılma sırası gələcək sığınacağı qoruyur.
+İşıqdan asılı döşəmə|İki otaq və ortasında deşikli meydan|İki relay eyni zolağın müxtəlif yarılarını açır. B bütöv yolu açmağa çalışmır; A aralıq adada dayanıb ikinci yarını özü işə salır.
+Kütlə növbəsi|Əyri dar kanal, iki enli cib|Eyni qabıqdan yüngül B ilk keçib yük stansiyasını açır; A yüngülləşir, lakin B ağırlaşdığı üçün əvvəlki cığırdan qayıda bilmir. Qayıdış başqa cibdən qurulur.
+Giriş deyil, çıxış|Çarpaz körpülər, ortada saxlanılan blok|Plitə basanda deyil, son blok çıxanda qırılır. Bir blok ortada gözləyərək digərinin yan qol səfərini mümkün edir; ikisini də erkən çıxarmaq yolu kəsir.
+Sınmadan əvvəl möhür|Spiral xarici yol və qısa iç boğaz|İç boğazın üstündə dayanaraq uzaq qapını möhürlə, sonra boğazı qırıb xarici yoldan dön. Möhür əvvəl vurulmasa geri yol qapısı açılmır.
+[M2] Koordinatlar və idarə yaddaşı
+İki kompaslı liman|Bir-birinə perpendikulyar iki dar yol|A x oxunda, B z oxunda çevrilir; relay təhvili ilə hər birinin çıxış duruşu dəyişir. Təhlükə sürət deyil, fərqli dünya hərəkətlərini planlamaqdır.
+Rotordan sonra körpü|L formalı iki boğaz və geniş dönmə meydanı|Domino 90° zonaya hansı vəziyyətdə girdiyinə görə körpüyə dik və ya uzanmış çıxır. Körpü yalnız uzanmış girişi götürür.
+Yadda qalan sərhəd|İki halqalı yol, bir polarite qapısı|Sərhədə yenidən tam giriş biti çevirir; sağ halqaya getməzdən əvvəl sol halqada biti hazırla. Qapı tələb olunan bit yoxdursa fiziki bağlıdır.
+Kompas mübadiləsi|Aşağı keçidli iki otaq|İki blokun polaritesini görüş terminalında dəyişmək olar. B dar çıxış üçün A-nın bitini götürür, A isə qayıdış rotorunu başqa bitlə keçir; yeni bit-mübadiləsi qaydasıdır.
+Buzda dönüş|Üç dayanacaqlı əyri buz kanalı|İdarə əvvəl dünya istiqamətinə çevrilir, sonra buz sürüşdürür. Dayanacağı partnyor tutaraq A-nın növbəti rotor girişini dəyişir.
+Yanlış tərəfdən doğru giriş|U şəkilli otaq və tək yönlü rotor girişi|Çıxışa yaxınlaşmaq əvəzinə arxa dövrədən girmək lazımdır; rotorun tam-iz şərti dominoya yan giriş vermir. Kub B qıfılı açıb həmin arxa dövrəni saxlayır.
+Sabit düymə, dəyişən xəritə|Ortası dönən kvadrat və dörd qol|Yerli oxları bir terminal dəyişir, dünya qapıları yerində qalır. Növbəti qolu açan niyyət cari transformda yalnız bir təhlükəsiz meydandan icra olunur; yeni yönlü-komanda sensorudur.
+İki sərhədin pariteti|Üçbucaq halqa içində ayrı iki zona|Birinci sərhəd x-i, ikinci z-ni çevirir. Final üçün hər ikisini yox, yalnız birini aktiv saxlayan dövrə seçilməlidir.
+Tərs tərəzi|Mərkəzdə ağır sensor, kənarda güzgülü dəhlizlər|A sensoru tərk edəndə B-nin idarəsi dərhal normallaşır. B əvvəl təhlükəsiz cibə girməsə növbəti düzgün görünən əmr onu boşluğa aparır.
+Rotasiya kilidi|Üç ayrı kompaslı otaq|Çıxış qapısı müəyyən orientasiya tələb edir, ancaq son otaqda dönüş üçün yer yoxdur. Həmin orientasiya əvvəlki otaqda hazırlanır.
+Bir blok, iki tarix|Qarmaqşəkilli yol və polariteyə bağlı körpü|Eyni yerə iki dəfə qayıtmaq lazımdır, lakin ikinci dəfə bit fərqlidir. Körpü yalnız ikinci vəziyyətdə real olduğundan koordinatın özü həll deyil.
+Kompası söndür|Xarici düzbucaqlı yol və daxili dar spiral|B kənardan generatoru saxlayır, A spirala girir; ortadakı relay təhvil alınanda generator sönür. A-nın qayıdışı artıq normal oxlarla planlanır.
+Dördüncü tərəf|Çıxışı üç tərəfdən divarlı rotor meydanı|Domino bir neçə yan yuvarlanma ilə qapının tələb etdiyi üzü hazırlayır. Sadəcə ox çevrilməsini bilmək kifayət etmir, N1 orientasiyası da tələb olunur.
+Sərhədi paylaşma|Daraqşəkilli iki paralel koridor|Sensor iki blok tam zonada olanda aktivdir. B dişlərdən birində gözləyir, A öz footprint-ini içəri tamamlayır; yarım giriş heç nə açmır.
+Əks istiqamətli enerji|İki enerji terminalı və arada çevrilən yol|Enerjili blokun idarəsi invers, boşunki normaldır. Enerji ötürməsi növbəti hərəkət xəritəsini də dəyişir; yeni enerji-transform bağlantısı tələb edir.
+Şalterin baxdığı tərəf|Pilləli üç balkon|Şalteri yalnız doğru yan üzü ilə yaxınlaşan domino aktivləşdirir. Rotor zəruri istiqaməti hazırlayır, aşağı balkonda təsadüfi F kifayət etmir.
+Qapalı kompas dövrəsi|İki keçidli səkkiz otaq|Hər tam zona girişi növbəti körpünün istiqamətini seçir. Dörd mərhələli dövrəni tamamlamadan başlanğıc çıxışı açılmır; yeni görünən dövr sayğacı tələb edir.
+Sabit partnyor|Tək dayanacaqlı S kanalı|A-nın transformu B-nin hansı sətirdə olduğundan asılıdır. B-ni irəli aparmaq A-nın çıxışını kəsir; öncə A-nı aralıq sığınacağa çıxartmaq lazımdır.
+İki ayrı final əmri|Ayrılan çəngəl, hər ucda başqa sensor|Bloklar eyni giriş əmri ilə müxtəlif dünya istiqamətlərinə gedirlər. N4 cüt addımı hər ikisini eyni vaxtda sensorlara qoymalıdır, ayrı-ayrı qoymaq qapını saxlamır.
+Xəritəni deyil, yaddaşı dəyiş|İç-içə iki düzbucaqlı, bağlanan qısayol|Qısayol ilk istifadə zamanı polariteni möhürləyir. Son məqsəd üçün lazım olan bit əvvəlcədən hazırlanmalıdır; qısayoldan sonra əlavə çevrilmə imkanı yoxdur.
+[M3] Ölçü və forma
+Dörd kontaktlı təhvil|Aşağı tunel və yuxarı enli körpü|A 2×2 izi ilə dörd kontaktı tutur, B yuxarı keçir. B uzaq relay-i tutandan sonra A kiçilib aşağı tuneldən çıxır.
+Böyümə küncü|Sütunlu həyət və küncdə forma stansiyası|Böyümə sağa-aşağı iz açır; A düzgün küncə yanaşmalıdır. Yanlış küncdə divar genişlənməni bloklayır, final isə böyük kub istəyir.
+Hündürlük borcu|Üç alçaq darvaza və bir dik sensor|Kub alçaq darvazalardan keçir, domino ağır sensoru dik tutur. Son darvazadan əvvəl yenidən kiçilmək və çıxışdan sonra böyümək üçün stansiyalar fərqli qollardadır.
+Enli, amma alçaq|Yastı tavanlı meydan və iki kontakt cütü|2×2×1 plitə keçir, 2×2×2 kub tavana dəyir. A yastı formada kontaktları tutarkən B final yüksəldicisini açır.
+Ölçü anbarı|Üç qapılı servis otaqları|Bir stansiya yalnız kiçildir, digəri yalnız böyüdür. Yol seçimi ölçü dövrəsinin geri dönməz ardıcıllığı ilə məhdudlaşır.
+Uzanmaq üçün yer|İki enli meydanı bağlayan dar dirsək|Domino dirsəkdə dönə bilmir; əvvəl kuba çevrilir, o tərəfdə yenidən domino olur. Stansiyanı açan B isə dirsəyin əks tərəfində başlamalıdır.
+Daşınan tavan kilidi|Açıq həyət, içində üç alçaq tağ|B şalterlə tavanlardan birini qaldırır. A böyük formada sensorun yükünü saxlayaraq yalnız qaldırılmış tağdan keçə bilər; kiçilmə kilidi yenidən bağlayır.
+Körpünün eni|İki paralel yol, biri dar, biri zəif|B dar yoldan keçir, A geniş izə yayılıb zəif yoldan keçir. Görüşdən sonra məqsədlər əks sahildə olduğuna görə relay təhvili lazımdır.
+Bir stansiyanın iki tərəfi|Divarla ayrılan iki yarım həyət|Stansiyanın iki yaxınlaşma küncü ayrı boş sahələrə böyüdür. A ortaq bir nöqtədə dayanıb ölçü dəyişməklə digər tərəfə qanunsuz keçə bilməz; tam footprint və swept collision yoxlanır.
+Üç forma, bir açar|U formalı qala, içində aşağı tunel|A kubla açarı alır, domino ilə körpünü keçir, plitə ilə final dövrəsini birləşdirir. Stansiyalar bu ardıcıllığı fiziki məsafələrlə məcbur edir.
+Geri sığmayan|Dar girişdən geniş altıbucaqlı otağa keçid|B giriş şalterini bağladıqdan sonra A böyük qalır. Çıxış üçün digər tərəfdə kiçilmə stansiyasını B-yə açdırmaq lazımdır; girişdən geri dönmək həll deyil.
+Kütlə yox, iz|Həddli dörd plitə və ağır ayrıca düymə|Eyni kütlə müxtəlif izlə paylanır; qabıqda yastı, sensor üzərində dik forma lazımdır. Sadəcə böyük olmaq bütün şərtləri ödəmir.
+Böyümənin açdığı yol|Aralı dayaq adaları və kontakt boşluğu|2×2 plitə dörd sensoru tutub ayrıca körpünü açır; özü boşluq üzərində körpü sayılmır. B bu açılan yoldan o tərəfə keçir.
+İki kiçikdən bir böyük|İki görüş meydanı, arada qapalı boğaz|A-nın böyümə icazəsi yalnız B yaxın terminalda olanda verilir. Böyüdükdən sonra B-nin qayıdışı üçün A başqa kontaktı tutmalıdır; yeni icazə-terminalı qaydasıdır.
+Forma möhürləri|Üç fərqli formalı nişanı olan qollar|Möhürlər kub→plitə→dik domino ardıcıllığında vurulur. Hər möhür başqa qolun qapısını açır, istənilən sırada toxunmaq nəticə vermir.
+Tərs ölçü seçimi|Biri qısa, biri uzun olan iki dövrə|Qısa yol böyük iz tələb edir, amma böyük iz çıxış tağına sığmır. Əvvəl uzun yoldakı kiçilmə stansiyasının kilidini açıb sonra qısayoldan istifadə etmək lazımdır.
+Sütunlar arasındakı diaqonal|Sərbəst həyət içində ofset sütunlar|Son iz boş olsa da yuvarlanmanın qövsü sütuna dəyir. A aralıq formada başqa tərəfdən yaxınlaşır; yalnız end-position yoxlaması qəbul edilmir.
+Bir dəfə böyü|Spiral qapılar və biristifadəlik stansiya|Böyümə yalnız bir dəfə mümkündür; hansı otaqda etmək lazım olduğu son sensorla tunellərin sırası ilə müəyyənləşir. Yeni stansiya-istifadə biti undo-da saxlanır.
+Çıxışı saxlayan çəki|İki final platforması, ortada alçaq körpü|A finala böyük formada çatanda B-nin yolu açılır; sonra A-nın kiçilməsi B-ni sala bilər. Son yerləşmələr eyni vaxtda sabit olmalıdır.
+Forma ilə portal|Dar portal önü və geniş çıxış meydanı|Portal tam çıxış footprint-ini yoxlayır. Kiçik keçib uzaqda böyümək lazımdır; dolu çıxışı zorla itələmək və ya divardan keçmək mümkün deyil.
+[M4] Yazılmış hərəkət və faydalı əks-səda
+Qeyd: bu ailə əvvəlki mənasız qırmızı təqibçi deyil; aşağıdakıların hamısı yeni dizayn namizədidir, hazır oyuna qaytarılmayıb. Qeyd→önbaxış→icra var, vaxt təzyiqi yoxdur.
+İki açarın eyni anı|Ayrı otaqlarda eyni anda tutulmalı düymələr|Əvvəl bir otaqda üç əmrlik kölgə proqramı yaz, sonra digər otaqda öz hərəkətini onunla uyğunlaşdır. Kölgə qapını açdığı üçün zəruridir, sadəcə arxadan gəlmir.
+Tərs izlə keçid|Güzgülü yox, fərqli maneəli iki balkon|Yazılmış marşrutun güzgüsü ikinci balkonda relay-ə çatmalıdır. Orijinal marşrut həm öz yoluna, həm əks izdəki maneələrə uyğun seçilir.
+Gözlə düyməsi|Bir uzun və bir qısa yan yol|Əks-səda düyməni dörd gediş sonra tutur; A qısa yolun təhlükəsiz cibində WAIT ilə fazanı uyğunlaşdırır. Gözləmə görünən proqram addımıdır, gizli saniyə deyil.
+Yazını yarıda kəs|Üç qollu qeyd meydanı|Proqram uzunluğunu oyunçu seçir; çox uzun yazı kölgəni düymədən çıxarır. Doğru son nöqtə və uzunluq birlikdə tapılır.
+Qeyd edilən forma|Geniş qeyd həyəti, dar icra dəhlizi|Kölgə resize əmrlərini də icra edir. Proqram icra sahəsində sığmalı, orijinal blok isə həmin vaxt ayrı sensoru saxlamalıdır; yeni forma-qeyd dəstəyi tələb edir.
+Gecikən körpü|Pilləli üç ada|Kölgə keçmiş mövqedə dayaq relay-ni saxlayır, A növbəti adaya keçir. Gecikmə boyunca dayaqsız qalan aralıq üçün əvvəlcədən WAIT yazılır.
+İki yazıdan biri|İki proqram terminalı, bir dar boğaz|Sol proqram qapını açır, sağ proqram körpünü saxlayır; yalnız biri aktiv ola bilər. A aralıq adada proqram dəyişdirən fiziki terminala çatmalıdır.
+Əks-sədanı park et|Dairəvi otaq və mərkəzi ağır sensor|Son əmrdən sonra kölgə yerində qalır. Qeyd sonu sensor üzərində hazırlanır, A isə boşalan xarici dövrədən çıxır.
+Söndürülən qeyd|Açılan divarların ayırdığı iki sektor|Kölgə birinci sektoru açır, ancaq finalda onun saxladığı qapı bağlı olmalıdır. A uzaq terminaldan kölgəni söndürüb başqa yolla qayıdır.
+Yaddaş releləri|Dörd otaqdan ibarət zəncir|Qeyd birinci düyməni saxlayır, A ikinciyə çatıb yeni qeydlə təhvil alır. Qeydləri sərhədsiz çoxaltmaq olmaz, yalnız bir aktiv yuva var.
+Yazının kəsişməsi|Çarpaz iki koridor və iki yan cib|Kölgə ilə eyni xanaya eyni addımda girmək bloklanır. A cibi seçərək kəsişmənin vaxtını dəyişir; ölüm yox, əvvəlcədən görünən konflikt var.
+Fərqli başlanğıc məsafəsi|İki uzunluğu bərabər olmayan sahil|Eyni proqram uzaq balkonda boşluğa düşməməlidir. Qeyd meydanında əlavə dolama proqramın sonunu düzgün relay-ə gətirir.
+Yaddaşın qapısı|Girişə bağlanan proqram otağı|Yazı ilk icra olunanda giriş kilidlənir. Proqram gələcək qayıdış düyməsini də əhatə etməlidir, yalnız çıxışı açan qısa yazı kifayət etmir.
+Kölgənin yükü|Qabıq və ağır sensor arasında ayrıc|Əks-səda forma və kütlənin qeyd anındakı vəziyyətini saxlayır. Yüngül qeydlə qabıq keçilir, ağır final isə canlı bloka qalır; yeni snapshot-kütlə qaydasıdır.
+Tərs sırada lent|Bir girişli spiral və yan şalterlər|Terminal lentin əmrlərini tərs sıra ilə icra edir, istiqamətləri çevirmir. Proqram bu fərqə uyğun yazılır; UI hər iki yolu göstərir.
+Yarım sürətli lent|İki paralel cığır və aralı relay-lər|Kölgə hər iki qəbul edilmiş əmrdən bir addımlayır. A addım büdcəsi ilə relay pəncərələrini uyğunlaşdırır; saniyəlik yarış yoxdur.
+Qeyd və enerji|Terminal, enerji qapısı və uzaq sensor|Kölgəni işlədən batareya məhduddur; terminala geri qoyulan enerji ikinci mərhələ üçün saxlanır. Proqramı lüzumsuz uzun yazmaq resursu tükəndirir; yeni enerji xərci açıq göstərilir.
+Fazalı divardan keç|İki fazalı dar otaq və təhlükəsiz yan meydan|Kölgə növbəli divarın şalterini hər üçüncü addım tutur. A keçidə həmin mərhələdən əvvəl girib təhlükəsiz meydanda çıxmalıdır.
+Yazı daşıyan portal|Ayrı qeyd adası və iki icra adası|Portal proqramı saxlayır, icra başlanğıcını dəyişir. Eyni proqramı iki adada işlətmək məcburidir, adaların maneələri fərqli rol bölüşdürməsi yaradır.
+Son yazını sil|Üç qapılı final meydanı|Qeyd bir qapını açır, eyni zamanda finalı kilidləyir. A əvvəl daxil olur, sonra içəridəki silmə terminalını işə salaraq əsl çıxışı açır.
+[M5] Divarlar və məkanın yenidən qurulması
+Üç fazalı pres|Üç təhlükəsiz ciblə bölünən uzun koridor|Divar hər qəbul edilmiş əmrdə bir faza dəyişir. A ciblər arasında planla keçir, B yan şalterlə bir fazanı saxlayır; düşünərkən saat işləmir.
+Birini aç, birini daralt|İki alternativ dövrə və mərkəzi şalter|Şalter bir yolu açıb digərini daraldır. Blokları eyni tərəfdə saxlamaq çıxışı kəsir, əvvəl ayırmaq lazımdır.
+Sürüşən arakəsmə|Dörd otaqlı xaç planı|Arakəsmə mərkəzdən yalnız boş olanda keçir. A və B fərqli otaqlara əvvəlcədən yerləşərək keçid istiqamətini dəyişirlər.
+Divarın arxasındakı şalter|Zəncirvari üç kilidli kamera|Birinci şalter ikinci kameranı, ikinci üçüncünü açır; üçüncü əvvəlki qayıdış yolunu azad edir. Başlanğıc finalı ən son kiliddən asılıdır.
+Hərəkətli tavan|İki hündür zal və arada enən tağ|B tavanı qaldıranda A domino keçir; B özü çıxmaq üçün A-nın uzaq düyməni tutmasını gözləyir. Ölçü və təhvil birlikdə işləyir.
+Daralan anbar|Kənarlardan deyil, seçilən sütundan gələn divar|Oyunçu divarın hansı kanala çəkiləcəyini seçir. Kanal seçimi sonrakı böyük footprint üçün boş meydanı saxlamalıdır.
+Əks çəkili iki divar|Bir geniş otaqda bir-birinə bağlı iki panel|Biri sağa gedəndə digəri sola gedir. İki blok panel arxalarında ilişməmək üçün fərqli vaxtda cibi dəyişir.
+Yolu uzadan təhlükəsizlik|Qısa pres dəhlizi və uzun servis halqası|Uzun yoldakı şalter presi söndürür, amma servis çıxışını bağlayır. A presdən keçir, B servisə geri dönmədən ikinci kilidi açır.
+Sabitlənən faza|Üç fazalı dişli zal|Mərkəzi ağır sensor cari divar fazasını dondurur. A doğru fazada sensoru tutmalı, B qapıları keçəndən sonra onu buraxmalıdır.
+Buzun son divarı|Buz xətti və sürüşdürülən stop paneli|Panelin mövqeyi sürüşmənin harada bitəcəyini müəyyən edir. Əvvəl uzaq şalteri, sonra yaxın finalı əldə etmək üçün iki müxtəlif stop lazımdır.
+Bağlanan pəncərə|Üst və alt yolu olan səkkizşəkilli plan|Pəncərə iki gediş açıq qalır. A yaxınlıqda əvvəlcədən dayanır, B açan kimi keçir; sonrakı mərhələdə rollar əksinədir.
+Bir istiqamətli arakəsmə|Daraq otaqlar və yalnız sağa sürüşən panel|Panel geri çəkilmir; hər hərəkət bir otağı itirib yenisini açır. Açarların yığılma sırası itiriləcək otaqlara görə seçilir.
+Kilidli dayaq sütunu|İki körpünün ortaq dayağı olan həyət|Panel çəkiləndə bir körpü açılır, o biri dayaq itirir. B uzaq dayaq sensorunu əvvəl tutmalıdır ki, A-nın yolu çökməsin.
+Divarla çevrilən kompas|Asimmetrik rotor zalı|Panel rotor zonasının girişini dəyişir; domino eyni transforma başqa duruşda daxil olur. Panelin dəyişməsi həllə həndəsi təsir göstərir.
+İki səviyyəli icazə|Üç otaq və iki şalter nişi|Birinci şalter panel motorunu, ikinci onun hədəf mövqeyini açır. Sonuncu qapının arxasına blok göndərməzdən əvvəl geri idarə imkanı saxlanır.
+Boşluq yaradan divar|Dairəvi yolun sürüşən iki parçası|Panel bir tərəfi döşəmə ilə doldurub arxada boşluq yaradır. Son vəziyyət hər iki blok üçün dayaq verməlidir; üstündə blok varkən teleport yoxdur, yeni hərəkətli-döşəmə sistemi tələb edir.
+Sıxışma deyil, çeşidləmə|Üç enli cib və ölçüyə görə keçən boğazlar|Divar böyük A-nı geniş cibdə, kiçik B-ni dar cibdə saxlayır. Məqsəd ölməmək deyil, doğru blokları doğru tərəfə ayırmaqdır.
+Geri qapının kilidi|Yuxarı çıxışlı U qala|İlk keçid qapını arxadan bağlayır; uzaq iki şalterdən biri divarı çəkir, o biri geri qapını açır. İkisini qarışdırmaq təhlükəsiz, amma həllsiz yerləşmə yaradır və undo tələb edir.
+Faza ötürən portal|Bir pres otağı və ayrı sakit ada|Portalın girişi də qəbul edilmiş addımdır, divarı bir faza irəlilədir. Çıxış meydanına doğru fazada qayıtmaq üçün sakit adada faza hazırlanır.
+Sonuncu boş cib|Sütunlu terminal və tək panel saxlama nişi|Paneli park etdiyin niş sonradan A-nın böyümə yeridir. B uzaq qıfılı açandan sonra paneli yenidən çəkmək lazımdır; bir şalterlə bitmir.
+[M6] Hədəflər və şərtli portal qərarları
+İcazəli final|İki final otağı və uzaq razılıq sensoru|B razılıq sensorunu tutmadan A-nın qapısı onu geri adaya göndərir. Razılıq açıq göstərilir, sürpriz cəza yox, qarşılıqlı yerləşmə tapmacasıdır.
+Üç ünvanlı seçim|Üç ada və ünvan indeksi olan portal|A ilk keçidlə B-nin adasını açır, B növbəti keçidlə finala gedir. Portalın qlobal indeksi final qayıdış üçün əvvəlcədən hazırlanır.
+Faydalı yanlış qapı|Başlanğıc meydanı və bağlı alt dövrə|Aralıq qapıdan keçmək geri yol kilidini açır. Həqiqi final əvvəlki meydandadır, amma kilid açılmadan ona daxil olmaq mümkün deyil.
+Dolu ünvan|İki kiçik portal adası və bir servis qolu|B çıxış xanasını tutur; A keçə bilmir. B-ni servis qoluna çıxarıb portalı boşaltmaq və sonra geri relay təhvili etmək lazımdır.
+Forma gömrüyü|Dar giriş adası və tavanlı çıxış|Portal ölçünü saxlayır. A böyük gedə bilmədiyi üçün əvvəl kiçilir, uzaqda yenidən böyüyüb ağır sensoru tutur.
+Bir dəfəlik bilet|Çarpaz dörd ada|İlk teleportdan sonra giriş sönür. A-nın yolu ilə B-nin bileti fərqli təyinatlara yönəldilməlidir; yeni biristifadəlik portal biti lazımdır.
+Geri ünvanı saxla|İki halqa və bir indeks terminalı|Qapını hər aktivləşdirmək indeksi dəyişir. Əvvəl çıxışa yaxınlaşmaq deyil, geri gəlmək üçün düzgün ünvanı ehtiyatda saxlamaq lazımdır.
+Sensorla seçilən liman|Uzaq iki ada, başlanğıcda iki sensor|B hansı sensoru tutursa A ora ötürülür. A birinci adadan B üçün başqa yol açır, B seçimi dəyişib A-nı ikinci adaya yönəldir.
+Qapı arxasında şalter|Bir-birinə portal ilə bağlanan üç kamera|Birinci portal şalterin arxasına, ikinci portal birinci qapının önünə çıxarır. Şalter zənciri tamamlanmadan son portal aktiv olmur.
+Güzgü çıxışlı qaçış|Asimmetrik iki zal|Portal giriş orientasiyasını dəyişmir, amma çıxış divarları yalnız bir duruşa yer verir. Orientasiya əvvəlki zaldakı dövrədə hazırlanır.
+Finalı söndürən razılıq|İki sensorlu yan cib və tək qapı|A-nın final bayrağı B sensoru buraxanda silinir. B öz çıxışına gedərkən alternativ sensoru A özü tutmalı və bayrağı bərpa etməlidir.
+İki keçid, bir dönüş|İki portal və aralarında qırılan boğaz|Bir portal irəli, digəri geri üçündür. Boğazı erkən qırmaq ikinci portalın icazə sensoruna yolu kəsir.
+Üzə görə ünvan|Altı kontaktlı başlanğıc zalı|Portalın ünvanı aşağı üz işarəsinə bağlıdır. Doğru adaya çatmaq üçün N1 dövrəsi lazımdır; yeni üz-ünvan bağlantısı tələb edir.
+Enerji bileti|Batareya anbarı və uzaq final adası|Teleport bir token xərcləyib çıxış deposuna ötürür, enerji itmir. B son səfər üçün depodan tokeni geri götürməlidir; xərc əvəzinə transfer qaydası açıqdır.
+Eyni qapının ikinci işi|Geniş başlanğıc otağı və kiçik yan ada|İlk giriş portalı açır, ikinci giriş şəbəkə şalterini işə salır. Aralıq adada hazırlıq etmədən ikinci girişi aktivləşdirmək final yolunu açmır.
+Çıxış deyil, görüş|Ayrı başlayan iki blok üçün ortaq ada|İki saxta final hər bloku görüş yerinə gətirir. Görüşdə enerji dəyişilir, sonra hər biri fərqli həqiqi çıxışına yönəlir.
+Qayıdış möhürü|Dörd pilləli portal zənciri|Hər adada fərqli forma möhürü var; son qapı bütün möhürləri yoxlayır. Ünvanlar birbaşa finala qısayol vermir.
+Portalın çəkisi|İki ada, birində həddli döşəmə|Teleport olunmuş domino çıxışda dik qalırsa qabıq çökür. Yüngül rol və ya geniş forma hazırlanmadan keçmək mümkün deyil.
+Uzaqdan bağlanan final|İki platforma və arada növbəli divar|B final icazəsini verir, A keçir; A içəridən divar fazasını dondurub B-ni buraxır. Hər blokun finalı digərinin yerləşməsinə bağlıdır.
+Son ünvan başlanğıcdır|Beş adalı, bir neçə istiqamətli portal qrafı|Başlanğıc çıxışı üç adadan icazə aldıqdan sonra açılır. Təkrar adaya getmək indeksi pozur, plan qraf üzərində qurulur, xal yerlərini dəyişmək deyil.
+[N1] Üz, orientasiya və kontakt
+Üç rəngin sırası|Üç qollu möhür zalı|A alt üzlə qırmızı→mavi→ağ kontaktları basır. Sadəcə xanaya çatmaq sayılmır, doğru fiziki üz aşağı olmalıdır.
+Yan kontakt|Divar boyunca L formalı dəhliz|Düymə döşəmədə deyil, divardadır. Domino doğru yan üzü ilə yaxınlaşır; bunun üçün geniş başlanğıc meydanında dövrə vurulur.
+Eyni yerdə başqa üz|Ortası boş halqa|Tam dövrədən qayıdan blok eyni koordinatda fərqli orientasiyaya sahib olmalıdır. Final sensoru həmin üzü tələb edir; koordinat əsaslı həll yanlışdır.
+İki blokun imzası|İki paralel niş meydanı|A və B eyni vaxtda fərqli üzləri göstərir. A hazır olanda B-nin dönüşü A-nın dayağını kəsməməlidir.
+Damğalı körpü|Dar körpüdən əvvəl geniş həyət|Körpü girişində müəyyən alt üz, çıxışda başqa yan üz tələb olunur. Giriş yolu orientasiya ilə seçilir, dar körpüdə düzəliş yeri yoxdur.
+Ölçüdə saxlanan üz|Forma stansiyası olan iki kamera|Resize üz etiketlərini qoruyur; kubda hazırlanan işarə domino finalında yan kontakt olur. Etiket çevrilməsi əvvəlcədən göstərilir.
+Dörd tərəfli prizma|Xaç zalı, hər qolda divar kontaktı|Dörd kontaktı eyni orientasiya ilə sırayla basmaq mümkün deyil. Hər qol arasında fərqli dövrə seçmək lazımdır, mərkəz möhür sayğacını saxlayır.
+Qütblü portal|Portal ilə ayrılmış iki tavanlı otaq|Üz işarəsi portalda qorunur. Uzaq otaqda dönmək üçün yer olmadığından girişdən əvvəl oriyentasiya tamamlanır.
+İzolyasiya üzü|Enerjili döşəmə ilə parçalanmış yol|Yalnız izolyasiya işarəli üz elektrik zolağına toxuna bilər. Digər üzü kontaktı açdığı üçün zolaqdan sonra yenidən dönüş lazımdır; yeni üz-təhlükə qaydasıdır.
+Yük və imza|Ağır kontakt, iki alçaq yan kanal|Doğru alt üz ilə dik qalmaq tələb olunur. Yüngül B yaxın yolu keçir, ağır A orientasiya üçün uzun xarici dövrədən gəlir.
+Üz təhvili|İki terminal və bir görüş meydanı|Terminal A-nın üst üz kodunu B üçün qapı icazəsi kimi yadda saxlayır. Sonra B həmin kodla başqa kontaktı basır; yeni yaddaş terminalıdır.
+Əks nişanlar|Səkkizşəkilli zal, iki zidd kontakt|Bir kontakt yuxarı, digəri aşağı üz kodunu yoxlayır. İkisini tutmaq üçün eyni dövrəni təkrarlamaq yox, fərqli halqaları birləşdirmək lazımdır.
+Dik qapının imzası|Pilləli dar boğazlar|A yalnız dik halda və şimal üzü müəyyən kod olanda keçə bilir. Uzun tərəfə yatıb qıfıldan keçmək mümkün deyil.
+Fazaya görə üz|Növbəli divarlı üç cib|Hər faza başqa kontaktı əlçatan edir. Orientasiya planı ilə faza planı birlikdə uyğunlaşdırılır, WAIT özü orientasiyanı dəyişmir.
+Unudulmayan möhür|Şalterlə bağlanan iki dönmə meydanı|İlk möhürdən sonra birinci meydan bağlanır. İkinci möhür üçün lazım olan üz əvvəlki dövrənin sonunda hazırlanmalıdır.
+Kontakt cütü|Enli plitə izi olan son zal|2×2 plitənin altındakı iki fərqli işarə iki sensorla uyğun gəlir. Sadəcə dörd xananı örtmək kifayət deyil; yeni hüceyrə-kontakt etiketləri tələb edir.
+Buzdan sonra yan üz|İki buz xətti, arada quru dönmə cibi|Sürüşmə roll yox, tərcümə kimi orientasiyanı saxlayır. Quru cibi seçmək final yan kontaktını hazırlayır.
+İki imzalı açar|Bir mərkəzi qapı və iki uzaq möhür|A bir möhürü, B digərini doğru üzlə vurur; hər biri yalnız öz roluna icazə verir. Bir blokla hər ikisini tamamlamaq olmaz.
+Orientasiya karantini|Əyri xarici yol və kiçik iç meydan|İç meydana düşəndə oriyentasiya dəyişdirmək üçün yer yoxdur. Portal çıxışında lazımi alt üz yoxlanır; xarici yol uyğun hazırlıq üçündür.
+Son üç toxunuş|Fərqli istiqamətli üç dar son qol|Möhür ardıcıllığı yalnız son üç düzgün toxunuşu saxlayır. Artıq yanlış kontakt əvvəldən hazırlanmış sıranı pozur; görünən sürüşən yaddaş tələb edir.
+[N2] Qorunan enerji və bölgü
+İki qapının büdcəsi|İki enerji qapılı qollar və ortaq depo|Cəmi üç token var, qapılar iki və bir istəyir. Tokenləri qapılarda itirmədən uzaq depoya köçürüb son bölgünü qurmaq lazımdır.
+Boş qayıdan|Bir ağır enerji körpüsü və dar yüngül yol|A enerjini uzağa daşıyır, B onu götürür. A boşalıb yüngül yoldan qayıdır, B dolu halda ağır finalı açır.
+Enerji lifti|Üç ayrı ada və tək transfer nöqtəsi|Transfer yalnız qonşu bloklar arasında mümkündür. Adaların ölçüsü hər görüşü fərqli yerdə təşkil etməyə məcbur edir.
+Son token depozitdə|Dairəvi yol, üç terminal|Finalda A və B boş, depo dolu olmalıdır. Əvvəlki qapılar dolu blok istədiyi üçün hər şeyi erkən depoya qoymaq olmaz.
+İki bərabər pay|Paralel iki koridor və ayrı çıxışlar|Hər çıxış iki token istəyir, görüşdən sonra transfer yoxdur. Bölüşdürmə son ayrıcda düzgün tamamlanmalıdır.
+Ödənişsiz daşınma|Biristifadəlik portal və uzaq depo|Token portal keçidində yox olmur, çıxış deposuna köçürülür. B onu geri dövrədən götürür; bir blok öz enerjisini özü geri ala bilmir.
+Yük həddində batareya|Qabıq yol və enli servis həyəti|Token kütləyə əlavə olunur. Körpüdən boş keçmək, uzaqda doldurulmaq və finala ağır çatmaq lazımdır; yeni token-kütlə əlaqəsidir.
+İki terminalın kilidi|Zəncirvari üç otaq|Birinci depoda bir token saxlananda ikinci qapı açılır. Depodan hamısını götürmək A-nı üçüncü otaqda tələyə salır.
+Tərs icazə|Şarjlı yol və yalnız boş bloku keçirən tunel|A doldurulub şalteri açır, sonra enerjini B-yə verməlidir. B-nin keçidi dolu, A-nın çıxışı boş vəziyyət tələb edir.
+Fazanın yanacağı|Növbəli divar zalı və iki depo|Motorun enerjisi terminalda saxlanır; tokeni çıxarmaq divarı cari fazada dondurur. Doğru faza həm A, həm B üçün yol saxlamalıdır.
+Körpü üçün ortaq ehtiyat|Üç ada və iki enerji körpüsü|İki körpünü eyni anda işlətməyə enerji çatmır. Aralıq adada ehtiyatı bir körpüdən digərinə köçürmək üçün relay təhvili qurulur.
+Üzlə açılan batareya|Möhür otağı və enerji saxlanan yan qol|Enerjini yalnız doğru kontakt üzü terminala toxunanda götürmək olar. N1 orientasiyası daşınma ardıcıllığını məhdudlaşdırır.
+Bir transferlik görüş|Çökən görüş körpüsü|Bloklar yalnız bir dəfə görüşə bilirlər. Sonrakı iki qapının enerji tələbi əvvəlcədən hesablanıb həmin görüşdə bölünür.
+Enerji valfi|Bir halqa üzərində istiqamətli üç depo|Token bir terminaldan yalnız növbətiyə ötürülür. Blokun özünə götürməsi üçün fiziki həmin terminala çatması lazımdır; yeni istiqamətli depo sistemi tələb edir.
+Minimum və maksimum|Geniş otaqdan ayrılan üç dar qol|Bir qapı ən az iki, digəri ən çox bir tokenə icazə verir. Sadəcə maksimum doldurmaq həll deyil, yol boyu bölgü dəyişir.
+Finalı saxlayan depo|İki çıxış arasında mərkəzi anbar|Depo bir token saxladıqca körpü realdır. B çıxışa çatana qədər A son tokeni götürə bilməz, sonra başqa qapı üçün götürməlidir.
+Uzaq şarj|Yaxınlıq dayaqlı əyri adalar|B A-nı müşayiət edir, amma enerji transferi üçün bir xana yaxınlaşmaq lazımdır. Dar sahədə həm dayaq, həm görüş məsafəsini saxlamaq tələb olunur.
+Enerjinin kompası|İki rotor və bir görüş cibi|Dolanda idarə 90° çevrilir. Görüşdə enerjini ötürmək növbəti yolun koordinat sistemini də dəyişir; N2+M2 bağlantısı açıq öyrədilir.
+Anbarın arxa qapısı|Üç qapılı U plan|Bir depo həm qapının ehtiyatıdır, həm B-nin son yüküdür. A içəridən mexaniki kilidi açmadan B həmin ehtiyatı götürə bilməz.
+Heç nə itmir|Dörd adalı son bölgü tapmacası|Altı token üç depo və iki blok arasında bölünür. Hər final fərqli pay istəyir; qapı ehtiyatları da ümumi altıya daxildir, gizli enerji yaranmır.
+[N3] Məkan tikişləri və topologiya
+Qatlanmış halqa|İki ayrı yarımdairə, iki açıq tikiş|Bir tikiş çıxışını dəyişəndə qrafın dövrəsi qırılır. A bir tərəfdə qalaraq B-yə yeni bağlantını açır; ünvanlar həmişə görünür.
+Dörd limanlı keçid|Mərkəzi terminal və dörd ada|Terminal eyni anda yalnız iki adanı birləşdirir. Blokları ayırıb sonra yenidən görüşdürmək üçün bağlantılar fərqli sırada dəyişir.
+Tək yönlü dairə|Üç ada üzərində yönlü portal qrafı|Əks qayıdış yoxdur. Bir blok qapını açır, digəri dövrəni tamamlayıb onun arxa sensoruna gəlir.
+Tikişin iki üzü|İki tavanlı otaq, bir döndərilən bağlantı|Bağlantı çıxış orientasiyasını seçilmiş 90° çevirir. Tavan və yan kontaktlar düzgün orientasiya seçimini zəruri edir; yeni orientasiya-tikişi qaydasıdır.
+Boş liman siyasəti|İki kiçik ada və saxlama platforması|Dolu çıxış portalı bütöv bloklayır. B-ni saxlama platformasına aparmadan A-nın bağlantısını dəyişmək mümkün deyil.
+Ada körpüsünün mübadiləsi|Üç ada, bir daşınan bağlantı cütü|Bir keçidi açmaq o birini bağlayır. Ortada blok saxlayaraq bağlantını ona arxa tərəfdən təhvil vermək lazımdır.
+Yarım xəritə|İki ayrı labirint hissəsi|Bir hissənin şimal kənarı digərinin şərqinə bağlanır. Eyni koordinat kimi düşünmək olmaz, çıxış markerləri və yerli duruş birlikdə hesablanır.
+Qayıdışsız açar|İki yarpaqlı ağac qrafı|A açarı götürəndə bir istiqamətli kənarı keçir. B kökdən ayrı şalter açıb yeni geri kənar yaradır; açar yeri yox, əlaqə dəyişir.
+İki nəfərlik tikiş|Paralel ada cütləri|Bağlantı yalnız hər iki başlanğıc sensoru tutulanda açılır. A keçəndə sensor buraxılır, ona görə uzaq relay əvvəlcədən başqa yol ilə hazırlanır.
+Topoloji kilid|Dörd otaqdan ibarət çevrilən qraf|Finala gedən kənar ancaq üç fiziki şalter birlikdə açıldıqda yaranır. Şalterlərə çatmaq üçün qrafı aralıq vəziyyətlərdə dəyişmək lazımdır.
+Böyük cismin limanı|Bir dar, bir enli çıxışı olan portal|A böyükdürsə dar çıxış seçimi qadağandır. B terminalı uzaqdan enli limana yönəldir, A keçəndən sonra kiçik B üçün başqa əlaqə açılır.
+Enerji şəbəkəsi|Üç terminal adası və enerji ilə açılan kənarlar|Enerji depozitləri bağlantıları açır. Tokenləri köçürəndə arxadakı kənar bağlanır; hər ikisinin qayıdışını saxlamaq şərtdir.
+Düyün əvəzetməsi|Dörd girişli mərkəzi ada|Şalter girişlərin cütləşməsini dəyişir: şimal–şərq və cənub–qərb əvəzinə başqa cütlər. Blokların hansı girişdə gözləməsi gələcək yolu müəyyən edir.
+Bir addım uzaqda, çox yol aralı|Vizual yaxın iki ada, əlaqəli uzaq dövrə|Yaxınlıq sensoru dünya məsafəsi ilə işləyir, portal məsafəsi ilə deyil. B yaxın adada A-ya dayaq verir, özü ora uzun qraf yolundan gəlməlidir.
+Görüşün xəritəsi|Beş düyünlü yönlü şəbəkə|Bloklar əvvəl ayrı düyünlərdədir; enerji ötürməsi üçün eyni görüş düyününə çatmalıdır. Görüşdən sonra çıxış istiqamətləri qıfıllarla dəyişir.
+Sönən tikiş|İlk istifadə sonrası bağlanan iki əlaqə|Hansı blokun hansı əlaqəni işlədəcəyi final rollarına görə seçilir. Eyni adaya çatmaq kifayət etmir, digər blok üçün qalan qraf da keçilən olmalıdır.
+Tikişin kənarındakı üz|Divar kontaktı olan uzaq otaq|Portal orientasiyanı qoruyur, uzun roll marşrutu isə dəyişir. İki yol eyni nöqtəyə gətirsə də yalnız biri lazımi üzü hazırlayır.
+Yolun arxasındakı idarə|Bir idarə adası, üç oyun adası|B idarədə bağlantı seçir, A adalarda açar zəncirini açır. Son mərhələdə A idarə adasını B üçün əlçatan etməlidir, B orada əbədi qalmır.
+Saatlı əlaqə|Üç fazada dəyişən iki tikiş|Faza qəbul edilmiş gedişlə irəliləyir. Portalın özü də fazanı dəyişdirdiyi üçün giriş anı ilə çıxışdan sonrakı qraf fərqlənir.
+Tam dövrənin sübutu|Altı düyünlü, iki qısayollu qraf|Hər vacib düyün mexaniki kilid açır, sadəcə “hamısını gəz” yazısı yoxdur. Qısayollar erkən final vermir, yalnız geri dönüşün səmərəsini dəyişir.
+[N4] Nisbi rezonans və əlaqəli hərəkət
+Məsafə nərdivanı|Pilləli iki paralel sahil|Körpülər məsafə 2, sonra 3, sonra 1 olanda açılır. Bloklar sabit aralıqla gedə bilmir, hər pillədə münasibəti yenidən qurur.
+Eyni sətir, ayrı yol|Ortası boş iki U dəhliz|Qapı eyni sətirdə olanda açıqdır. B xarici yoldan sətiri saxlayır, A iç yoldan keçir; sonra uzaq alternativ kontaktla təhvil edir.
+Diaqonal razılaşma|Dörd künclü həyət, ortada divar|Sensorlar eyni diaqonalı tələb edir, amma ortadan keçmək olmaz. Bir blokun dolanması zamanı digərinin təhlükəsiz dayanacağı seçilir.
+İp uzunluğu|İki qarmaqşəkilli yol|Manhattan məsafəsi maksimum dörddür. Birini qabağa çox göndərmək o birinin hərəkətini bloklayır; yan cibdən mərhələli yaxınlaşma lazımdır.
+Gərginlik körpüsü|İki ada arası şəffaf zolaq|Körpü yalnız məsafə dəqiq üç olanda realdır. A irəlilədikcə B başqa sahildə eyni ritmdə geri çəkilir, son relay bu şərti əvəz edir.
+Cüt addım kilidi|İki asimmetrik dar kanal|Eyni anda verilən iki niyyət birlikdə validasiya olunur. Bir tərəfdə divar varsa hər ikisi yerində qalır; iki yolun uyğun addım cütləri tapılır.
+Formaların rezonansı|Bir enli, bir dar final meydanı|Qapı A plitə və B dik domino olanda açılır. Bloklar stansiyalara fərqli vaxtda çatıb eyni anda uyğun formaları saxlamalıdır.
+Üzlərin qarşılaşması|Yan kontaktlı iki balkon|A-nın şərq üzü B-nin qərb üzü ilə uyğun kod daşımalıdır. Dəqiq orientasiya ilə nisbi yerləşmə birlikdə yoxlanır.
+Bir-birinə baxmadan|Xarici halqa və daxili spiral|Qapı bloklar fərqli sətir və sütunda olanda açılır. Son dar boğazdan keçərkən həmin münasibəti qorumaq üçün B-nin cib seçimi vacibdir.
+Yaxınlaşıb ayrıl|Üç geniş görüş meydanı|Birinci kilid yaxınlıq, ikinci uzaqlıq, üçüncü eyni sətir tələb edir. Hər kilid növbətinin yolunu açır, dəyişiklik dekorativ deyil.
+Enerji bərabərliyi|Ayrı depoları olan iki otaq|Körpü yalnız blokların enerjisi bərabər olanda açılır. Uzaq qapı fərqli pay istədiyi üçün körpünü keçəndən sonra yenidən transfer lazımdır.
+Çəkinin fərqi|Həddli döşəmələr və ağır düymələr|Rezonans ümumi kütlə fərqi bir olanda açılır. Ölçü izi yükü dəyişir, amma kütləni dəyişmir; enerji ilə kütlə artırma qaydası ayrıca göstərilir.
+Bir xəttin iki ucu|Uzun qırıq kanal və paralel servis yolu|Qapı blokların eyni sütunda və aralarında maneəsiz xətt olanda açılır. Xəttin qarşısındakı panel əvvəl uzaq şalterlə çəkilir; yeni line-of-sight qaydasıdır.
+Qırılan bağ|Biristifadəlik boğaz və iki yaxınlıq sensoru|A boğazı tərk edəndə qayıdış kəsilir. B əvvəl aralıq müşahidə nöqtəsinə yerləşməsə uzaqdakı A-nın dayağı sönür.
+İki fərqli miqyas|Geniş A meydanı və dar B cığırı|Məsafə anchorla yox, ən yaxın footprint xanası ilə hesablanır. A böyüyərək rezonans məsafəsini azaldır; yeni ölçü-məsafə semantikası ayrıca öyrədilir.
+Güzgü yox, tamamlayıcı|Asimmetrik iki yarım labirint|A sağa gedəndə B eyni istiqamət yox, seçilən perpendikulyar istiqamətdə hərəkət edir. Cüt addımlar hər iki maneə sisteminə uyğun gəlməlidir.
+Rezonansı park et|Dörd dayaq cibi olan meydan|A sabit nöqtədə qalaraq yalnız iki cibi B üçün təhlükəsiz edir. B uzaq relay-i açdıqdan sonra A-nın park yeri dəyişir və digər iki cib açılır.
+İki finalın ortası|Final platformaları müxtəlif yüksəklik görünüşlü adalarda|Hər iki final dolu olanda məsafə şərti də ödənməlidir. İlk yaxın görünən nişan aralıq relay-dir, əsl məqsədlər açıq fərqli işarələnir.
+Bağın kompası|İki rotor və ofset aralıq ada|Eyni sütunda olanda idarə dəyişir, uzaqlaşanda normallaşır. A çıxışa yaxınlaşdıqca B-ni fərqli sətirə çəkmək lazımdır ki, növbəti dünya hərəkəti mümkün olsun.
+Beş münasibətin finalı|Şaxələnmiş böyük meydan, beş mexaniki kilid|Yaxınlıq, eyni sətir, fərqli sütun, forma cütü və üz uyğunluğu ayrı kilidlər açır. Kilidlərin ardıcıllığını xəritə məcbur edir; hamısını eyni vaxtda tələb edib həllsiz qoymaq olmaz.

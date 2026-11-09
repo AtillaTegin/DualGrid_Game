@@ -1,0 +1,74 @@
+[
+  {
+    "id": "65",
+    "source": "C65",
+    "moves": 24,
+    "visited": 134,
+    "allItems": true,
+    "lever": true
+  },
+  {
+    "id": "66",
+    "source": "C66",
+    "moves": 22,
+    "visited": 190,
+    "allItems": true,
+    "lever": false
+  },
+  {
+    "id": "67",
+    "source": "C67",
+    "moves": 17,
+    "visited": 1416,
+    "allItems": true,
+    "lever": false
+  },
+  {
+    "id": "68",
+    "source": "C68",
+    "moves": 29,
+    "visited": 6890,
+    "allItems": true,
+    "lever": false
+  },
+  {
+    "id": "69",
+    "source": "C69",
+    "moves": 38,
+    "visited": 4183,
+    "allItems": true,
+    "lever": true
+  },
+  {
+    "id": "70",
+    "source": "C70",
+    "moves": 30,
+    "visited": 208,
+    "allItems": true,
+    "lever": false
+  },
+  {
+    "id": "71",
+    "source": "C71",
+    "moves": 15,
+    "visited": 960,
+    "allItems": true,
+    "lever": false
+  },
+  {
+    "id": "72",
+    "source": "C72",
+    "moves": 16,
+    "visited": 1544,
+    "allItems": true,
+    "lever": false
+  },
+  {
+    "id": "73",
+    "source": "C73",
+    "moves": 27,
+    "visited": 142,
+    "allItems": true,
+    "lever": false
+  }
+]

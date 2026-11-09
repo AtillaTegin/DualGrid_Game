@@ -1,0 +1,6100 @@
+[
+  {
+    "id": "61",
+    "source": "M1",
+    "family": "M1",
+    "title": "Etibarlı keçid",
+    "rule": "Dalğalı saxta plitə dayaq deyil. A sol relay-i saxlasın; B aşağıdakı həqiqi körpüdən keçib sağ relay-i təhvil alsın. Sonra A da keçsin. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      ".......",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 0,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "illusion": [
+      [
+        3,
+        1
+      ]
+    ],
+    "knownIllusion": true,
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "source": "M1",
+    "family": "M1",
+    "title": "Boşluğun o biri tərəfi",
+    "rule": "Dalğalı saxta plitə dayaq deyil. A sol relay-i saxlasın; B aşağıdakı həqiqi körpüdən keçib sağ relay-i təhvil alsın. Sonra A da keçsin. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      ".......",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 0
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 0,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "illusion": [
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "knownIllusion": true,
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "source": "M1.1",
+    "family": "M1",
+    "title": "İki yol, bir həqiqət",
+    "rule": "Saxta yol qabaqcadan titrəyən kənarla görünür. Təsadüfi ölüm tələb olunmur: həqiqi yolu və relay-in kimdə qalacağını planlaşdır. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      ".......",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 0,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "illusion": [
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "knownIllusion": true,
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "source": "M1.1",
+    "family": "M1",
+    "title": "Relay təhvili",
+    "rule": "Saxta yol qabaqcadan titrəyən kənarla görünür. Təsadüfi ölüm tələb olunmur: həqiqi yolu və relay-in kimdə qalacağını planlaşdır. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      ".......",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 0
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 0,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "illusion": [
+      [
+        3,
+        1
+      ]
+    ],
+    "knownIllusion": true,
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          0
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            0
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "source": "M1.2",
+    "family": "M1",
+    "title": "Qırılan körpü və kilidli qayıdış",
+    "rule": "Qırılan körpünü keçib qızılı açarı götür. Uzaq şalterə yaxınlaşıb F bas: aşağı qayıdış yolu açılır. Bütün işıq xallarını yol boyu topla; onlar çıxış qapısını açır. Körpüdən geri dönmək olmur.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "         ",
+      ".........",
+      " .     ..",
+      " .    ...",
+      " .    ...",
+      " ....... "
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 0,
+        "z": 1
+      }
+    ],
+    "fragile": [
+      [
+        4,
+        1
+      ]
+    ],
+    "difficulty": "ORTA",
+    "collectAll": true,
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          7,
+          1
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          1
+        ]
+      },
+      {
+        "id": "east",
+        "kind": "point",
+        "at": [
+          8,
+          3
+        ]
+      },
+      {
+        "id": "south-east",
+        "kind": "point",
+        "at": [
+          7,
+          4
+        ]
+      }
+    ],
+    "levers": [
+      {
+        "id": "return",
+        "at": [
+          6,
+          3
+        ],
+        "requires": {
+          "allKeys": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "return-route",
+        "at": [
+          1,
+          2
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "return"
+          ]
+        }
+      },
+      {
+        "id": "exit",
+        "at": [
+          0,
+          1
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "return"
+          ],
+          "allPoints": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "source": "M1.2",
+    "family": "M1",
+    "title": "Şalterin o biri tərəfində",
+    "rule": "Qırılan körpünü keçib qızılı açarı götür. Uzaq şalterə yaxınlaşıb F bas: aşağı qayıdış yolu açılır. Bütün işıq xallarını yol boyu topla; onlar çıxış qapısını açır. Körpüdən geri dönmək olmur.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "         ",
+      ".........",
+      " .     ..",
+      " .    ...",
+      " .    ...",
+      " ....... "
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 0,
+        "z": 1
+      }
+    ],
+    "fragile": [
+      [
+        4,
+        1
+      ]
+    ],
+    "difficulty": "ORTA",
+    "collectAll": true,
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          7,
+          1
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          1
+        ]
+      },
+      {
+        "id": "east",
+        "kind": "point",
+        "at": [
+          8,
+          3
+        ]
+      },
+      {
+        "id": "south-east",
+        "kind": "point",
+        "at": [
+          7,
+          4
+        ]
+      },
+      {
+        "id": "alcove",
+        "kind": "point",
+        "at": [
+          6,
+          5
+        ]
+      }
+    ],
+    "levers": [
+      {
+        "id": "return",
+        "at": [
+          6,
+          4
+        ],
+        "requires": {
+          "allKeys": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "return-route",
+        "at": [
+          1,
+          2
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "return"
+          ]
+        }
+      },
+      {
+        "id": "exit",
+        "at": [
+          0,
+          1
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "return"
+          ],
+          "allPoints": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "source": "M1.3",
+    "family": "M1",
+    "title": "Kütləni bölüşdür",
+    "rule": "A-nın kütləsi 2-dir, qabıq hər xanada yalnız 1 yük saxlayır. Qabığı uzanmış gövdə ilə keç, uzaq sensoru işə sal və digər çıxışa qayıt. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "....  ....",
+      "..........",
+      "....  ....",
+      "....  ....",
+      "..........",
+      "....  ...."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "shapes": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 1,
+        "z": 4,
+        "dims": [
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "switches": [
+      [
+        7,
+        1
+      ]
+    ],
+    "needSwitches": true,
+    "shell": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "shellThreshold": 1,
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          9,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          9,
+          5
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          9,
+          3
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          1,
+          4
+        ],
+        "width": 1,
+        "cells": [
+          [
+            1,
+            4
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ],
+          "routeComplete": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "source": "M1.3",
+    "family": "M1",
+    "title": "Qabığın üstündə dövrə",
+    "rule": "A-nın kütləsi 2-dir, qabıq hər xanada yalnız 1 yük saxlayır. Qabığı uzanmış gövdə ilə keç, uzaq sensoru işə sal və digər çıxışa qayıt. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "....  ....",
+      "..........",
+      "....  ....",
+      "....  ....",
+      "..........",
+      "....  ...."
+    ],
+    "starts": [
+      [
+        1,
+        4
+      ]
+    ],
+    "shapes": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 1,
+        "z": 1,
+        "dims": [
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "switches": [
+      [
+        7,
+        1
+      ]
+    ],
+    "needSwitches": true,
+    "shell": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "shellThreshold": 1,
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          9,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          9,
+          5
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          9,
+          3
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          1,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            1,
+            1
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ],
+          "routeComplete": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "source": "M1.4",
+    "family": "M1",
+    "title": "İşığı təhvil ver",
+    "rule": "Bir blok relay-i saxlamadan körpü dayaq vermir. A sol relay-i tutsun, B sağ relay-ə keçsin, yalnız sonra A-nı keçir. İkinci xəritədə arxadakı plitə qırılır. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "holo": [
+      [
+        3,
+        2
+      ]
+    ],
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "source": "M1.4",
+    "family": "M1",
+    "title": "Körpüdə ikinci növbə",
+    "rule": "Bir blok relay-i saxlamadan körpü dayaq vermir. A sol relay-i tutsun, B sağ relay-ə keçsin, yalnız sonra A-nı keçir. İkinci xəritədə arxadakı plitə qırılır. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "fragile": [
+      [
+        1,
+        2
+      ]
+    ],
+    "holo": [
+      [
+        3,
+        2
+      ]
+    ],
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "source": "M1.5",
+    "family": "M1",
+    "title": "Birlikdə görünən yol",
+    "rule": "Bənövşəyi yol yalnız partnyor hər dayaq xanasına ən çox 2 addım yaxın olanda mövcuddur. İki bloku növbə ilə apar; arxadakını unutsan öndəkinin dayağı itər. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "....  ...",
+      "....  ...",
+      ".........",
+      "....  ...",
+      "....  ..."
+    ],
+    "starts": [
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 1
+      },
+      {
+        "x": 7,
+        "z": 3
+      }
+    ],
+    "observer": [
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "radius": 2,
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          3
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            3
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "source": "M1.5",
+    "family": "M1",
+    "title": "Müşahidə məsafəsi",
+    "rule": "Bənövşəyi yol yalnız partnyor hər dayaq xanasına ən çox 2 addım yaxın olanda mövcuddur. İki bloku növbə ilə apar; arxadakını unutsan öndəkinin dayağı itər. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "....  ...",
+      "....  ...",
+      ".........",
+      "....  ...",
+      "....  ..."
+    ],
+    "starts": [
+      [
+        3,
+        3
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 0
+      },
+      {
+        "x": 7,
+        "z": 2
+      }
+    ],
+    "observer": [
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "radius": 2,
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          2
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            2
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "source": "M1.6",
+    "family": "M1",
+    "title": "İki keçidlik yaddaş",
+    "rule": "Döşəmə sensorlarını nömrə sırası ilə götür: sağ yuxarı → sol yuxarı → yenə sağ yuxarı. İki nöqtəli plitə ikinci girişdən sonra tərk ediləndə qırılır. Üçüncü yol üçün aşağı dövrəni planlaşdır. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".....",
+      ".. ..",
+      "....."
+    ],
+    "starts": [
+      [
+        1,
+        0
+      ]
+    ],
+    "goals": [
+      {
+        "x": 0,
+        "z": 2
+      }
+    ],
+    "visitable": [
+      [
+        2,
+        0
+      ]
+    ],
+    "switches": [
+      [
+        3,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "needSwitches": true,
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          4,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          4,
+          2
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          4,
+          1
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          0,
+          2
+        ],
+        "width": 1,
+        "cells": [
+          [
+            0,
+            2
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ],
+          "routeComplete": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "source": "M1.6",
+    "family": "M1",
+    "title": "Üç açar, iki imkan",
+    "rule": "Döşəmə sensorlarını nömrə sırası ilə götür: sağ yuxarı → sol yuxarı → yenə sağ yuxarı. İki nöqtəli plitə ikinci girişdən sonra tərk ediləndə qırılır. Üçüncü yol üçün aşağı dövrəni planlaşdır. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".....",
+      ".. ..",
+      "....."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ]
+    ],
+    "goals": [
+      {
+        "x": 0,
+        "z": 2
+      }
+    ],
+    "visitable": [
+      [
+        2,
+        0
+      ]
+    ],
+    "switches": [
+      [
+        3,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "needSwitches": true,
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          4,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          4,
+          2
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          4,
+          1
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          0,
+          2
+        ],
+        "width": 1,
+        "cells": [
+          [
+            0,
+            2
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ],
+          "routeComplete": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "source": "M2",
+    "family": "M2",
+    "title": "Tərs keçid",
+    "rule": "Relay əməkdaşlığı davam edir, amma bənövşəyi zonada oxlar 180° dəyişir. Kompas düymənin dünyada hara apardığını göstərir. Körpü üstündə idarəni əvvəlcədən hesabla. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "reverse": {
+      "kind": "invert",
+      "zone": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "source": "M2",
+    "family": "M2",
+    "title": "Tərs keçiddə təhvil",
+    "rule": "Relay əməkdaşlığı davam edir, amma bənövşəyi zonada oxlar 180° dəyişir. Kompas düymənin dünyada hara apardığını göstərir. Körpü üstündə idarəni əvvəlcədən hesabla. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "fragile": [
+      [
+        1,
+        2
+      ]
+    ],
+    "reverse": {
+      "kind": "invert",
+      "zone": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "source": "M2.1",
+    "family": "M2",
+    "title": "İki tərəfli inversiya",
+    "rule": "Zonaya giriş normaldır; içəridən çıxışda SOL dünyada sağa aparır. Blokları eyni anda deyil, relay təhvili ilə keçir. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "reverse": {
+      "kind": "invert",
+      "zone": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    },
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "source": "M2.1",
+    "family": "M2",
+    "title": "Qırılan inversiya yolu",
+    "rule": "Zonaya giriş normaldır; içəridən çıxışda SOL dünyada sağa aparır. Blokları eyni anda deyil, relay təhvili ilə keçir. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "fragile": [
+      [
+        1,
+        2
+      ]
+    ],
+    "reverse": {
+      "kind": "invert",
+      "zone": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    },
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "source": "M2.2",
+    "family": "M2",
+    "title": "Dönən koordinatlar",
+    "rule": "Rotor zonasının içində YUXARI dünyada sağa aparır. A relay-i saxlasın, B-ni dönmüş koordinatlarla keçir, sonra rolları təhvil ver. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "reverse": {
+      "kind": "rotate",
+      "zone": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "source": "M2.2",
+    "family": "M2",
+    "title": "Rotorun o biri üzü",
+    "rule": "Rotor zonasının içində YUXARI dünyada sağa aparır. A relay-i saxlasın, B-ni dönmüş koordinatlarla keçir, sonra rolları təhvil ver. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "fragile": [
+      [
+        1,
+        2
+      ]
+    ],
+    "reverse": {
+      "kind": "rotate",
+      "zone": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "source": "M2.3",
+    "family": "M2",
+    "title": "Yadda qalan polarite",
+    "rule": "Nazik zolağa hər giriş həmin blokun polaritesini dəyişir. Zolaqdan çıxanda tərslik qalır. A və B-nin yaddaşı ayrıdır; relay-i təhvil verərək iki çıxışa çat. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "reverse": {
+      "kind": "latch",
+      "zone": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "source": "M2.3",
+    "family": "M2",
+    "title": "Dönməyən yaddaş",
+    "rule": "Nazik zolağa hər giriş həmin blokun polaritesini dəyişir. Zolaqdan çıxanda tərslik qalır. A və B-nin yaddaşı ayrıdır; relay-i təhvil verərək iki çıxışa çat. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "fragile": [
+      [
+        1,
+        2
+      ]
+    ],
+    "reverse": {
+      "kind": "latch",
+      "zone": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "source": "M2.4",
+    "family": "M2",
+    "title": "İki ayrı kompas",
+    "rule": "Relay tutulanda A-nın sağ/solu, B-nin yuxarı/aşağısı dəyişir. İşığı digər blok təhvil alanda hərəkət xəritəsini yenidən yoxla. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "reverse": {
+      "kind": "split",
+      "sensors": [
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ]
+    },
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "source": "M2.4",
+    "family": "M2",
+    "title": "Partnyorun çevirdiyi dünya",
+    "rule": "Relay tutulanda A-nın sağ/solu, B-nin yuxarı/aşağısı dəyişir. İşığı digər blok təhvil alanda hərəkət xəritəsini yenidən yoxla. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "... ...",
+      "... ...",
+      ".......",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3
+      },
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "relay",
+        "tiles": [
+          [
+            3,
+            2
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 1,
+              "z": 1
+            },
+            {
+              "x": 5,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "fragile": [
+      [
+        1,
+        2
+      ]
+    ],
+    "reverse": {
+      "kind": "split",
+      "sensors": [
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ]
+    },
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          6,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          5,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "source": "M3",
+    "family": "M3",
+    "title": "Kiçil, keç, yenə böyü",
+    "rule": "Dik domino alçaq tirə dəyir; təkcə son mövqe deyil, bütün yuvarlanma yoxlanır. Sol G meydançasında kub ol, tirin altından keç, sağda yenidən dik domino yarat. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".... ....",
+      ".... ....",
+      ".........",
+      ".... ....",
+      ".... ...."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "shapes": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        1
+      ],
+      [
+        7,
+        3
+      ]
+    ],
+    "ceilings": [
+      {
+        "x": 4,
+        "z": 2,
+        "h": 1.5
+      }
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 3,
+        "dims": [
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          3
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            3
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "source": "M3",
+    "family": "M3",
+    "title": "Formanın düzgün yeri",
+    "rule": "Dik domino alçaq tirə dəyir; təkcə son mövqe deyil, bütün yuvarlanma yoxlanır. Sol G meydançasında kub ol, tirin altından keç, sağda yenidən dik domino yarat. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".... ....",
+      ".... ....",
+      ".........",
+      ".... ....",
+      ".... ...."
+    ],
+    "starts": [
+      [
+        1,
+        0
+      ]
+    ],
+    "shapes": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        0
+      ],
+      [
+        7,
+        3
+      ]
+    ],
+    "ceilings": [
+      {
+        "x": 4,
+        "z": 2,
+        "h": 1.5
+      }
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 3,
+        "dims": [
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          3
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            3
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "source": "M3.1",
+    "family": "M3",
+    "title": "Tirin altından",
+    "rule": "Tir hündür domino üçün maneədir. Əvvəl kiçil, sonra keç və sağdakı işıqlı çıxışın formasını tamamla. Toqquşan əmr yerinə yetirilmir. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".... ....",
+      ".... ....",
+      ".........",
+      ".... ....",
+      ".... ...."
+    ],
+    "starts": [
+      [
+        1,
+        0
+      ]
+    ],
+    "shapes": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        0
+      ],
+      [
+        7,
+        4
+      ]
+    ],
+    "ceilings": [
+      {
+        "x": 2,
+        "z": 0,
+        "h": 1.5
+      },
+      {
+        "x": 4,
+        "z": 2,
+        "h": 1.5
+      }
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 4,
+        "dims": [
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          4
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            4
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "source": "M3.1",
+    "family": "M3",
+    "title": "Alçaq keçidin həlli",
+    "rule": "Tir hündür domino üçün maneədir. Əvvəl kiçil, sonra keç və sağdakı işıqlı çıxışın formasını tamamla. Toqquşan əmr yerinə yetirilmir. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".... ....",
+      ".... ....",
+      ".........",
+      ".... ....",
+      ".... ...."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "shapes": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        1
+      ],
+      [
+        7,
+        4
+      ]
+    ],
+    "ceilings": [
+      {
+        "x": 2,
+        "z": 1,
+        "h": 1.5
+      },
+      {
+        "x": 4,
+        "z": 2,
+        "h": 1.5
+      }
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 4,
+        "dims": [
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          4
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            4
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "source": "M3.2",
+    "family": "M3",
+    "title": "Dörd işıq bir açardır",
+    "rule": "A-nı dörd mavi işığın sol-yuxarı küncünə gətir və G ilə 2×2 plitə et. Dördünün hamısı örtüləndə B-nin körpüsü açılır. A sensorun üstündə qalsın. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".... ....",
+      ".... ....",
+      ".... ....",
+      ".........",
+      ".... ...."
+    ],
+    "starts": [
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 1,
+        "z": 1,
+        "dims": [
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "x": 7,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "four",
+        "tiles": [
+          [
+            4,
+            3
+          ]
+        ],
+        "rule": {
+          "type": "cover",
+          "actor": 0,
+          "cells": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          1
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            1
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "source": "M3.2",
+    "family": "M3",
+    "title": "Plitə ilə yol aç",
+    "rule": "A-nı dörd mavi işığın sol-yuxarı küncünə gətir və G ilə 2×2 plitə et. Dördünün hamısı örtüləndə B-nin körpüsü açılır. A sensorun üstündə qalsın. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".... ....",
+      ".... ....",
+      ".... ....",
+      ".........",
+      ".... ...."
+    ],
+    "starts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 1,
+        "z": 1,
+        "dims": [
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "x": 7,
+        "z": 0
+      }
+    ],
+    "gates": [
+      {
+        "id": "four",
+        "tiles": [
+          [
+            4,
+            3
+          ]
+        ],
+        "rule": {
+          "type": "cover",
+          "actor": 0,
+          "cells": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          1,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          0
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            0
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "source": "M3.3",
+    "family": "M3",
+    "title": "Böyük addıma yer aç",
+    "rule": "B sol relay-i saxlasın. A yuxarı G meydançasında 2×2×2 kub olsun. Hər addımı iki xanadır: iki enli körpüdən keçib dörd işıqlı çıxışa yerləş. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "..........",
+      "..........",
+      "....  ....",
+      "....  ....",
+      "....  ....",
+      "....  ...."
+    ],
+    "starts": [
+      [
+        1,
+        4
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        0
+      ]
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 4,
+        "dims": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "x": 0,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "wide",
+        "tiles": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 0,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": "upper",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "lower",
+        "kind": "point",
+        "at": [
+          8,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          9,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          4
+        ],
+        "width": 2,
+        "cells": [
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "source": "M3.3",
+    "family": "M3",
+    "title": "İki xanalıq keçid",
+    "rule": "B sol relay-i saxlasın. A yuxarı G meydançasında 2×2×2 kub olsun. Hər addımı iki xanadır: iki enli körpüdən keçib dörd işıqlı çıxışa yerləş. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "..........",
+      "..........",
+      "....  ....",
+      "....  ....",
+      "....  ....",
+      "....  ...."
+    ],
+    "starts": [
+      [
+        1,
+        5
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        0
+      ]
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 4,
+        "dims": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "x": 0,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "wide",
+        "tiles": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "sensor",
+          "pads": [
+            {
+              "x": 0,
+              "z": 1
+            }
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": "upper",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "lower",
+        "kind": "point",
+        "at": [
+          8,
+          3
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          9,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          4
+        ],
+        "width": 2,
+        "cells": [
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "source": "M3.4",
+    "family": "M3",
+    "title": "Dik forma kilidi",
+    "rule": "G ilə domino yarat və forma kilidinə dik yerləş. Keçid yadda qalaraq açılır. Yenidən kub ol və sağ çıxışa çat; sadəcə kütlə kifayət etmir. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "..... ...",
+      ".........",
+      "..... ...",
+      "..... ...",
+      "..... ..."
+    ],
+    "starts": [
+      [
+        0,
+        1
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "formLatch": {
+      "at": [
+        4,
+        1
+      ],
+      "dims": [
+        1,
+        2,
+        1
+      ]
+    },
+    "gates": [
+      {
+        "id": "form",
+        "tiles": [
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "latch"
+        }
+      }
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 3,
+        "dims": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          3
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            3
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "source": "M3.4",
+    "family": "M3",
+    "title": "Kiliddən sonra kiçil",
+    "rule": "G ilə domino yarat və forma kilidinə dik yerləş. Keçid yadda qalaraq açılır. Yenidən kub ol və sağ çıxışa çat; sadəcə kütlə kifayət etmir. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "..... ...",
+      ".........",
+      "..... ...",
+      "..... ...",
+      "..... ..."
+    ],
+    "starts": [
+      [
+        0,
+        0
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "resizePads": [
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "formLatch": {
+      "at": [
+        4,
+        1
+      ],
+      "dims": [
+        1,
+        2,
+        1
+      ]
+    },
+    "gates": [
+      {
+        "id": "form",
+        "tiles": [
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "latch"
+        }
+      }
+    ],
+    "goals": [
+      {
+        "x": 7,
+        "z": 3,
+        "dims": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "difficulty": "ORTA",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          1,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          8,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          8,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          8,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          3
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            3
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "source": "M3.6",
+    "family": "M3",
+    "title": "Sola böyüyən həll",
+    "rule": "A yalnız (2,2) meydançasında böyüyür. Sağdakı divar maneədir: X ilə sol/yuxarı lövbərini seç, G bas və dörd işığı ört. Sonra B-ni açılan körpüdən keçir. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".... ...",
+      ".... ...",
+      ".... ...",
+      "........",
+      ".... ..."
+    ],
+    "starts": [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "walls": [
+      [
+        3,
+        2
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ]
+    ],
+    "resizePads": [
+      [
+        2,
+        2
+      ]
+    ],
+    "chooseAnchor": true,
+    "goals": [
+      {
+        "x": 1,
+        "z": 1,
+        "dims": [
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "x": 6,
+        "z": 3
+      }
+    ],
+    "gates": [
+      {
+        "id": "corner",
+        "tiles": [
+          [
+            4,
+            3
+          ]
+        ],
+        "rule": {
+          "type": "cover",
+          "actor": 0,
+          "cells": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          3,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          5,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          7,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          3
+        ],
+        "width": 1,
+        "cells": [
+          [
+            6,
+            3
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "source": "M3.6",
+    "family": "M3",
+    "title": "Küncdən açılan körpü",
+    "rule": "A yalnız (2,2) meydançasında böyüyür. Sağdakı divar maneədir: X ilə sol/yuxarı lövbərini seç, G bas və dörd işığı ört. Sonra B-ni açılan körpüdən keçir. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      ".... ...",
+      ".... ...",
+      ".... ...",
+      "........",
+      ".... ..."
+    ],
+    "starts": [
+      [
+        1,
+        4
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "walls": [
+      [
+        3,
+        2
+      ]
+    ],
+    "forms": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ]
+    ],
+    "resizePads": [
+      [
+        2,
+        2
+      ]
+    ],
+    "chooseAnchor": true,
+    "goals": [
+      {
+        "x": 1,
+        "z": 1,
+        "dims": [
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "x": 7,
+        "z": 3
+      }
+    ],
+    "gates": [
+      {
+        "id": "corner",
+        "tiles": [
+          [
+            4,
+            3
+          ]
+        ],
+        "rule": {
+          "type": "cover",
+          "actor": 0,
+          "cells": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          3,
+          0
+        ]
+      },
+      {
+        "id": "north",
+        "kind": "point",
+        "at": [
+          5,
+          0
+        ]
+      },
+      {
+        "id": "south",
+        "kind": "point",
+        "at": [
+          7,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          2
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          7,
+          3
+        ],
+        "width": 1,
+        "cells": [
+          [
+            7,
+            3
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "source": "M4",
+    "family": "M4",
+    "title": "Kölgə körpünü açır",
+    "rule": "Saat yoxdur. Qırmızı kölgə A-nın əmrlərini 2 gediş sonra X üzrə güzgüləyir. Onu aşağı relay-ə gətirib körpünü aç. Q ilə növbədəki addımları boşalt, sonra kölgəni relay-dən çıxarmadan keç. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "      .....",
+      " ..........",
+      "      .....",
+      "...........",
+      "      ....."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 10,
+        "z": 2
+      }
+    ],
+    "echo": {
+      "start": [
+        5,
+        3
+      ],
+      "delay": 2,
+      "mirror": "x"
+    },
+    "gates": [
+      {
+        "id": "echo-relay",
+        "tiles": [
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "echo",
+          "at": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          10,
+          0
+        ]
+      },
+      {
+        "id": "south-west",
+        "kind": "point",
+        "at": [
+          6,
+          4
+        ]
+      },
+      {
+        "id": "south-east",
+        "kind": "point",
+        "at": [
+          10,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          0
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          10,
+          2
+        ],
+        "width": 1,
+        "cells": [
+          [
+            10,
+            2
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "source": "M4",
+    "family": "M4",
+    "title": "Gecikməni hesabla",
+    "rule": "Saat yoxdur. Qırmızı kölgə A-nın əmrlərini 2 gediş sonra X üzrə güzgüləyir. Onu aşağı relay-ə gətirib körpünü aç. Q ilə növbədəki addımları boşalt, sonra kölgəni relay-dən çıxarmadan keç. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "      .....",
+      " ..........",
+      "      .....",
+      "...........",
+      "      ....."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 9,
+        "z": 2
+      }
+    ],
+    "echo": {
+      "start": [
+        5,
+        3
+      ],
+      "delay": 2,
+      "mirror": "x"
+    },
+    "gates": [
+      {
+        "id": "echo-relay",
+        "tiles": [
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "echo",
+          "at": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "walls": [
+      [
+        8,
+        2
+      ]
+    ],
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          9,
+          4
+        ]
+      },
+      {
+        "id": "north-west",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "north-east",
+        "kind": "point",
+        "at": [
+          10,
+          0
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          4
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          9,
+          2
+        ],
+        "width": 1,
+        "cells": [
+          [
+            9,
+            2
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "99",
+    "source": "M4.2",
+    "family": "M4",
+    "title": "Güzgünün verdiyi yol",
+    "rule": "A sağa gedəndə kölgə sola gedir. Gecikən növbəni hesablayıb kölgəni relay üzərində saxla. Bu dəfə körpü yalnız onun düzgün yerdə qalması ilə açılır. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "      .....",
+      " ..........",
+      "      .....",
+      "...........",
+      "      ....."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 10,
+        "z": 2
+      }
+    ],
+    "echo": {
+      "start": [
+        5,
+        3
+      ],
+      "delay": 1,
+      "mirror": "x"
+    },
+    "gates": [
+      {
+        "id": "echo-relay",
+        "tiles": [
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "echo",
+          "at": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          10,
+          0
+        ]
+      },
+      {
+        "id": "south-west",
+        "kind": "point",
+        "at": [
+          6,
+          4
+        ]
+      },
+      {
+        "id": "south-east",
+        "kind": "point",
+        "at": [
+          10,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          0
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          10,
+          2
+        ],
+        "width": 1,
+        "cells": [
+          [
+            10,
+            2
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "source": "M4.2",
+    "family": "M4",
+    "title": "Əks addımla açılan qapı",
+    "rule": "A sağa gedəndə kölgə sola gedir. Gecikən növbəni hesablayıb kölgəni relay üzərində saxla. Bu dəfə körpü yalnız onun düzgün yerdə qalması ilə açılır. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "      .....",
+      " ..........",
+      "      .....",
+      "...........",
+      "      ....."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 9,
+        "z": 2
+      }
+    ],
+    "echo": {
+      "start": [
+        5,
+        3
+      ],
+      "delay": 1,
+      "mirror": "x"
+    },
+    "gates": [
+      {
+        "id": "echo-relay",
+        "tiles": [
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "echo",
+          "at": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "walls": [
+      [
+        8,
+        2
+      ]
+    ],
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          9,
+          4
+        ]
+      },
+      {
+        "id": "north-west",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "north-east",
+        "kind": "point",
+        "at": [
+          10,
+          0
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          4
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          9,
+          2
+        ],
+        "width": 1,
+        "cells": [
+          [
+            9,
+            2
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "101",
+    "source": "M4.3",
+    "family": "M4",
+    "title": "Gözləmənin doğru anı",
+    "rule": "Q boş vaxt deyil: kölgənin növbəsini irəli aparır. Üç sağ əmrdən sonra növbəni Q ilə boşalt ki, kölgə relay-ə otursun. Körpüdən keçərkən köhnə əmrlərin onu hara aparacağını hesabla. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "      .....",
+      " ..........",
+      "      .....",
+      "...........",
+      "      ....."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 10,
+        "z": 2
+      }
+    ],
+    "echo": {
+      "start": [
+        5,
+        3
+      ],
+      "delay": 3,
+      "mirror": "x"
+    },
+    "gates": [
+      {
+        "id": "echo-relay",
+        "tiles": [
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "echo",
+          "at": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          10,
+          0
+        ]
+      },
+      {
+        "id": "south-west",
+        "kind": "point",
+        "at": [
+          6,
+          4
+        ]
+      },
+      {
+        "id": "south-east",
+        "kind": "point",
+        "at": [
+          10,
+          4
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          0
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          10,
+          2
+        ],
+        "width": 1,
+        "cells": [
+          [
+            10,
+            2
+          ]
+        ],
+        "slide": "up",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "source": "M4.3",
+    "family": "M4",
+    "title": "Növbədən yol qur",
+    "rule": "Q boş vaxt deyil: kölgənin növbəsini irəli aparır. Üç sağ əmrdən sonra növbəni Q ilə boşalt ki, kölgə relay-ə otursun. Körpüdən keçərkən köhnə əmrlərin onu hara aparacağını hesabla. Qızılı açarı və bütün işıq xallarını da topla. Şalterin üstünə və ya yanına gəl, F bas: çıxış qapısı açılacaq.",
+    "refined": true,
+    "physicalRoll": true,
+    "strict": true,
+    "revision": 3,
+    "charges": -1,
+    "resizeActors": [
+      0
+    ],
+    "map": [
+      "      .....",
+      " ..........",
+      "      .....",
+      "...........",
+      "      ....."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 9,
+        "z": 2
+      }
+    ],
+    "echo": {
+      "start": [
+        5,
+        3
+      ],
+      "delay": 3,
+      "mirror": "x"
+    },
+    "gates": [
+      {
+        "id": "echo-relay",
+        "tiles": [
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "echo",
+          "at": [
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "difficulty": "ÇƏTİN",
+    "walls": [
+      [
+        8,
+        2
+      ]
+    ],
+    "collectibles": [
+      {
+        "id": "amber",
+        "kind": "key",
+        "at": [
+          9,
+          4
+        ]
+      },
+      {
+        "id": "north-west",
+        "kind": "point",
+        "at": [
+          6,
+          0
+        ]
+      },
+      {
+        "id": "north-east",
+        "kind": "point",
+        "at": [
+          10,
+          0
+        ]
+      }
+    ],
+    "collectAll": true,
+    "levers": [
+      {
+        "id": "exit",
+        "at": [
+          6,
+          4
+        ],
+        "requires": {
+          "allKeys": true,
+          "allPoints": true
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "exit",
+        "at": [
+          9,
+          2
+        ],
+        "width": 1,
+        "cells": [
+          [
+            9,
+            2
+          ]
+        ],
+        "slide": "side",
+        "requires": {
+          "levers": [
+            "exit"
+          ]
+        }
+      }
+    ]
+  }
+]

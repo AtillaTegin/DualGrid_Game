@@ -1,0 +1,912 @@
+DİZAYN ARAŞDIRMASI / YALNIZ PDF
+Dual Grid
+mod kitabxanası
+Sənin altı ideyanı təhlil edən, genişləndirən və ayrıca yeni ailələrə açan
+konsept sənədi.
+30 alt-element  +  16 yeni ailə elementi
+6 ana mod • 46 təklif • 15 cüt • 8 resept
+Faktlar, şəxsi dizayn qiymətləndirməsi və gələcək qayda təklifləri bir-birindən ayrılır. Bu sənəd
+implementasiya və ya təsdiqlənmiş səviyyə paketi deyil.
+8 noyabr 2026 | Azərbaycan dili | Konsept versiyası 1
+
+DUAL GRID  /  MOD KİTABXANASI
+02
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+Oxuma xəritəsi
+Bu sənəd sənin altı mexanikanı əvvəl öz mənasında təhlil edir, sonra onların daxilində 30 fərqli
+alt-element təklif edir. Bundan SONRA bizim dörd yeni ailəmiz və onların 16 alt-elementi gəlir: cəmi
+46 konsept. Sənin ana ideyalarınla bizim alt bölgü və yeni ideyalarımız qarışdırılmır. Hər konsept
+qayda, düşüncə, nümunə, öyrətmə siqnalı və texniki xərc baxımından qiymətləndirilir. Heç biri bu
+tapşırıqda oyuna əlavə edilməyib, koordinatlı həll və insan sınağı ilə təsdiqlənməyib. Məqsəd siyahını
+böyütmək yox, hansı ideyanın gələcək sınağa dəyəcəyini seçməkdir.
+01 Baza və dizayn müqaviləsi
+02 M1 Phantom Floor - 6 alt-element
+03 M2 Reversing Controls - 4 alt-element
+04 M3 Dinamik ölçü - 6 alt-element
+05 M4 Kölgə klonu - 5 alt-element
+06 M5 Divarlar - 5 alt-element
+07 M6 Saxta final - 4 alt-element
+08 N1-N4: bizim 4 yeni ailəmiz - 16 element
+09 15 cüt uyğunluq və 8 resept
+10 Hadisə sırası, H, undo və sınaq
+11 Mənbələr və sübut sərhədi
+Ana M ideyaları istifadəçinindir. Bütün M alt-elementləri, N ailələri, kombinasiyalar və prototip
+qaydaları bu araşdırmada təklif etdiyimiz genişləndirmələrdir.
+
+DUAL GRID  /  MOD KİTABXANASI
+03
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+Baza və dizayn müqaviləsi
+Mövcud baza 60 səviyyəli lokal PC demosudur. README-yə görə 1-6 tək kub, 7-12 iki kub, 13-20
+domino+kub, 21-dən iki domino gəlir; ilk 22-gedişlik həll 30-cu səviyyədədir. Canlı animasiyalı dərs və
+H ilə cari vəziyyətdən konkret addım var. logic.js oxunuşu size=1 birxanalıq hərəkəti, domino U/X/Z
+aşmasını, rol, körpü və buz davranışını təsdiqləyir. Burada mövcud testlər yenidən işə salınmayıb;
+README-də yazılan test sayı yeni modların yoxlanması sayılmır.
+Əsas kampaniya üçün prioritetim öyrənilən, proqnozlaşdırılan qayda və tam geri almadır. Sürpriz, qəfil
+inversiya, iki saniyəlik klon və sıxan timer ləğv edilmir: qısa optional Chaos/challenge profilində, açıq
+gözlənti və sürətli cəhdlə saxlanılır. Etibarlı final işarəsi bütün kampaniyada təsadüfən yalan
+danışmamalıdır. İlk sürprizdən sonra öyrənilən məlumat saxlanır; dünya undo-su ilə oyunçu biliyi eyni
+şey deyil.
+Burada footprint gövdənin zəmin izidir: kubda bir, dik dominoda bir, uzanmış dominoda iki xana.
+Qəbul edilmiş gameplay əmri bir qlobal növbədir. TAB, H, kamera, dərs və rədd edilmiş giriş növbə
+sayılmır; buz alt-addımları eyni əmrin içindədir. Uğurlu resize, transfer, ENTER və WAIT uyğun profildə
+bir növbədir. Heç bir alt-elementdə açıq yazılmayıbsa boşluğu dayaqsız körpüləmə yoxdur. Qiymətlər
+nisbi dizayn/texniki xərcdir, iş günü və büdcə deyil.
+Qısa lüğət: anchor/lövbər cismin hesablandığı sabit xana/küncdür; queue gələcəkdə icra olunacaq
+əmrlər növbəsidir; snapshot dünyanın bir andakı tam surətidir; latch dəyişəndən sonra yadda qalan
+açar bitidir; phase/faza mexanizmin dövr addımıdır; stateKey gələcəyi fərqləndirən vəziyyət açarıdır;
+collision gövdələrin toqquşma yoxlamasıdır. Resize ölçü dəyişməsi, preview növbəti nəticənin
+önbaxışıdır. Bütün ailələrdə H bu tam vəziyyəti bilməli, Z bir əmrin bütün nəticələrini qaytarmalıdır;
+konkret maddə yalnız öz əlavə ehtiyacını vurğulayır.
+Mənbəli fon: Unept-in Level Devil təqdimatı sürpriz/trap oyununun nümunəsidir [S3-S4]. Traynor-un müsahibəsində intuitiv,
+yadda qalan qayda və ideyanı göstərən asan dərs vurğulanır [S5]. XAG107 giriş sürəti/mürəkkəbliyi və alternativ idarə
+baryerlərini göstərir [S6]. Superliminal developer məqaləsi ölçü ilə collision əlaqəsinin texniki yükünü izah edir [S7]. Braid
+rewind sessiyası dəqiq tarix bərpasına nümunədir [S9]. Bloxorz tədqiqatı grid/orientasiya çərçivəsidir [S10]. N2 və N4 real
+elektrik və qüvvə simulyasiyası deyil [S11-S12]. Bu faktlardan konkret alt-elementə keçid bizim sintezimizdir, mənbənin həmin
+mexanikanı tövsiyə etməsi deyil.
+
+DUAL GRID  /  MOD KİTABXANASI
+04
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+SƏNİN ANA İDEYAN / M1
+Phantom Floor - saxta zəmin
+Sənin ideyan: təhlükəsiz görünən zəminə daxil olanda onun çökməsi və bloku itirməsi. Güclü sürpriz və
+marşrut yaddaşı yaradır, amma gizli məlumatla ilk ölüm planlama səhvi deyil. Orijinal rage variantı
+saxlanılır; əsas kampaniya üçün öyrənilən çat/işıq nişanı, önbaxış və tam undo tövsiyə olunur. Altı
+alt-element aşağıda bizim genişləndirməmizdir.
+M1.1 - Ani illüziya
+Qayda: görünən saxta xana support hesabında real deyil; qəbul edilmiş hərəkətin və hər buz
+alt-addımının footprint-i yoxlananda bir hissə də buraya düşərsə ölüm. Kub bir xanadan, domino iki
+xananın hər hansı birindən zərər görür; domino boşluğu körpü kimi keçmir. Konsept: təhlükəsiz qısa
+yol kimi görünən zolaq yan dolanmanı tələb edir. Öyrətmə: rage-də əvvəlcədən ümumi “zəmin
+aldadır” xəbərdarlığı və qısa respawn; kampaniyada saxta xananın kənar parıldaması və H ilə həqiqi
+dayağın göstərilməsi. Çətinlik aşağı məntiq/yüksək sürpriz, xərc aşağı. Undo ölümdən əvvəlki yerə; H
+açılanda gizlini açacağını bildirsin. Gizli xananı ilk dəfə bilməmək səhv planlama adlandırılmasın.
+M1.2 - Arxanca qırılan yol
+Qayda: real dayaq olan plitə onun üzərindən bütün blok footprint-ləri çıxan ilk qəbul edilmiş gedişin
+sonunda daimi yox olur. Domino iki xanadan yalnız birini boşaldıbsa həmin xana ayrıca boşalmış
+sayılır; digər blok hələ oradadırsa çökmür. Konsept: A keçdikdən sonra B-nin yolu bağlanacağından
+əvvəl ikincinin yerləşməsi planlanır. İşarə biristifadəlik körpü tikişi, önbaxışda boşaldılacaq xanalar.
+Çətinlik orta, xərc orta: sınıq xanalara vəziyyət yaddaşı lazımdır. Buz aralıq izləri də tərk edilən yol
+sayılır. Z bütün çökmələri qaytarır; H broken set ilə işləyir, lazım olsa əvvəlki gedişə qaytarsın.
+
+DUAL GRID  /  MOD KİTABXANASI
+05
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M1 / ALT-ELEMENTLƏR
+Phantom Floor - saxta zəmin - davamı
+M1.3 - Yük həddində çökən qabıq
+Qayda: hər sabit yerləşmə və buz alt-addımında hüceyrə yükü hesablanır; təklif olunan oyun vahidləri
+ağır=2, yüngül=1, uzanmış domino iki xanaya bərabər bölür. Hədd=1 seçiləndə ağır kub/dik domino
+çökdürür, ağır uzanmış domino həddi keçmir. Bu real material simulyasiyası deyil. Konsept: körpüyə
+yüngül rolda və ya uzun bloku uzadaraq giriş. Nişan yük vahidini və təhlükəli nəticəni göstərir; dərs
+dik/uzanmış fərqini yanaşı canlandırır. Çətinlik orta, xərc orta. H rol+ölçü+duruşu hesablayır; Z qırılma
+və ölümü qaytarır. Kubun uzanma alternativi olmadığı üçün rol yolu da olmalıdır.
+M1.4 - Relay-in həqiqətə çevirdiyi zəmin
+Qayda: saxta qrup yalnız ayrıca görünən sensor basılı ikən real dayaqdır; sensor hər gedişin sonunda
+yenidən hesablanır. Hərəkətə əvvəlki sabit dayaqlarla başlanır, sonra sensor/körpü yenilənir və bütün
+bloklar təkrar yoxlanır. Kub bir, domino bütün iki xanasını real etməlidir. Konsept: A görünməz kimi
+işarəli yol qrupunu saxlayır, B qarşı tərəfdən alternativ sensorla onu təhvil alır. Ön cue: xəttlə bağlı
+sensor və holografik grid. Çətinlik orta, xərc aşağı/orta; mövcud bridge məntiqinə bənzəsə də illüziya
+vizualı ayrı öyrədilir. Z sensor və dayağı birgə qaytarır; H passiv blokun düşməsini də proqnozlaşdırır.
+
+DUAL GRID  /  MOD KİTABXANASI
+06
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M1 / ALT-ELEMENTLƏR
+Phantom Floor - saxta zəmin - davamı
+M1.5 - Partnyorun müşahidə dairəsi
+Qayda: ikinci blokun anchor hüceyrəsindən Manhattan məsafəsi ≤2 olan phantom xanalar realdır; hər
+iki blok üçün müşahidəçi yalnız digər blokdur. Domino bütün footprint-i dairəyə sığmalıdır; uzun
+bədən dairəni özündən böyütmür. Birbloklu səviyyədə tətbiq edilməsin. Konsept: B irəliləmək üçün
+A-nı yan dəhliz boyunca müşayiət etdirir. Dünya növbə sonu yenilənir, yeni dayaqlar sonra hamıda
+yoxlanır. Cue hər müşahidəçinin aydın sərhəd konturu, təhlükəli footprint rəngi. Çətinlik yüksək, xərc
+orta/yüksək; qarşılıqlı dairə və geri dönüş çətinləşir. Z hərəkətlə birlikdə dayağı qaytarır; H hər iki
+mövqeyi hesablayır. Görünüş kamerasının istiqaməti trigger deyil.
+M1.6 - Ziyarət büdcəli plitə
+Qayda: hər xana c=2 giriş haqqı ilə başlayır; footprint həmin xanaya əvvəlki alt-addımda yox ikən daxil
+olduqda 1 azalır. c=0 olan xanada hazırda duran blok çıxana qədər dayaq qalır, sonrakı yenidən giriş
+ölüm yaradır. Yerində qalan blok və TAB haqq yemir; domino hər yeni footprint xanasını ayrıca
+xərcləyir, buz alt-addımı da girişdir. Konsept: kub qısa yolu iki dəfə istifadə edə bilər, domino yan
+yuvarlanması əlavə xanalara xərclənir; geriyə lazım olan keçid saxlanır. Cue iki aşınma nişanı və
+next-step sayğacı. Çətinlik yüksək, xərc orta; sadəcə timer variantı deyil, marşrut resursudur. Z
+sayğacları qaytarır; H counters daxil tam state tələb edir, həll yoxdursa undo təklif edir.
+
+DUAL GRID  /  MOD KİTABXANASI
+07
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+SƏNİN ANA İDEYAN / M2
+Reversing Controls - dəyişən idarə xəritəsi
+Sənin ideyan: müəyyən zonalarda sağ/sol və yuxarı/aşağı idarəsinin tərsinə çevrilməsi. Təkcə refleks
+çaşdırırsa tez yorucu olar; başqa məkan qaydası ilə birləşəndə koordinat düşüncəsi yaradır. Dörd
+alt-element bizim təklifimizdir. İdarə transformu remap edilmiş gameplay niyyətinə yalnız bir dəfə
+tətbiq edilir; H, Z, TAB və menyu heç vaxt tərsinə çevrilmir.
+M2.1 - 180° inversiya zonası
+Qayda: remap edilmiş kardinal niyyət (dx,dz) zonada (-dx,-dz)-yə çevrilir; zonaya giriş həmin gedişdən
+sonra növbəti əmrə təsir edir. Kub anchoru, domino isə bütün footprint-i zonada olanda transform
+aktivdir; yarım giriş normaldır. Konsept: kənarı dar sahədə çıxışa düzgün yuvarlanma. Cue transformlu
+canlı oxlar və girişdən əvvəl sərhəd. Çətinlik aşağı/orta, xərc aşağı. Z inputu deyil dünya vəziyyətini
+qaytarır; H “sağ bas, blok sola gedəcək” deyir. Rage-də qəfil ilk dəyişmə mümkündür, ayrıca rejim
+seçimi ilə; normal kampaniyada xəbərdarlıq verilsin.
+M2.2 - 90° koordinat rotoru
+Qayda: zona tam örtüləndə (dx,dz)→(-dz,dx); kamera fırlanmır. Kub və domino eyni transformu alır,
+domino roll-u transformdan SONRA hesablanır. Konsept: L dəhlizdə “yuxarı” basmaqla sağa aşan
+dominonun çıxış duruşunu planlamaq. Cue dördtərəfli kompas və növbəti footprint; təhlükəsiz geniş
+meydanda animasiyalı dərs. Çətinlik orta, xərc aşağı/orta. Undo tam bərpa; H düymə və dünya oxunu
+ayrı göstərir. Rotasiya ilə vizual kamera rotasiyası eyni vaxtda tətbiq edilməsin.
+
+DUAL GRID  /  MOD KİTABXANASI
+08
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M2 / ALT-ELEMENTLƏR
+Reversing Controls - dəyişən idarə xəritəsi -
+davamı
+M2.3 - Sərhəddən keçəndə yadda qalan polarite
+Qayda: əvvəlki tam footprint zonadan kənar, son tam footprint zona daxilində olanda həmin blokun
+polarity biti çevrilir; çıxanda dəyişmir, sonra yenidən tam girişdə çevrilir. Aralıq yarım footprint trigger
+deyil; sürüşmədə hər alt-addım tam giriş yarada bilər. Kub daha tez trigger alır, domino giriş üçün iki
+xanaya yer istəyir. Konsept: çıxışdan əvvəl rotora girib çıxmaqla blokun gələcək idarəsini hazırlamaq.
+Cue blok üstündə normal/tərs kompas və sərhəddə çevrilmə önbaxışı. Çətinlik yüksək, xərc orta: tarix
+bitini stateKey/undo/H saxlayır. Sonsuz buz çevrilmə döngəsi təkrar vəziyyət kimi tanınmalıdır. Bu sadə
+zona variantından fərqli yaddaş tapmacasıdır.
+M2.4 - İki blok üçün fərqli dünya xəritəsi
+Qayda: xüsusi sensor aktiv ikən A-nın yalnız x əmri, B-nin yalnız z əmri çevrilir; aktiv blokdan asılı gizli
+dəyişiklik yoxdur, sensor hər son vəziyyətdə hesablanır. Kub/domino fərqi hərəkət həndəsəsində qalır,
+ölçüyə görə əlavə istisna yoxdur. Konsept: A sensoru saxlayıb B-ni çıxarır, sonra B sensoru təhvil alır və
+A başqa transformda geriyə dönür. Cue hər kartda öz ox xəritəsi. Çətinlik orta/yüksək, xərc orta;
+sadəcə rəng fərqi deyil, iki müxtəlif xətti transformdur. Z sensoru və mövqeləri bərpa edir; H konkret
+blokun input-to-world xəritəsini göstərir. Controller və ekran düymələri eyni qaydanı izləyir.
+
+DUAL GRID  /  MOD KİTABXANASI
+09
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+SƏNİN ANA İDEYAN / M3
+Dynamic Shrinking/Growing - dinamik ölçü
+Sənin ideyan: oyun zamanı 1×1 kubun böyüməsi və kiçilməsi, o cümlədən 2×2 forma. Bu ölçünü dekor
+yox, marşrut və sensor qərarına çevirir. Dəqiqləşdirmə: 2×2 yer izi 2×2×1 alçaq plitə və ya 2×2×2
+böyük kub demək ola bilər; hər level bunu açıq seçməlidir. Aşağıdakı altı variant bizim dizayn
+genişləndirməmizdir. Kub↔domino sadə hazırlıq pilləsidir, sənin 2×2 fikrini əvəz etmir.
+M3.1 Sıxılma meydançası
+Qayda: xüsusi meydançada dik 1×1×2 blok əmrlə 1×1×1 kuba çevrilir; aşağı kubun xanası lövbərdir.
+Hərəkətdən sonra öz-özünə yenidən uzanmır.
+Məna/nümunə: uzun blokun keçmədiyi dar dəhlizdən kub keçir, amma o tərəfdə uzanmaq üçün yer
+saxlanmalıdır.
+İzahla öyrətmə: əvvəl təhlükəsiz səhnədə uzun/kub ölçü konturları və “bir xana yer tutur” göstərilir.
+Sinerji: tərs idarə və hərəkətli divarlarla dar keçid planı.
+Risk/xərc: orta; kubu kiçiltməyin hər dəfə üstün seçim olmasına qarşı uzun forma üçün ayrıca fayda
+lazımdır.
+M3.2 Dörd xanalıq plitə
+Qayda: 1 kub → 2×2×1 plitə; yalnız bütün dörd alt xana dəstəklənəndə böyüyür. Bu obyektin bir
+xanalıq boşluğu havada örtməsi baza qaydasına daxil deyil. Xüsusi yuvarlanmada ölçülər `(a,b,c)` kimi
+saxlanır; x istiqamətində aşma alt enlə hündürlüyü dəyişir.
+Məna: plitə eyni anda iki ayrı sensoru örtür, sonra dar çıxış üçün kiçilir.
+Vizual dərs: şəffaf 2×2 iz, yaşıl dörd dayaq, tavan varsa qırmızı həcm.
+Sinerji: iki sensorlu qapı və M5 sığınacağı.
+Risk/xərc: yüksək; yalnız mesh-i böyütmək kifayət deyil, ümumi prizma collision/roll lazımdır.
+
+DUAL GRID  /  MOD KİTABXANASI
+10
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M3 / ALT-ELEMENTLƏR
+Dynamic Shrinking/Growing - dinamik ölçü -
+davamı
+M3.3 Böyük kubun addımı
+Qayda: 1×1×1 ↔ 2×2×2 kub; böyük kub hər aşmada istiqamət üzrə 2 xana yer dəyişir, 2×2 iz və 2
+hündürlük saxlayır. Lövbər küncü aydın işarələnir.
+Məna: böyük addım hədəf koordinatına çatmağı dəyişir; kiçilmə mövqeyi addım fazasını düzəltmək
+üçün istifadə olunur. Böyük kub birxanalıq boşluğun üstündən təhlükəsiz tullanmış sayılmır.
+Dərs: eyni xəttdə bir və iki xanlıq hədəf kölgəsi.
+Sinerji: M3.6 lövbər, M5 hərəkət büdcəsi.
+Risk/xərc: yüksək; hədəfin böyük cismi necə qəbul etdiyi müəyyən edilməli, adi birxanalıq çıxış yalnız
+kiçik kub qəbul etməlidir.
+M3.4 Ölçüyə uyğun kilid
+Qayda: bir keçid maksimum en/hündürlük, başqa sensor isə konkret forma/duruş tələb edir; sensor
+“böyük” deyə heavy rolunu avtomatik qəbul etmir.
+Məna: kiçik halda daxilə gir, geniş otaqda böyük ol, ölçü sensorunu saxlayıb partnyorun yolunu aç.
+Dərs: qapıda en×hündürlük nişanı, sensorda forma silueti; rol işarəsi ayrıca.
+Sinerji: mövcud ağır/yüngül mübadilə ilə “ölçü ayrı, rol ayrı” tapmacası.
+Risk/xərc: orta; çoxsaylı xüsusi istisnalar oxunaqlılığı azaldar. Bir leveldə bir ölçü kilidi növü öyrədilsin.
+
+DUAL GRID  /  MOD KİTABXANASI
+11
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M3 / ALT-ELEMENTLƏR
+Dynamic Shrinking/Growing - dinamik ölçü -
+davamı
+M3.5 Məhdud transformasiya ehtiyatı
+Qayda: levelə, məsələn, iki uğurlu ölçü dəyişmə nişanı verilir; rədd edilmiş böyümə nişan xərcləmir.
+Undo nişanı qaytarır. Nişan real pul və ya reklamla alınmır.
+Məna: ən qısa yol yerinə transformasiyaların düzgün ardıcıllığı seçilir; dar yolu tez keçmək son ölçü
+dəyişməsini boş yerə xərcləyə bilər.
+Dərs: iki nişan və eyni nümunənin bir/sıfır qalıqla müqayisəsi.
+Sinerji: M4 kölgənin ölçüsü ayrıca dəyişmirsə asimmetriya.
+Risk/xərc: orta; resurs sadəcə təkrara məcbur etməsin, qalan ehtiyat daim görünməlidir. Kub/domino
+və ya seçilən 2×2 forma eyni açıq büdcəni paylaşır; H qalan ehtiyatı state-in hissəsi sayır və tükənmiş
+resursu yox sayan köhnə yol vermir.
+M3.6 Seçilən böyümə lövbəri
+Qayda: genişlənmə meydançasında böyümədən əvvəl dörd künc istiqamətindən biri seçilir; seçim
+ayrıca növbə deyil, transformasiya əmrinə daxildir. Baza avtomatik +x,+z lövbərinin mürəkkəb
+uzantısıdır.
+Məna: eyni xananı saxlayıb gövdəni sağ və ya sol sensor cütünə yaymaq mümkündür.
+Dərs: dörd kontur, seçilən yalnız biri; hər birinin tutacağı xanalar göstərilir.
+Sinerji: M5 daralan otaqda təhlükəsiz böyümə və N1 kontakt orientasiyası.
+Risk/xərc: yüksək interfeys yükü; ilk ölçü dərslərində olmasın, sərbəst dəyişmə exploitinə çevrilməməsi
+üçün yalnız meydançada işləsin.
+
+DUAL GRID  /  MOD KİTABXANASI
+12
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+SƏNİN ANA İDEYAN / M4
+Shadow Doppelganger - gecikən güzgü klonu
+Sənin orijinal ideyan: qırmızı kölgə hərəkətləri iki saniyə gecikmə ilə güzgülü təkrar edir; təmas ölümü
+və səviyyə resetini yaradır. Bu real-time təzyiq forması ayrıca Chaos/challenge seçimi kimi saxlanılır.
+Əsas məntiq kampaniyası üçün N qəbul edilmiş əmr gecikməsi və açıq WAIT alternativini təklif edirik;
+bu iki saniyənin gizlicə əvəzlənməsi deyil. Beş alt-element bizimdir. Queue, təmas, sönmə və undo
+birlikdə dəqiq müəyyən edilməlidir.
+M4.1 Gecikmə növbəsi
+Qayda: level bir mənbə blok və N=3 kimi gecikmə seçir; növbə əvvəl N WAIT ilə doludur. Hər uğurlu
+qlobal gedişdə köhnə növbənin başı klon üçün götürülür, həmin gedişin mənbə əmri sona əlavə
+olunur. Mənbə əvəzinə partnyor oynanırsa WAIT yazılır. Rədd edilmiş komanda saatı irəli aparmır.
+Məna: təhlükəni yalnız məsafə ilə deyil, gələcək əmr sırası ilə idarə etmək.
+Dərs: ekranda “WAIT, →, ↑” növbəsi və icra olunacaq baş əmrin çərçivəsi.
+Sinerji: M5 növbəli divar.
+Risk/xərc: yüksək vəziyyət artımı; müxtəlif queue-lar eyni mövqedə müxtəlif gələcəkdir. Kub üçün
+növbə birxanalıq, domino üçün U/X/Z aşma əmrlərini daşıyır. H tam queue-nu görməli, Z növbə başı
+və sonunu əvvəlki vəziyyətə qaytarmalıdır.
+M4.2 Açıq güzgü oxu
+Qayda: şaquli xəritə oxunda sol↔sağ, yuxarı/aşağı dəyişmir; üfüqi oxda bunun əksi. Level oxu sabitdir,
+kamera çevrilməsi onu dəyişmir. Mənbə əmri əvvəl tərs idarə effektindən keçirilir, sonra alınan DÜNYA
+istiqaməti güzgülənib klona verilir; fiziki klaviş ikinci dəfə yozulmur.
+Məna: “sağa basdım” deyil, “mənbə dünyada sola getdi, klon sağa gedəcək” düşüncəsi.
+Dərs: mənbə və klon oxları yanaşı, incə güzgü xətti.
+Sinerji: tərs idarə moduyla güclü, amma gec öyrədilməli kombinasiya.
+Risk/xərc: orta; hərəkət trayektoriyası teleport güzgüsü deyil, klon öz vəziyyətindən normal roll edir.
+Kub bir xana güzgülü addım atır, domino öz duruşundan aşır. H əvvəl dünya komandasını, sonra
+klonun güzgü nəticəsini göstərir; Z ikisini birlikdə qaytarır.
+
+DUAL GRID  /  MOD KİTABXANASI
+13
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M4 / ALT-ELEMENTLƏR
+Shadow Doppelganger - gecikən güzgü klonu -
+davamı
+M4.3 WAIT və təhlükəsiz məsafə
+Qayda: ayrıca WAIT bir uğurlu qlobal gedişdir; mənbə yerində qalır, queue/divar irəliləyir. TAB, menyu,
+kamera və kömək WAIT deyil.
+Məna: bir gediş gözləmək klonun əvvəlki əmrlə uzaqlaşmasını təmin edə bilər; amma M5 büdcəsini
+sərf edir.
+Dərs: təhlükəsiz otaqda bir WAIT və queue-nun dəyişməsi; düymə açıq yazılır.
+Sinerji: dövri divar və elektrik fazası.
+Risk/xərc: orta; WAIT döngələrinin solver tərəfindən düzgün birləşdirilməsi vacibdir, yalnız koordinata
+görə visited işarəsi səhvdir. Kub və domino WAIT-də yerini/duruşunu saxlayır; dünya isə irəliləyir. H
+gözləməni açıq addım kimi təklif edə bilər, Z bütün faza və queue dəyişməsini ləğv edir.
+M4.4 Klonun bədəni və maneə davranışı
+Qayda: klon ilkin forması və orientasiyası ilə başlayır; öz roll/slide qaydasından istifadə edir. Maneəyə
+gedən klon əmri həmin dəfə WAIT kimi xərclənir, queue-dan çıxır; sonradan təkrar sınanmır. Klon adi
+platformalarda hərəkət edir, aktorlarla fiziki itələşmir; qırmızı təmas təhlükədir. Ölçü hadisəsinin təkrarı
+ayrıca açılmayıbsa M3 əmri queue-ya WAIT yazır.
+Məna: klonu divarda saxlayaraq məsafə yaratmaq, sonra yanlış istiqamətdə azad etməmək.
+Dərs: qırmızı kontur maneəyə dəyib bir vuruş dayanır.
+Sinerji: M3-də mənbə kiçik, klon uzun qala bilər.
+Risk/xərc: yüksək; asimmetriya açıq göstərilməsə oyunçu bug sanacaq. Klon dəstəksiz yerə çatarsa
+həmin cəhdin qalan hissəsi üçün sönür; qəhrəmanlar buna görə ölmür, R ilə klon yenidən yaranır.
+Undo sönməni də qaytarır. Klonun forma və izi real blokla eyni həndəsə yoxlamasına tabedir. Baza
+queue yalnız güzgülənən dünya MOVE və WAIT saxlayır. Resize, transfer və teleportla nəticələnən
+bütün mənbə əmri WAIT yazır; teleport klona ayrıca köçürülmür. Mənbənin keçmiş footprint
+snapshot-u ilə klonun bədənini dəyişmək bu variantda yoxdur.
+
+DUAL GRID  /  MOD KİTABXANASI
+14
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M4 / ALT-ELEMENTLƏR
+Shadow Doppelganger - gecikən güzgü klonu -
+davamı
+M4.5 Təmas və zaman variantı
+Qayda: final xanaların üst-üstə düşməsi, eyni atomik mərhələdə aktorların yerlərini dəyişib
+bir-birindən keçməsi və fırlanma zamanı həcm kəsişməsi təhlükə sayılır. Təmasda istifadəçinin nəzərdə
+tutduğu level reset icra olunur; kampaniya rahatlıq variantında əvvəl qısa “tutuldun” vəziyyəti və Undo
+verilir. İki saniyəlik variant sabit simulyasiya tick-i, timestamp-li queue, pause və countdown ilə ayrıca
+qayda profilidir.
+Məna: qabaqcadan yol ayırmaq; refleks variantında vaxt təzyiqi.
+Dərs: təhlükə konturu, gələcək klon yeri və reset qaydası əvvəldən.
+Sinerji: gizli yol modunda klonun görünürlüğünü gizlətmək çox ağır kombinasiya, yalnız ixtiyari.
+Risk/xərc: çox yüksək; real-time rejimdə hazır addımlı H optimal həll vədi verə bilməz. Kubda bir,
+uzanmış dominoda iki hüceyrə təması yoxlanır. Real-time H saatı dondurur, amma yenidən işə
+salınanda əvvəlki addım sertifikatı avtomatik etibarlı sayılmır.
+
+DUAL GRID  /  MOD KİTABXANASI
+15
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+SƏNİN ANA İDEYAN / M5
+Moving/Squeezing Walls - dəyişən divarlar
+Sənin ideyan: timer-lə hərəkət edən, sahəni daraldan və bloku sıxan divarlar. Bu, məkana zaman
+məhdudiyyəti əlavə edir. Növbəli variant düşünməni yox, gediş seçimini; saniyəlik variant icra sürətini
+sınağa çəkir. Aşağıdakı beş alt-element bizim analitik bölgümüzdür. Kampaniyada görünən faza və
+sərbəst düşünmə, real-time challenge-da sabit simulyasiya saatı və pause siyasəti seçilir.
+M5.1 Növbə ilə daralma
+Qayda: hər K uğurlu gedişdən sonra göstərilən divar sərhədi bir xana irəliləyir; WAIT və exchange
+sayılır, rədd olunmuş addım sayılmır. Geri dönməyən divar son həddə dayanır.
+Məna: uzun yol təhlükəsiz görünsə də gələcək daralmaya çatmaya bilər.
+Dərs: “2 gediş sonra bu zolaq bağlanır” və döşəmədə zolaq; ilk nümunədə limitsiz undo.
+Sinerji: M3 böyük addım və kiçik dəhliz.
+Risk/xərc: orta/yüksək; bütün daralma parametrləri əvvəldən göstərilməlidir, gizli sürət artımı olmasın.
+Kubun bir, uzanmış dominonun iki xanası və bütöv həcmi təhlükəyə görə yoxlanır. Z divar
+fazası/sayğacını qaytarır; H cari fazanı görür və passiv bloku da təhlükədən kənar saxlamalıdır.
+M5.2 Dövri piston
+Qayda: divar fazaları `[geri, xəbərdarlıq, irəli, xəbərdarlıq]`; hər uğurlu növbə bir fazadır. Xəbərdarlıq
+mövqeyi collision deyil. İrəli fazasında tutulan xana blokla kəsişərsə sıxılma olur.
+Məna: WAIT ilə pəncərəyə uyğunlaşmaq, partnyoru təhlükəsiz yerdə saxlamaq.
+Dərs: dörd fazalı ikon və növbəti mövqe konturu.
+Sinerji: M4 queue sinxronlaşdırması.
+Risk/xərc: yüksək; periodların ən kiçik ortaq bölünəni (ƏKOB) faza sayını artırır, bir leveldə çox müxtəlif
+period olmasın. Kubun bir, uzanmış dominonun iki xanası və bütöv həcmi təhlükəyə görə yoxlanır. Z
+divar fazası/sayğacını qaytarır; H cari fazanı görür və passiv bloku da təhlükədən kənar saxlamalıdır.
+
+DUAL GRID  /  MOD KİTABXANASI
+16
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M5 / ALT-ELEMENTLƏR
+Moving/Squeezing Walls - dəyişən divarlar -
+davamı
+M5.3 Duruşa uyğun sığınacaq
+Qayda: döşəmədə qorunan ciblər var; yalnız gövdənin bütöv həcmi cibdədirsə divardan qorunur. Uzun
+blokun bir xanasının cibdə olması kifayət deyil.
+Məna: yaxın cibli düz yol yerinə əvvəl duruş dəyişib geri girmək.
+Dərs: bütün gövdə yaşıl olanda təhlükəsiz nişanı; qismən yerləşmə qırmızı.
+Sinerji: M3 kiçilmə; həcm anlayışını təbii öyrədir.
+Risk/xərc: orta; izometrik örtülmə üçün divar şəffaflaşması lazımdır, collision vizual şəffaflıqla yox
+olmur. Kiçik kub bir cibə sığa bilər, domino üçün bütün uzanmış iz tələb olunur. H yalnız son anchor-a
+deyil gövdəyə baxır; Z divar və duruşu birgə bərpa edir.
+M5.4 Partnyor əyləci və idarə olunan divar
+Qayda: xüsusi sensor növbənin əvvəlində basılıdırsa həmin divar həmin növbə faza irəliləmir; sensoru
+bu növbədə basmaq növbəti növbədən saxlayır. Dayanma fazası və sonrakı bərpa qaldığı yerdəndir,
+sıfırdan deyil.
+Məna: bir blok divarı saxlayır, o biri keçir, sonra təhlükəsiz təhvil planlanır.
+Dərs: sensor-divar əlaqəsi və “gələn növbədən dayanır” nümunəsi.
+Sinerji: rol mübadiləsi və M4 clone sensoru baza variantda AKTİVLƏŞDİRMİR.
+Risk/xərc: orta; indiki körpü sensoru ilə fərqli gecikmə eyni ikonla göstərilməsin. Kubun bir, uzanmış
+dominonun iki xanası və bütöv həcmi təhlükəyə görə yoxlanır. Z divar fazası/sayğacını qaytarır; H cari
+fazanı görür və passiv bloku da təhlükədən kənar saxlamalıdır.
+
+DUAL GRID  /  MOD KİTABXANASI
+17
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M5 / ALT-ELEMENTLƏR
+Moving/Squeezing Walls - dəyişən divarlar -
+davamı
+M5.5 Real vaxt sıxılması
+Qayda: ixtiyari challenge profilində divar hər T saniyə bir grid mərhələsi keçir; countdown məntiqi
+simulyasiya saatıdır, render FPS deyil. Pause, dərs, H sorğusu, menyu və fokus itməsi saatı dondurur;
+qayıdanda qısa geri sayım olur. Növbə versiyasının hesabı ilə qarışdırılmır.
+Məna: planı əvvəl qurub vaxtında icra etmək.
+Dərs: təhlükəsiz training və dəyişən sürət deyil, sabit görünən T.
+Sinerji: iki saniyəlik M4 ayrı advanced challenge-da.
+Risk/xərc: çox yüksək; məntiq oyununun refleks tələbini artırır, əsas kampaniyanın məcburi şərti
+olmasın. Kubun bir, uzanmış dominonun iki xanası və bütöv həcmi təhlükəyə görə yoxlanır. Z divar
+fazası/sayğacını qaytarır; H cari fazanı görür və passiv bloku da təhlükədən kənar saxlamalıdır.
+
+DUAL GRID  /  MOD KİTABXANASI
+18
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+SƏNİN ANA İDEYAN / M6
+Fake Goal - teleport edən saxta final
+Sənin ideyan: çıxışa bənzəyən hədəfə çatanda qələbə əvəzinə teleport tələsi işləməsi. Optional
+Chaos-da gözlənti pozuntusu saxlanılır; əsas kampaniyada əvvəldən etibarlı olduğu öyrədilən bütün
+çıxışlar sonradan əsassız tələyə çevrilmir. Dörd alt-element bizimdir. Kampaniya variantı teleportu
+faydalı yol qərarına çevirə bilər; yeni saxta nişan ayrı öyrədilir, öyrənilmiş yer yaddaşda qalır.
+M6.1 - Sabit ünvanlı saxta çıxış
+Qayda: uyğun blok saxta çıxışda U vəziyyətində anchor ilə dayandıqda teleport olur; real qələbə
+yoxlanmasından ƏVVƏL. Məqsəd koordinatı sabitdir, orientation və rol dəyişmir; kub U qalır, domino
+iki hüceyrəli uzanmış təmasla aktivləşmir. Destination dolu və ya dəstəksizdirsə giriş əmri bütöv rədd
+edilir, dünya saatı irəliləmir; bu fərq önbaxışda göstərilir. Konsept: rage-də “çatdım” sürprizi;
+kampaniyada həmin portal uzaq sensor arxasına yol verir. İlk açılışdan sonra saxta nişan davamlı
+tanınır; H həqiqi endpoint göstərir. Çətinlik aşağı/orta, xərc orta. Teleport zənciri bu variantda yoxdur;
+Z girişdən əvvəlki tam vəziyyətə qaytarır.
+M6.2 - Dövrəli ünvanlı çıxış şəbəkəsi
+Qayda: eyni nişanlı saxta qapı her aktivləşəndə sabit [P,Q,R] siyahısının növbəti ünvanına ötürür; indeks
+qlobal və görünəndir. U/anchor trigger, duruş və ölçü saxlanır; tam destination footprint validasiya
+edilir. Konsept: kub birinci marşrutu götürür, ikinci aktivləşmə dominonu başqa tərəfə göndərir;
+növbəti dönüş üçün indeks hazırlanır. Cue qapı üstündə növbəti ünvan simvolu və xətt. Çətinlik
+yüksək, xərc orta/yüksək; RNG deyil. R indeks=0, Z indeks daxil hamısını qaytarır; H şəbəkə indeksini
+state-də saxlayır və bir gedişdə yalnız bir teleport işləyir.
+
+DUAL GRID  /  MOD KİTABXANASI
+19
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+M6 / ALT-ELEMENTLƏR
+Fake Goal - teleport edən saxta final - davamı
+M6.3 - Partnyor hazır deyilsə aldadan çıxış
+Qayda: qapı U girişində başqa blokun xüsusi “icazə” sensorunda olub-olmadığını yoxlayır; sensor
+aktivdirsə qapı həqiqi exit flag verir, deyilsə sabit geri platformasına teleport edir. İlk həqiqi flag bloku
+udmur; sensor sonradan buraxılsa flag silinir. Kub bir xana ilə, domino yalnız dik işləyir. Konsept: çıxışa
+tələsmək əvəzinə iki blokun final yerləşməsini planlamaq. Cue qapıda kilid və sensor əlaqəsi; rage-də
+niyyətli sürpriz, kampaniyada aydın status. Çətinlik orta, xərc orta/yüksək: goals yoxlaması genişlənir. Z
+flag/teleportu bərpa edir; H “A-nı hələ bitirmə” məntiqini izah edir. Həll üçün sensoru kimin
+saxlayacağı konkret xəritədə sübut edilməlidir. Teleport qərarı üçün icazə sensoru növbənin
+BAŞLANĞIC snapshot-undan götürülür; final flag son sensorlardan sonra yenilənir. Eyni növbədə yeni
+basılan sensor geri dönüb artıq verilmiş portal qərarını dəyişmir.
+M6.4 - Yol açan məcburi saxta final
+Qayda: ilk U girişi bloku sabit staging yerinə teleport edir və bir geri yol qıfılını birdəfəlik açır; qapı
+bundan sonra açıq portal nişanına çevrilir, real çıxış başqa yerdədir. Sonrakı giriş eyni staging yerinə
+ötürür, qıfıl artıq açıq qalır. Kub/domino U; destination footprint qaydası M6.1 kimi: dolu və ya
+dəstəksiz ünvan girişi bütöv rədd edir. Konsept: aldatma yalnız cəza deyil, ikinci blokun yolunu açan
+zəruri mərhələdir; sonra birlikdə əsl finala gedirlər. Cue reveal animasiyası və açılan körpü xətti, ilk
+dərsdə təhlükəsiz staging. Çətinlik orta, xərc orta; saxta məqsədin faydalı funksiyası var. Z qıfılı da
+bağlayır; H reveal bitinə və yeni yola əsaslanır. İrəliləyişi avtomatik disk checkpoint kimi saxlamır.
+
+DUAL GRID  /  MOD KİTABXANASI
+20
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+BİZİM ƏLAVƏ AİLƏMİZ / N1
+Üz yaddaşı və kontaktlar
+Bu ailə bütövlükdə bizim əlavə təklifimizdir. Yer və U/X/Z izi ilə yanaşı hansı fiziki üzün aşağı və ya yana
+baxdığı izlənir. Tam etiketli sərt cismin 6 üst üz × 4 dönmə = 24 orientasiyası öz həndəsi sayımımızdır,
+hazır engine dəstəyi deyil. Gizli alt üz əzbərlətmək əvəzinə HUD və önbaxış göstərilir; resize zamanı üz
+işarələri qorunur.
+N1.1 Aşağı üz açarı
+Qayda: bir üz nişanlıdır; uyğun sensor yalnız həmin üz aşağı və bütöv kontakt sensor üzərində olanda
+işləyir.
+Qərar/nümunə: qapıya qısa yol düzgün üz vermir; kiçik dövrə ilə həmin koordinata başqa üzlə
+qayıtmaq lazımdır.
+Dərs: iki fiziki addım, dəyişən üz diaqramı və aşağı kontaktın HUD ikonası; rəng tək siqnal deyil.
+Sinerji: M3 böyük kub eyni üzlə daha geniş sahəni örtür.
+Risk/xərc: orta/yüksək; görünməyən alt üz əzbərlətməsin, hover və proqnozla göstərilsin. Kubda
+bütün üzlər bərabər ölçüdədir; dominoda uzun/qısa üz kontaktı sensor sahəsinə uyğun gəlməlidir.
+N1.2 Yan terminal cütü
+Qayda: divar terminalları ilə təmas yalnız uyğun nişanlı yan üz, eyni hündürlük və tam qonşuluqda baş
+verir; diaqonal toxunma işləmir.
+Qərar: sensoru basmaq üçün dik durmaqla yan terminalı qoşmaq üçün uzanmaq arasında seçim.
+Nümunə: bir blok terminalı bağlayır, digəri körpünü keçir, sonra birinci kontaktı dəyişir.
+Dərs: kontakt işıq xətti və “yan üz uyğun deyil” işarəsi.
+Sinerji: N4 nisbi düzülüş.
+Risk/xərc: yüksək; izometrik arxa kontaktlar kəsik görüntüdə göstərilsin. Baza variantında həqiqi
+elektrik cərəyanı yox, açıq ikili əlaqə qaydasıdır. Kub birxanalıq terminalda, domino isə uzun üzün və
+hündürlüyün həqiqi kontakt sahəsi ilə yoxlanır.
+
+DUAL GRID  /  MOD KİTABXANASI
+21
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+N1 / ALT-ELEMENTLƏR
+Üz yaddaşı və kontaktlar - davamı
+N1.3 İzolyasiya üzü
+Qayda: təhlükəli səth yalnız aşağıda qalxan işarəli üz olanda keçilir; gövdənin qalan üzü toxunanda
+ölüm. Bütün tutulan xanalar yoxlanır.
+Qərar: qorunan üzlə düz getmək mümkündür, amma növbəti çevrilmə üzünü dəyişir; təhlükəsiz
+platformada marşrut hazırlamaq lazımdır.
+Dərs: tək təhlükə xanası və dərhal undo, növbəti alt üz konturu.
+Sinerji: görünməyən yol üçün artıq görünən bədən qaydası; eyni anda gizli təhlükə ilə ilk dəfə
+öyrədilməsin.
+Risk/xərc: orta; real material simulyasiyası kimi təqdim edilməsin. Kubun bir alt üzü, dominonun iki
+xananı örtən bütöv alt üzü qorunmalıdır.
+N1.4 Üz ardıcıllığı yaddaşı
+Qayda: üç dayanacaq sensoru aşağı üzü məsələn dairə→üçbucaq→xətt ardıcıllığında istəyir; yalnız
+həmin sensorlarda uğurlu yoxlama mərhələni irəlilədir. Səhv yoxlama mərhələni sıfırlayır, dünya ölümə
+getmir; undo mərhələni qaytarır.
+Qərar: hədəfə çatmaqla yanaşı orientasiya tarixçəsini planlamaq.
+Dərs: üç aydın ikon, hər mərhələnin aktiv işığı.
+Sinerji: M4 queue iki müxtəlif yaddaşı birləşdirir, yalnız advanced səviyyə.
+Risk/xərc: yüksək state artımı və yaddaş yükü; təkrar gediş yox, bir aydın orientasiya kəşfi tələb etsin.
+Kub və domino eyni ikon ardıcıllığını fərqli yuvarlanma dövrəsi ilə əldə edir.
+
+DUAL GRID  /  MOD KİTABXANASI
+22
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+BİZİM ƏLAVƏ AİLƏMİZ / N2
+Qorunan enerji ehtiyatı
+Bu ailə bizimdir: ümumi enerji nişanları itmir və sərbəst yaranmır, bloklar və terminallar arasında
+bölüşdürülür. Qorunma ideyasından ilhamlanır, real gərginlik/cərəyan simulyasiyası deyil. Bir görüşdən
+sonra hansı blokun hansı resursla hansı tərəfdə qalacağı əsas qərardır. Mövcud E rol mübadiləsi ilə
+eyni əmri gizli paylaşmayan ayrıca idarə göstərilir.
+N2.1 Toxunaraq enerji ötürmə
+Qayda: bloklar xüsusi transfer pad-da ortaq kənarla qonşudursa ayrıca Enerji ötürmə əmri bir vahidi
+seçilən blokdan digərinə keçirir; tutum aşılmır, ümumi enerji dəyişmir. Ötürmə bir növbədir.
+Qərar: qapıya enerji aparmaq üçün əvvəl blokları uyğun nöqtədə görüşdürmək.
+Dərs: A-da 2, B-də 0 → A-da 1, B-də 1, toplam sayğac sabit.
+Sinerji: M5 büdcəsi görüş yerinin dəyərini artırır.
+Risk/xərc: orta; mövcud rol exchange ilə düymə və termin fərqi göstərilsin. Kub və dominonun enerji
+tutumu ölçüyə görə avtomatik dəyişmir; lövbərli terminal və ya tam pad təması səviyyədə nişanlanır.
+N2.2 Enerji saxlayan keçid
+Qayda: körpü iki nişan yatırılanadək bağlıdır; yatırılan nişan anbarda qalır. Geri çəkmə yalnız həmin
+terminalda əmrlə mümkündür; körpü dərhal bağlanır və dayaq yenidən yoxlanır.
+Qərar: enerjini hazır keçiddə qoymaq, yoxsa geri götürüb növbəti qapıya aparmaq.
+Dərs: blokdakı və anbardakı sayın toplamı, bağlı körpü preview.
+Sinerji: mövcud sensor təhvilinin resurslu variasiyası.
+Risk/xərc: orta/yüksək; sonsuz enerji spawn və itki olmasın; anbar state/undo hash-də saxlanmalıdır.
+Kub və dominonun enerji tutumu ölçüyə görə avtomatik dəyişmir; lövbərli terminal və ya tam pad
+təması səviyyədə nişanlanır.
+
+DUAL GRID  /  MOD KİTABXANASI
+23
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+N2 / ALT-ELEMENTLƏR
+Qorunan enerji ehtiyatı - davamı
+N2.3 Bölüşdürmə kilidi
+Qayda: iki hədəf eyni sabit vəziyyətdə A-da məhz 1, B-də məhz 2 enerji tələb edir; toplam üçdür. Sayı
+aşmaq da uyğun deyil.
+Qərar: “daha çox həmişə yaxşıdır” deyil, düzgün paylanma və marşrut. Nümunə: bir sensoru keçmək
+üçün A müvəqqəti 2 alır, sonra çıxışdan əvvəl birini B-yə qaytarır.
+Dərs: çıxışda 1/2 ikon və cari sayla müqayisə.
+Sinerji: M3 ölçü ilə enerji tutumu baza qaydasında əlaqəsizdir.
+Risk/xərc: aşağı/orta; arifmetika məkan qərarını əvəz etməsin. Kub və dominonun enerji tutumu
+ölçüyə görə avtomatik dəyişmir; lövbərli terminal və ya tam pad təması səviyyədə nişanlanır.
+N2.4 Qapalı dövriyyə açarı
+Qayda: tək battery nişanı A terminalından götürüləndə qapı A bağlanır, B terminalına qoyulanda qapı
+B açılır; iki terminal eyni resursu paylaşır, eyni vaxtda ikisi açıq ola bilməz.
+Qərar: partnyor qapı A-nın hansı tərəfində dayanmalıdır ki, dəyişiklikdən sonra ilişməsin?
+Dərs: iki qapılı təhlükəsiz otaqda resurs xətti; ikisinin birgə açılmaması göstərilir.
+Sinerji: M4 təhlükəni başqa dəhlizə yönləndirmək.
+Risk/xərc: orta; sırf bir açarlı rəng qapısı təkrarına çevrilməməsi üçün iki blokun yerinin səbəb olduğu
+qərar vacibdir. Kub və dominonun enerji tutumu ölçüyə görə avtomatik dəyişmir; lövbərli terminal və
+ya tam pad təması səviyyədə nişanlanır.
+
+DUAL GRID  /  MOD KİTABXANASI
+24
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+BİZİM ƏLAVƏ AİLƏMİZ / N3
+Məkan tikişləri və topoloji bağlantılar
+Bu ailə bizim əlavə təklifimizdir. M6-dan fərqli olaraq təyinatı açıq olan bağlantını planlaşdırır,
+aldatmır. Məkan qrafının kənarları dəyişir; qeyri-Evklid fizika iddiası yoxdur. Bir keçid bir əmrdir;
+portalda avtomatik sonsuz ping-pong yoxdur. Dolu və dəstəksiz çıxış bütün giriş əmrinə mane olur,
+təsadüfi fallback axtarılmır.
+N3.1 Cüt tikiş qapısı
+Qayda: aktor sabit vəziyyətdə qapı meydançasına tam yerləşdikdən sonra ayrıca ENTER əmri ilə
+göstərilən cüt meydançaya eyni duruş/orientasiya ilə keçir. Çıxışda bütün həcm və dayaq yoxlanır; yer
+doludursa əmr rədd edilir.
+Qərar: partnyoru çıxış ağzından çıxarmadan ötürmə mümkün deyil.
+Dərs: iki meydançanın eyni işarəsi, çıxış gövdəsinin canlı konturu.
+Sinerji: M3 böyük gövdənin qapıya sığması.
+Risk/xərc: orta; avtomatik sonsuz portal ping-pong olmur, bir ENTER bir keçiddir.
+N3.2 Dönən tikiş
+Qayda: qapı yerli koordinat sistemini leveldə yazılan 90° bucaqla döndərir; gövdənin istiqaməti və
+bütün üz işarələri də eyni çevrilmə ilə yenilənir. Həndəsi forma dəyişmir.
+Qərar: uzaqlaşmaq üçün yox, çıxışda düzgün uzanma və kontakt üzü almaq üçün qapıdan keçmək.
+Dərs: giriş-çıxış oxları və “90°” ikon; ilk səviyyədə yalnız bir dönüş.
+Sinerji: N1 kontakt puzzle.
+Risk/xərc: yüksək; mesh dönüb state dönməsə ciddi bug. Solver keçidi vahid edge kimi bilməlidir.
+
+DUAL GRID  /  MOD KİTABXANASI
+25
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+N3 / ALT-ELEMENTLƏR
+Məkan tikişləri və topoloji bağlantılar - davamı
+N3.3 Açıq sarınan sərhəd
+Qayda: ilk versiyada yalnız 1×1×1 kub üçün xəritənin işarəli sağ/sol kənarları bağlıdır; kənardan bir
+addım qarşı kənardakı uyğun xananı hədəfləyir. Gövdə eyni anda iki kənarı tutmur. Uzun və 2×2
+cisimlər bu variantda qapı olmadan sərhədi keçə bilməz.
+Qərar: ən yaxın görünən yol həmişə ən qısa deyil; sərhəd dolayı çıxış verir.
+Dərs: bütöv lent çərçivəsi və hədəf oxu.
+Sinerji: M3 kublaşma.
+Risk/xərc: orta/yüksək; uzun blok üçün ayrıca tam seam geometry lazımdır, gizli yarım-teleport
+edilməsin.
+N3.4 Dəyişən bağlantı seçicisi
+Qayda: A girişinin iki açıq etiketli çıxışı var; partnyorun sabit sensoru hansı çıxışa bağlandığını müəyyən
+edir. Keçid əmri başlanğıc snapshot-dakı bağlantını götürür; gediş ortasında istiqamət dəyişmir.
+Qərar: partnyor bir yolu açmaq üçün əvvəl hazır sensorunu tərk etməlidir; keçən blok geri dönüşü
+yenidən bağlaya bilər.
+Dərs: yalnız aktiv çıxışa çəkilən işıq xətti və növbəti landing preview.
+Sinerji: iki bloklu əməkdaşlıq, M5 təhlükəsiz çıxış seçimi.
+Risk/xərc: yüksək, gizli yol ilə birləşdirilsə həm bağlantı, həm zəmin görünməz olmasın.
+
+DUAL GRID  /  MOD KİTABXANASI
+26
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+BİZİM ƏLAVƏ AİLƏMİZ / N4
+Nisbi rezonans və bağlar
+Bu ailə bizimdir. Açılma şərti sabit düymədən çox iki cismin nisbi sətir, məsafə və orientasiyasıdır.
+Maqnit/ip estetikası verilə bilər, amma gizli real qüvvə yoxdur. Kub və domino fərqləri şərtdə açıq
+yazılır. İlk sınaq üçün N4.1 münasibdir; cüt addım N4.4 ayrıca eyni anda niyyət qaydası tələb edir.
+N4.1 Eyni xətt rezonansı
+Qayda: hər iki blok dikdirsə, lövbərləri eyni sətir və ya sütunda və aralarında solid divar yoxdursa
+rezonans qapısı açılır. Aralıq maksimum məsafə ayrıca göstərilir; əgər limitsizdirsə limit ikonu
+qoyulmur.
+Qərar: blok hədəfə yaxınlaşarkən xəttdən çıxır və partnyorun keçidi bağlana bilər.
+Dərs: aralarında işıq şüası, divarın onu kəsməsi.
+Sinerji: M3 uzun formaya qayıdanda diklik itir.
+Risk/xərc: orta; şüa divarın arxasında gizli işləməsin, görmə xətti deterministik grid ray olsun. Kub
+həmişə dikdir; domino üçün U şərti real orientasiya məhdudiyyətidir.
+N4.2 Sonlu məsafə bağı
+Qayda: blok lövbərlərinin Manhattan məsafəsi L-dən böyük ola bilməz. Qadağan addım rədd edilir,
+partnyoru dartmır və növbə sərf etmir. Formanın lövbəri dəyişməz; böyük gövdənin mərkəzi ilə ölçmək
+başqa, bu bazadan fərqli qaydadır.
+Qərar: əvvəl arxadakı bloku irəli gətirmək lazımdır; bir blokun sərbəst görünən yolu cütlüyü ayırır.
+Dərs: L və qalan məsafə, qırmızı proposed link.
+Sinerji: N3 portal yalnız çıxış məsafə şərtini ödəyirsə işləyir.
+Risk/xərc: orta; real ip kimi dolaşma/obstacle simulation yoxdur.
+
+DUAL GRID  /  MOD KİTABXANASI
+27
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+N4 / ALT-ELEMENTLƏR
+Nisbi rezonans və bağlar - davamı
+N4.3 Qarşılıqlı orientasiya kilidi
+Qayda: iki uzun blok uzanmış və biri X, biri Z istiqamətindədirsə qapı açıqdır; yerə/sensora bağlı deyil.
+Dik və ya paralel olduqda bağlanır.
+Qərar: keçən blok çevriləndə qapını bağlaya bilər; digər blokun orientasiyasını əvvəl hazırlamaq
+lazımdır.
+Dərs: paralel ×, perpendikulyar   siluetləri, aktiv qapıya xətt.
+Sinerji: M4 klon baza cütlüyün üzvü sayılmır; əlavə üzv variantı ayrıca tədris tələb edər.
+Risk/xərc: aşağı/orta; həmişə ucqar küncdə blok saxlamaqla triviallaşmaması üçün trayektoriya
+daraldılmalıdır. Bu alt-element iki domino tələb edir; kubu səssizcə X/Z saymaq olmaz, kub
+səviyyəsində başqa dərs seçilir.
+N4.4 Cüt addım bağlaması
+Qayda: xüsusi bağ rejimində seçilən blok üçün istiqamət əmri o biri bloka leveldə yazılan eyni və ya
+əks dünya istiqamətini verir; iki niyyət eyni snapshot-dan hesablanır. İkisindən biri fiziki maneəyə
+dəysə hər ikisi rədd edilir; dəstəksiz nəticə isə qəbul edilmiş təhlükəli gedişdir.
+Qərar: birinin böyük/uzun addımı o birinin yoluna uyğun gəlmir; rejimi aktivləşdirmədən əvvəl
+başlanğıc mövqeləri hazırlamaq.
+Dərs: iki hədəf konturu, qırmızı bir maneənin hər ikisini saxlaması.
+Sinerji: M3 müxtəlif ölçülər, M4 güzgü yalnız sonra.
+Risk/xərc: yüksək; eyni anda aktor yer dəyişmə və həcm kəsişmələri açıq qadağan edilməlidir.
+
+DUAL GRID  /  MOD KİTABXANASI
+28
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+15 cüt: əlaqə və risk
+Uyğun/Sına/Riskli playtest nəticəsi deyil. M4 burada növbəli kampaniya variantıdır; iki saniyəlik orijinal
+ayrıca profildir.
+M1+M2 / Sına
+Təhlükəsiz marşrutla input xəritəsini birgə planlama. İlk dərsdə gizli floor yox, aşkar çökmə; H əvvəl
+transformu, sonra footprint dayağını göstərir
+M1+M3 / Uyğun
+Böyük/kiçik/dik/uzanmış footprint zəmin resursunu dəyişir. Ölçü dəyişməsi vaxtında yeni footprint
+dəstəyi əvvəl yoxlanır; qırılma idealizə edilmiş yük qaydasıdır
+M1+M4 / Sına
+Əvvəlki yol kölgənin gələcək təhlükəsinə çevrilir. Phantom yalnız real blokdanmı, kölgədənmi tetik alır
+açıqdır; ilkin seçim kölgə səthi dəyişmir
+M1+M5 / Sına
+Çökən yol və daralan sahə geri dönüşü məhdudlaşdırır. Hər ikisi diskret növbə; çökmə/divar ardıcıllığı
+göstərilir; gizli floor+real-time squeeze başlanğıca verilməsin
+M1+M6 / Riskli
+Yanlış final başqa yoldan zəmini aşmağa məcbur edir. İki gizli cəza ardıcıl yox; portal ünvanı və son
+footprint görünür, teleport eyni qırılma qaydasına tabedir
+M2+M3 / Sına
+Eyni niyyət fərqli ölçüdə fərqli son iz verir. Input transform ölçü roll hesabından əvvəl; 2×2 forma
+ayrıca hərəkət cədvəli olmadan daxil edilmir
+M2+M4 / Riskli
+Keçmiş əmrin başqa idarə xəritəsində təkrarı. Kölgə raw key yox, artıq həll edilmiş dünya komandasını
+yazır; əks halda çevrilmə iki dəfə tətbiq edilər
+M2+M5 / Sına
+Təzyiq altında yeni input xəritəsi. Kampaniyada divar növbə ilə, H və dərs timer-i dayandırır; real-time
+variant ayrıca xəbərdarlıq
+
+DUAL GRID  /  MOD KİTABXANASI
+29
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+15 cüt: əlaqə və risk - davamı
+M2+M6 / Uyğun
+Portal səni başqa input zonasına salır. Teleport həmin gedişin sonunda zona statusunu dəyişir;
+çıxışdan sonrakı ilk input üçün kompas yenilənir
+M3+M4 / Sına
+Kölgənin izi ilə real ölçü fərqlənə bilər. Klonun bədəni level başlanğıcındakı sabit formadır; resize əmri
+WAIT yazılır. Cari böyük blokla kiçik klon fərqi açıq göstərilir.
+M3+M5 / Uyğun
+Dar keçid üçün kiçilmə, sensor üçün böyümə. Divar fazası və resize vaxtı aydın; qanunsuz büyümə
+bütün əmri rədd edir, yarım model sıxılmır
+M3+M6 / Sına
+Saxta final forma dəyişməsini strateji yerləşdirir. Teleport ölçünü gizlicə dəyişmir; açıq resize cihazı
+varsa başqa trigger kimi göstərilir
+M4+M5 / Riskli
+Həm əvvəlki izdən, həm indiki sıxılmadan qaçış. Real-time iki sistem yüksək reaksiya yükü; əvvəl diskret
+ayrı dərslər, bütün queue/faza undo olunur
+M4+M6 / Sına
+Teleportla kölgədən ayrılma və geri çatma. Teleportla nəticələnən mənbə əmri queue-ya WAIT yazılır;
+klon teleport olmur. Dünya snapshot-u tamdır, replay payload isə MOVE/WAIT-dir.
+M5+M6 / Sına
+Təhlükəli finaldan geri teleport divar fazasını yeni məkana daşıyır. Teleport global fazanı sıfırlamır;
+ünvan squeeze altında mümkünsüzdürsə preview xəbərdar edir
+
+DUAL GRID  /  MOD KİTABXANASI
+30
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+Konsept reseptlər
+İlk altı resept iki sistemlidir. Son iki resept üçlüdür. Heç biri koordinat xəritəsi və tam həll ilə
+təsdiqlənməyib.
+R1 Son keçidi özünə saxla [M1.2 + M3].
+A kiçik forma ilə biristifadəlik körpünü keçib B-yə yol hazırlayır; B-nin uzun forması çıxışa giriş
+orientasiyası üçün başqa tərəfdən gəlməlidir. Tapmaca cəmi bir yolun yox, gələcək footprint-in
+qorunmasıdır. Resize təhlükəsiz meydançada, yol tərk ediləndə qırılır. Ön cue qırılacaq xanalardır. H
+current size və broken-set ilə işləyir; heç bir doğru yol ilkin halda koordinatla sübut edilməyib. Orta
+çətinlik; əsas kampaniya namizədi.
+R2 Qapıdan sonra kompas [M2.1 + M6.1].
+Saxta final bloku sabit inversiya meydanına ötürür. Geri çıxmaq üçün əvvəl “səhv” görünən düymə
+dünya üzrə doğru aşmanı verir. Dərk portalın ünvanı ilə sonrakı idarəni ayırmaqdır. Portal çıxışa U
+qoyur, növbəti gedişdə inversiya aktivdir. H basılacaq düymə və dünya oxunu yanaşı verir. İlk nümayiş
+təhlükəsiz böyük meydanda; orta çətinlik, optional sürprizdən sonra kampaniya versiyası.
+
+DUAL GRID  /  MOD KİTABXANASI
+31
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+Konsept reseptlər - davamı
+R3 Böyümək üçün geri çəkil [M3 + M5].
+Növbə ilə daralan dəhlizdə kiçik forma yan cibə girir, divar açıq fazaya keçəndə geniş meydanda
+dominoya çevrilib ağır dik sensoru basır. Daralma saniyə yox, qəbul edilmiş gediş sayına bağlıdır.
+Forma kütləni avtomatik dəyişmirsə sensor rol şərti ayrıca saxlanmalıdır. Dərk düzgün gücü düzgün
+məkanda hazırlamaqdır. H ölçü/faza/rol bilir, qanunsuz böyümə bir əmrlə rədd edilir. Orta/yüksək,
+bütün qaydalar öyrəniləndən sonra.
+R4 Əvvəlki izin altı boşdur [M1.2 + M4 diskret].
+A birdəfəlik yolu tərk edir; iki qəbul edilmiş gediş sonra həmin istiqamətə gələn klon boşalmış
+hüceyrədə dayağını itirib cəhd bitənədək sönür. Qəhrəmanlar sırf buna görə ölmür. Dərk: dəyişən yol
+həm öz marşrutunu, həm gələcək təhlükəni formalaşdırır. Kölgə plitəni özü qırmır; real blokun tərk
+etməsi qırır. Queue önbaxışı həmin sönməni də göstərir. Z qırılmış səthi və klonu birlikdə qaytarır, R
+klonu yenidən yaradır. Bu konseptdə klonun təhlükəsini söndürmək B üçün yol açır; geri çıxışın
+kilidlənməməsi konkret xəritədə yoxlanmalıdır. Yüksək çətinlik, ayrıca iki qaydalı laboratoriya; ölməz
+havada gedən klon bu variantın gizli qaydası deyil.
+
+DUAL GRID  /  MOD KİTABXANASI
+32
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+Konsept reseptlər - davamı
+R5 Portalın ünvanını yox, fazanı da oxu [M5 + M6.2].
+Dövrəli saxta qapının növbəti ünvanı açıqdır; ünvanlardan biri növbəti divar fazasında bağlanır.
+Oyunçu başqa blokla bir faydalı əmr edib qapıya uyğun fazada girir. Qlobal faza teleportla sıfırlanmır.
+Dərk məkan və zaman hazırlığının ayrılmasıdır. H ünvan indeksi+faza verir, göstərilən addımı et hər
+ikisini eyni növbə sırası ilə icra edir. Yüksək, kampaniyanın sonrakı sınağı.
+R6 Partnyor görünürlüyü güc deyil [M1.5 + N4 nisbi rezonans ailəsi].
+İki blokun lövbərləri eyni sətirdə və aralarında divar olmadıqda N4.1 rezonansı ayrıca keçidi açır; M1.5
+phantom sahənin dayağını isə yalnız partnyorun Manhattan radiusu saxlayır. Oyunçu həm yaxın
+qalmağı, həm xəttdən çıxmamağı planlayır. Domino uzananda rezonansın diklik şərti itir, müşahidə
+radiusu isə anchor-dan hesablanmağa davam edir. İki şərt fərqli xətt və dairə ilə göstərilir. H hər iki
+predikatı, Z onların dünya nəticələrini birlikdə nəzərə alır. İlk otaqda radius və rezonans ayrıca öyrədilir;
+sonra bir qısa marşrutda birləşir. Bu ikiqat şərtin hər iki çıxışa imkan verməsi hələ koordinatla
+yoxlanmayıb. Orta/yüksək çətinlik; ailələr ayrıca tanış olandan sonra.
+
+DUAL GRID  /  MOD KİTABXANASI
+33
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+Konsept reseptlər - davamı
+R7 Görünən yolun gizli qiyməti [M1.6 + M2.3 + M6.1, üçlü].
+Səfər büdcəli plitələrdən keçib polarite zonasına daxil olan A, teleportdan sonra yenə keçidə qayıdır;
+dəyişmiş idarə ilə yol haqqını ikinci dəfə boş yerə xərcləməməlidir. Teleport polarity-ni sıfırlamır,
+ziyarət sayğacları da qalır. B alternativ sabit yol saxlayır. Dərk input yaddaşı, məkan dönüşü və məhdud
+təkrar girişi birləşdirməkdir. Bütün üçü ayrı dərsdə öyrədilmədən verilməsin. H counters+bit+positions
+ilə tam axtarış tələb edir. Yüksək, əlavə laboratoriya; sürpriz gizlilik söndürülmüş.
+R8 Keçmişin ölçüsünü ötürmə [M3 + M4 diskret + M6.4, üçlü].
+Kiçik A M6.4 saxta finalını açır, staging yerinə ötürülür və geri yol qıfılı açılır. Bu teleport mənbə
+queue-suna WAIT yazır; klon özü teleport olmur və başlanğıcdakı kiçik formasını saxlayır. Sonra A açıq
+cihazda domino olur; resize da queue-da WAIT-dir. İndi real böyük bədənlə kiçik klon fərqli dəhlizlərə
+sığır, B açılmış yol ilə çıxış hazırlayır. Dərk keçmiş əmrlərlə cari formanın ayrı qaydalar olmasıdır, tarixi
+forma replay-i deyil. H klonun dəyişməz bədəni, queue, latch və cari böyük footprint-i göstərir. Z
+hamısını birlikdə qaytarır. Bu üçlü sınaq yalnız hər ailə tanış olanda verilsin; qısa yolda kəsişmə və
+həllolunma hələ konkret xəritə ilə yoxlanmayıb. Yüksək çətinlik, optional laboratoriya.
+
+DUAL GRID  /  MOD KİTABXANASI
+34
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+Vahid hadisə sırası
+Gələcək implementasiya üçün vahid sıra belə təklif edilir. Əvvəl tam snapshot alınır və remap edilmiş
+niyyət cari input transformundan bir dəfə keçir. Başlanğıcdakı körpü, divar əyləci, portal bağlantısı və
+kölgə queue başı oxunur. Resize və teleportun bütöv çıxış həcmi/dayağı əvvəl yoxlanır; rədd edilən
+istifadəçi əmri heç bir saat, resurs və queue dəyişmir.
+Oyunçu ilə vaxtı çatmış klon niyyətləri eyni başlanğıcdan hesablanır. Roll və buz sabit mikroaddımlarla
+həll edilir; klon maneəyə dəyəndə həmin əmri WAIT kimi xərcləyir. İki real blokun swap/sweep
+kəsişməsi bütün əmri rədd edir; real blokla qırmızı klonun belə təması isə təhlükədir. Qapı U/anchor
+trigger-i yalnız uyğun sabit yerə çatanda, qələbədən əvvəl işləyir. Bir gedişdə bir teleport; çıxış dolu və
+ya dəstəksizdirsə giriş bütöv rədd edilir, artıq hesablanmış visit/polarity dəyişmələri də commit edilmir.
+Təsadüfi boş ünvan axtarılmır. Baza replay payload-u yalnız dünya MOVE/WAIT-dir: teleportla
+nəticələnən bütün mənbə əmri WAIT yazır, klon teleport olmur. Tam WorldState snapshot-u ilə bu
+sadə replay payload eyni anlayış deyil.
+M1.1 və yük qabığı M1.3 hər real alt-addımda yoxlanır. M1.2 tərk edilmiş alt-addım xanalarını toplayır,
+çökmə növbə sonunda olur; M1.6 giriş haqlarını alt-addımda xərcləyir. M2.3 polarity biti buz
+alt-addımında dəyişə bilər, amma yalnız NÖVBƏTİ oyunçu əmrinə təsir edir; davam edən sürüşməni
+döndərmir. Queue/divar saatı yenə bir qlobal əmr sayılır. Klon baza profilində zəmini dəyişmir və adi
+sensorları basmır. Son mövqelər commit olunur, sensorlar və körpülər yenilənir. Divarlar başlanğıcdakı
+əyləc siqnalı ilə faza keçir; bu növbə basılan əyləc növbəti növbədən təsir edir. Bütün real blokların
+dayağı və bütün həcm təhlükələri yoxlanır; klon dəstəksizdirsə cəhdin sonunadək sönür, Z həmin
+hadisəni geri alıb onu bərpa edə bilər. Ölüm qələbədən üstündür. Sonra yeni queue, resurs və terminal
+vəziyyəti birlikdə saxlanır, animasiya yalnız bu qərarı göstərir.
+M3 üçün 2×2×1 plitə ilə 2×2×2 kub ayrı formadır. Bütün yeni hüceyrə və həcm dəstəklənir; gizli
+gap-bridging yoxdur. Retained cell/lövbər ekranda işarələnir, böyümə mərkəzdən sürüşmür. Baza
++x,+z küncüdür; dörd istiqamət seçimi yalnız M3.6-da var. Ölçü avtomatik ağır rol və enerji tutumu
+yaratmır. Üz yaddaşı əlavə edilərsə yerli üzlər resize-da qorunur.
+İki saniyəlik real-time M4 və saniyəlik M5 fixed simulation tick, timestamp və pause ilə ayrı profildir. H,
+dərs, menyu və fokus itkisi zamanı saat dondurulur; qayıdanda görünən qısa sayım verilir. Onların
+nəticələri növbəli N-gecikmə nəticələri ilə eyni leaderboard-da müqayisə edilmir. N=2 və N=3
+nümunə parametrlərdir, iki saniyənin riyazi ekvivalenti deyil. Real-time üçün hazır H optimal həll
+zəmanəti daşımır; pause-dan sonrakı niyyət təzədən etibarlılıq yoxlamasından keçir. Təklif olunan
+ayrıca düymələr: E rol mübadiləsi, T enerji ötürmə, Q WAIT, Enter açıq tikiş. Bunlar implementasiya
+edilməyib və remap edilə bilməlidir.
+
+DUAL GRID  /  MOD KİTABXANASI
+35
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+H, undo və sınaq müqaviləsi
+Tam state-ə blok kimliyi/lövbəri, forma ölçüləri və fiziki üz orientasiyası, rol, floor və ziyarət sayğacları,
+inversiya latch-i, portal indeksi və qıfılları, enerji və anbarlar, klon
+pose/forması/sönməsi/queue/timestamp, divar fazası/əyləci, mexaniki tick və terminal status daxil
+edilməlidir. Eyni koordinat fərqli queue ilə eyni gələcək deyil. Səviyyə və qayda versiyası H cache-in
+hissəsidir. Mövcud stateKey yalnız hazır blok vəziyyətini saxladığından yeni ailələrə yetmir.
+Hazır heuristika sabit ölçülər və mövcud keçidlər üçündür. Dinamik forma, teleport və iki aktorun bir
+əmrdə hərəkəti köhnə məsafə cəmini təhlükəsiz aşağı sərhəd olmaqdan çıxara bilər. Yeni transition
+graph və etibarlı lower bound qurulmalı, alınmırsa sıfır/zəif heuristika seçilməlidir. Axtarış limiti həll
+yoxdur deyil. H tərs idarədə həm hansı düymənin basılacağını, həm dünya istiqamətini göstərir; Show
+step eyni qaydanı işlətməlidir. Gizli məlumatda adi izah ilə istifadəçinin seçdiyi tam sirri açan kömək
+ayrı göstərilir.
+WorldUndo bir istifadəçi əmri və bütün avtomatik nəticələrini qaytarır. KnowledgeState isə görülmüş
+trap, açılmış saxta final nişanı və baxılmış dərsi saxlayır; geri alma oyunçuya öyrəndiyini unutdurmur.
+Ölüm və restart zamanı default bilik qalır; ayrıca təzə sürpriz profili açıq seçilə bilər. Resume yalnız
+saxlanma müqaviləsi varsa və bütün queue/faza ilə işləməlidir; hazır README cari yarımçıq lövhənin
+diskdə saxlanmadığını deyir.
+İlk sınaq dalğası M1.2, M2.1, M3.1, M5.2 və açıq M6.1; hərəsi əvvəl bir kiçik təhlükəsiz otaqda. Sonra
+M1.3+M3, M2+M6, M3+M5 münasibətləri. Yeni ailələrdən N1.1 və N4.1 əvvəl, N2 və N3 sonra. M4
+ayrıca queue dərsi istəyir; real-time, iki gizli tələ və üçlü reseptlər axırda optional laboratoriyadır. Bütün
+46 ideyanın eyni kampaniyada olması məqsəd deyil.
+60 səviyyəlik mövcud öyrənmə yolunun üstünə birdən bu ailələr yığılmasın. Tək kub dərsində bir
+trigger, iki kubda qarşılıqlı asılılıq, qarışıq ölçüdə footprint, sonra domino duruşu öyrədilsin. Mövcud
+30-cu səviyyədəki ilk 22 gedişlik həll yeni mod üçün uzunluq hədəfi deyil. Yeni qayda ilk dəfə qısa və
+animasiyalı göstərilsin; çətinlik məlumatın gizlənməsindən və məcburi uzun icradan deyil, münasibətin
+dərk edilməsindən gəlsin.
+Yoxlama siyahısı: hər forma üçün trigger sərhədi; domino yarım-zona; resize-dayaq/tavan; teleport
+dolu/dəstəksiz ünvan; kölgə swap/sweep/sönmə; qırılan zəmində passiv blok; rədd input-da saatın
+sabitliyi; bir undo-da bütün queue/faza/resursun bərpası; restart və bilik ayrımı; H-in tam state-dən
+yolu; limit və həllsizliyin ayrımı; qayda versiyası dəyişəndə cache-in yenilənməsi. İnsan sınağında niyə
+uduzduğunu izah etmə, yeni xəritəyə transfer, təkrar icra yükü və iki blokun həqiqi zərurəti ayrıca
+müşahidə edilir. Bu yoxlamalar hələ icra edilməyib.
+
+DUAL GRID  /  MOD KİTABXANASI
+36
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+Mənbələr və sübut sərhədi
+Mənbəli faktlar arxa plan verir; 46 alt-elementin qaydası bizim təklifimizdir. Həllolunma, əyləncə,
+qədim mənşə və dünyada ilkinlik iddiası yoxdur. Lokal mənbə auditində mövcud testlər yenidən işə
+salınmayıb.
+S1 Mövcud oyun README-si
+60 səviyyə, öyrənmə yolu, H və dərslər; mənbə oxunuşu, test rerun yox.
+C:\Users\User\Documents\ChatGPT\Bloxorz New Mechanics\demo\README.md
+S2 Mövcud məntiq
+Kub/domino, hazır state və solver sərhədi; yeni mod dəstəyi iddia edilmir.
+C:\Users\User\Documents\ChatGPT\Bloxorz New Mechanics\demo\src\logic.js
+S3 Unept - orijinal Level Devil prototipi
+Birbaşa müəllifdən rəsmi mağazalara keçid.
+https://unept.itch.io/level-devil-prototype
+S4 Level Devil - rəsmi mağaza
+Sürpriz/trap janrının müəllif təqdimatı; bizim əyləncə sübutumuz deyil.
+https://store.steampowered.com/app/3242750/Level_Devil/
+S5 Patrick Traynor - dizayn müsahibəsi
+Intuitiv qayda, öyrətmə və səviyyə iterasiyası barədə müəllif mövqeyi.
+https://www.gamedeveloper.com/design/patrick-s-parabox-
+S6 Xbox Accessibility Guideline 107
+Giriş alternativləri, remap və sürət/mürəkkəblik baryeri.
+https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/107
+
+DUAL GRID  /  MOD KİTABXANASI
+37
+Konsept araşdırması • Oyun faylları dəyişdirilməyib
+Mənbələr və sübut sərhədi - davamı
+S7 Pillow Castle - Superliminal texnologiyası
+Ölçü, collision və obyekt xassələri; bizim grid qaydası eyni deyil.
+https://blog.playstation.com/2020/06/30/breaking-down-the-tech-behind-superliminals-mind-bending-illusions/
+S8 Hempuli - Baba Is You
+Obyekt və qayda qarşılıqlı istifadəsinin müəllif təsviri.
+https://hempuli.com/baba/
+S9 Jonathan Blow - Braid rewind sessiyası
+Dəqiq keçmiş bərpasının əhəmiyyəti; bu araşdırmada tam video izlənməsi iddia edilmir.
+https://www.gdcvault.com/play/1012210/The-Implementation-of-Rewind-inJonathan
+S10 Bloxorz - ilkin tədqiqat
+Grid və orientasiya çərçivəsi; ümumiləşdirilmiş çətinlik konkret səviyyə zövqü deyil.
+https://arxiv.org/abs/1411.5951
+S11 UMass - Kirchhoff qaydaları
+Qorunma prinsipi; token sistemi real elektrik simulyasiyası deyil.
+https://openbooks.library.umass.edu/funee/chapter/2-6/
+S12 OpenStax - statik tarazlıq
+Real qüvvə/moment ilə diskret rezonansın ayrılması.
+https://openstax.org/books/university-physics-volume-1/pages/12-1-conditions-for-static-equilibrium

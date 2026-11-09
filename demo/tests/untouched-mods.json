@@ -1,0 +1,1468 @@
+[
+  {
+    "id": "M4.1",
+    "title": "Gecikmə növbəsi",
+    "family": "M4",
+    "rule": "Kölgə hər uğurlu əmrdə növbədən bir addım oxuyur; gecikmə 3 əmrdir. A çıxışına gedərkən növbəni izlə.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "echo": {
+      "start": [
+        5,
+        3
+      ],
+      "delay": 3,
+      "mirror": "none"
+    },
+    "required": [
+      "echo"
+    ]
+  },
+  {
+    "id": "M5",
+    "title": "Moving/Squeezing Walls - dəyişən divarlar",
+    "family": "M5",
+    "rule": "Divar 2 saniyədən bir soldan bir sütun tutur. Ən az bir dəyişməni gör və sağ çıxışa çat. P pauza, Q planlama addımıdır.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "realtime": true,
+    "wall": {
+      "kind": "shrink",
+      "every": 4,
+      "max": 3
+    },
+    "required": [
+      "wall"
+    ]
+  },
+  {
+    "id": "M5.1",
+    "title": "Növbə ilə daralma",
+    "family": "M5",
+    "rule": "Divar hər iki uğurlu əmrdən sonra bir sütun irəliləyir. Düşünərkən saat işləmir. Sağ çıxışa get.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "wall": {
+      "kind": "shrink",
+      "every": 2,
+      "max": 3
+    },
+    "required": [
+      "wall"
+    ]
+  },
+  {
+    "id": "M5.2",
+    "title": "Dövri piston",
+    "family": "M5",
+    "rule": "Pistonun 4 fazası var: açıq → xəbərdarlıq → sıxılma → xəbərdarlıq. Sıxılma anında qırmızı xananın üstündə qalma. Q ilə gözlə.",
+    "map": [
+      "       ",
+      ".......",
+      "       "
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "wall": {
+      "kind": "piston",
+      "cells": [
+        [
+          3,
+          1
+        ]
+      ],
+      "every": 1
+    },
+    "required": [
+      "wall"
+    ]
+  },
+  {
+    "id": "M5.3",
+    "title": "Duruşa uyğun sığınacaq",
+    "family": "M5",
+    "rule": "Dik domino sığınacağa sığmır; uzanmış gövdə sığır. Sağa uzan, Q ilə sıxılmanı sığınacaqda keçir, sonra sağa qalx.",
+    "map": [
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "starts": [
+      [
+        2,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1,
+        "dims": [
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "shapes": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "wall": {
+      "kind": "piston",
+      "cells": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "every": 1
+    },
+    "shelter": {
+      "cells": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "height": 1
+    },
+    "required": [
+      "shelter"
+    ]
+  },
+  {
+    "id": "M5.4",
+    "title": "Partnyor əyləci və idarə olunan divar",
+    "family": "M5",
+    "rule": "B-ni aşağı əyləc relay-inə apar və orada saxla. Sonrakı əmrlərdə divar donur; A keçidi aşsın. Son mövqelər: A sağda, B relay-də.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1
+      },
+      {
+        "x": 0,
+        "z": 3
+      }
+    ],
+    "wall": {
+      "kind": "piston",
+      "cells": [
+        [
+          3,
+          1
+        ]
+      ],
+      "every": 1,
+      "brake": {
+        "x": 0,
+        "z": 3
+      }
+    },
+    "required": [
+      "brake"
+    ]
+  },
+  {
+    "id": "M5.5",
+    "title": "Real vaxt sıxılması",
+    "family": "M5",
+    "rule": "Piston hər 2 saniyədə növbəti fazaya keçir. Qırmızı sıxılma fazasından yayın, sağ çıxışa çat. H köməyi saatı saxlayır.",
+    "map": [
+      "       ",
+      ".......",
+      "       "
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "realtime": true,
+    "wall": {
+      "kind": "piston",
+      "cells": [
+        [
+          3,
+          1
+        ]
+      ],
+      "every": 4
+    },
+    "required": [
+      "wall"
+    ]
+  },
+  {
+    "id": "M6",
+    "title": "Fake Goal - teleport edən saxta final",
+    "family": "M6",
+    "rule": "Parlaq qapıya gir. O final deyil: səni aşağıya atır. Sonra görünən A çıxışına çat. Bu sınaqda ilk qapının davranışını yoxlamaq vacibdir.",
+    "map": [
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 6,
+        "z": 3
+      }
+    ],
+    "fake": {
+      "kind": "fixed",
+      "at": [
+        3,
+        1
+      ],
+      "dest": [
+        1,
+        3
+      ]
+    },
+    "required": [
+      "teleport"
+    ]
+  },
+  {
+    "id": "M6.1",
+    "title": "Sabit ünvanlı saxta çıxış",
+    "family": "M6",
+    "rule": "Saxta qapı həmişə eyni aşağı təyinata aparır. Bir dəfə istifadə et və həqiqi çıxışa çat.",
+    "map": [
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 6,
+        "z": 3
+      }
+    ],
+    "fake": {
+      "kind": "fixed",
+      "at": [
+        3,
+        1
+      ],
+      "dest": [
+        1,
+        3
+      ]
+    },
+    "required": [
+      "teleport"
+    ]
+  },
+  {
+    "id": "M6.2",
+    "title": "Dövrəli ünvanlı çıxış şəbəkəsi",
+    "family": "M6",
+    "rule": "Eyni qapı ünvanları növbə ilə dəyişir: (1,3), (5,3), (6,0). Ən az iki dəfə gir, sonra həqiqi çıxışı tap. Növbəti ünvan HUD-da açıqdır.",
+    "map": [
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 6,
+        "z": 3
+      }
+    ],
+    "fake": {
+      "kind": "cycle",
+      "at": [
+        3,
+        1
+      ],
+      "destinations": [
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          0
+        ]
+      ]
+    },
+    "required": [
+      "teleport"
+    ],
+    "requirePortals": 2
+  },
+  {
+    "id": "M6.3",
+    "title": "Partnyor hazır deyilsə aldadan çıxış",
+    "family": "M6",
+    "rule": "B (1,3) relay-də deyilsə qapı A-nı başlanğıca qaytarır. Əvvəl B-ni yerləşdir, sonra A ilə qapıya gir. B orada qalsın.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "goals": [
+      {
+        "x": 3,
+        "z": 1
+      },
+      {
+        "x": 1,
+        "z": 3
+      }
+    ],
+    "fake": {
+      "kind": "permission",
+      "at": [
+        3,
+        1
+      ],
+      "dest": [
+        1,
+        1
+      ],
+      "permission": {
+        "x": 1,
+        "z": 3
+      }
+    },
+    "required": [
+      "permission"
+    ],
+    "needExitFlag": true
+  },
+  {
+    "id": "M6.4",
+    "title": "Yol açan məcburi saxta final",
+    "family": "M6",
+    "rule": "Qapı tələdir, amma keçəndə uzaq körpünü daimi açır. Saxta finaldan keç və aşağı sağdakı həqiqi çıxışa çat.",
+    "map": [
+      ".....   ",
+      ".....   ",
+      ".....   ",
+      "........",
+      ".....   "
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 6,
+        "z": 3
+      }
+    ],
+    "fake": {
+      "kind": "latch",
+      "at": [
+        3,
+        1
+      ],
+      "dest": [
+        1,
+        3
+      ]
+    },
+    "required": [
+      "teleport"
+    ],
+    "gates": [
+      {
+        "id": "l",
+        "tiles": [
+          [
+            5,
+            3
+          ]
+        ],
+        "rule": {
+          "type": "latch"
+        }
+      }
+    ]
+  },
+  {
+    "id": "N1",
+    "title": "Üz yaddaşı və kontaktlar",
+    "family": "N1",
+    "rule": "Kubun hər üzünün 0–5 nömrəsi var. Bir sağ yuvarlanma sağdakı 2-ni alt üzə gətirir. 2 kontaktının üstündə alt üz 2 olsun.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 2,
+        "z": 1,
+        "face": 2
+      }
+    ],
+    "useFaces": true,
+    "contact": {
+      "at": [
+        2,
+        1
+      ],
+      "face": 2
+    },
+    "required": [
+      "contact"
+    ]
+  },
+  {
+    "id": "N1.1",
+    "title": "Aşağı üz açarı",
+    "family": "N1",
+    "rule": "İşıqlı 2 kontaktına alt üz 2 ilə çat. Sağ panel alt, üst və yan üzləri göstərir.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 2,
+        "z": 1,
+        "face": 2
+      }
+    ],
+    "useFaces": true,
+    "contact": {
+      "at": [
+        2,
+        1
+      ],
+      "face": 2
+    },
+    "required": [
+      "contact"
+    ]
+  },
+  {
+    "id": "N1.2",
+    "title": "Yan terminal cütü",
+    "family": "N1",
+    "rule": "Divar yan terminaldır. Bir sağ yuvarlanmadan sonra sağ üz 0 olur. (2,1)-də dayan və sağ üzünü 0 terminalına uyğunlaşdır.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 2,
+        "z": 1,
+        "face": 0,
+        "side": "r"
+      }
+    ],
+    "useFaces": true,
+    "walls": [
+      [
+        3,
+        1
+      ]
+    ],
+    "contact": {
+      "at": [
+        2,
+        1
+      ],
+      "side": "r",
+      "face": 0
+    },
+    "required": [
+      "contact"
+    ]
+  },
+  {
+    "id": "N1.3",
+    "title": "İzolyasiya üzü",
+    "family": "N1",
+    "rule": "Elektrikli hər iki plitəyə yalnız alt üz 2 ilə basmaq olar. Hər ikisini ayrıca keç. Ardıcıl düz yuvarlanma üzü dəyişir: kənarda dövrə vurub orientasiyanı düzəlt.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 4,
+        "z": 1
+      }
+    ],
+    "useFaces": true,
+    "faceHazards": [
+      {
+        "at": [
+          2,
+          1
+        ],
+        "face": 2
+      },
+      {
+        "at": [
+          3,
+          1
+        ],
+        "face": 2
+      }
+    ],
+    "required": [
+      "shield-2,1",
+      "shield-3,1"
+    ]
+  },
+  {
+    "id": "N1.4",
+    "title": "Üz ardıcıllığı yaddaşı",
+    "family": "N1",
+    "rule": "Kontakt sırası: (2,1) alt2 → (2,2) alt4 → (3,2) alt0. Sağ, aşağı, sağ. Səhv kontakt sıranı sıfırlayır.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 3,
+        "z": 2
+      }
+    ],
+    "useFaces": true,
+    "sequence": [
+      {
+        "at": [
+          2,
+          1
+        ],
+        "face": 2
+      },
+      {
+        "at": [
+          2,
+          2
+        ],
+        "face": 4
+      },
+      {
+        "at": [
+          3,
+          2
+        ],
+        "face": 0
+      }
+    ],
+    "required": [
+      "sequence"
+    ]
+  },
+  {
+    "id": "N2",
+    "title": "Qorunan enerji ehtiyatı",
+    "family": "N2",
+    "rule": "A-da 2 enerji var, B-də 0. A seçili ikən T ilə qonşu B-yə 1 ötür. Hərəsində 1 qalanda sınaq tamamlanır.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 1,
+        "z": 1,
+        "energy": 1
+      },
+      {
+        "x": 2,
+        "z": 1,
+        "energy": 1
+      }
+    ],
+    "energy": [
+      2,
+      0
+    ],
+    "energyMode": "pair",
+    "required": [
+      "transfer"
+    ]
+  },
+  {
+    "id": "N2.1",
+    "title": "Toxunaraq enerji ötürmə",
+    "family": "N2",
+    "rule": "Bloklar kənarla qonşu olanda T seçilmiş blokdan digərinə 1 enerji verir. 1/1 bölüşdür və hərəsini öz çıxışına apar.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 4,
+        "z": 1,
+        "energy": 1
+      },
+      {
+        "x": 1,
+        "z": 2,
+        "energy": 1
+      }
+    ],
+    "energy": [
+      2,
+      0
+    ],
+    "energyMode": "pair",
+    "required": [
+      "transfer"
+    ]
+  },
+  {
+    "id": "N2.2",
+    "title": "Enerji saxlayan keçid",
+    "family": "N2",
+    "rule": "A başlanğıc terminalında T-ni iki dəfə bassın: 2 enerji körpüdə saxlanır. İndi açılan enerji keçidindən sağ çıxışa get.",
+    "map": [
+      "       ",
+      ".......",
+      "       "
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1
+      }
+    ],
+    "energy": [
+      2
+    ],
+    "energyMode": "storage",
+    "terminal": [
+      1,
+      1
+    ],
+    "gates": [
+      {
+        "id": "e",
+        "tiles": [
+          [
+            3,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "energy",
+          "amount": 2
+        }
+      }
+    ],
+    "required": [
+      "stored"
+    ]
+  },
+  {
+    "id": "N2.3",
+    "title": "Bölüşdürmə kilidi",
+    "family": "N2",
+    "rule": "Ümumi 3 enerji qorunur. A-dan B-yə iki T ötür, sonra A 1 enerji ilə, B 2 enerji ilə çıxışına çatsın.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 4,
+        "z": 1,
+        "energy": 1
+      },
+      {
+        "x": 4,
+        "z": 2,
+        "energy": 2
+      }
+    ],
+    "energy": [
+      3,
+      0
+    ],
+    "energyMode": "pair",
+    "required": [
+      "transfer"
+    ]
+  },
+  {
+    "id": "N2.4",
+    "title": "Qapalı dövriyyə açarı",
+    "family": "N2",
+    "rule": "T ilə sol terminaldan batareyanı götür: köhnə keçid bağlanır. Sağ terminalda T ilə yerləşdir: final keçidi açılır. Enerji itmir.",
+    "map": [
+      ".....  ",
+      ".......",
+      ".....  "
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 6,
+        "z": 1
+      }
+    ],
+    "energy": [
+      0
+    ],
+    "energyMode": "battery",
+    "terminals": [
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "gates": [
+      {
+        "id": "b0",
+        "tiles": [
+          [
+            2,
+            0
+          ]
+        ],
+        "rule": {
+          "type": "battery",
+          "slot": 0
+        }
+      },
+      {
+        "id": "b1",
+        "tiles": [
+          [
+            5,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "battery",
+          "slot": 1
+        }
+      }
+    ],
+    "required": [
+      "battery"
+    ]
+  },
+  {
+    "id": "N3",
+    "title": "Məkan tikişləri və topoloji bağlantılar",
+    "family": "N3",
+    "rule": "Halqanın üstündə Enter bas: iki ayrı ada birləşir. Təyinat əvvəlcədən bəllidir. Sağ adadakı çıxışa get.",
+    "map": [
+      "... ...",
+      "... ...",
+      "... ...",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 6,
+        "z": 2
+      }
+    ],
+    "portal": {
+      "from": [
+        1,
+        1
+      ],
+      "to": [
+        5,
+        1
+      ],
+      "back": true
+    },
+    "required": [
+      "portal"
+    ]
+  },
+  {
+    "id": "N3.1",
+    "title": "Cüt tikiş qapısı",
+    "family": "N3",
+    "rule": "Çıxış tikişi B ilə doludur: A-nın Enter əmri bütöv rədd ediləcək. Əvvəl B-ni sağa çək, sonra A-nı ötür.",
+    "map": [
+      "... ...",
+      "... ...",
+      "... ...",
+      "... ..."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 6,
+        "z": 2
+      },
+      {
+        "x": 6,
+        "z": 1
+      }
+    ],
+    "portal": {
+      "from": [
+        1,
+        1
+      ],
+      "to": [
+        5,
+        1
+      ],
+      "back": true
+    },
+    "required": [
+      "portal"
+    ]
+  },
+  {
+    "id": "N3.2",
+    "title": "Dönən tikiş",
+    "family": "N3",
+    "rule": "Uzun gövdə X istiqamətində uzanıb. Enter tikişi onu 90° döndərib Z istiqamətində yerləşdirir. Sonra aşağı yuvarlanıb dik çıxışa çat.",
+    "map": [
+      "....    ",
+      ".... .  ",
+      ".... .  ",
+      ".... .  ",
+      ".... .  "
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 3,
+        "dims": [
+          1,
+          2,
+          1
+        ]
+      }
+    ],
+    "shapes": [
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "portal": {
+      "from": [
+        1,
+        1
+      ],
+      "to": [
+        5,
+        1
+      ],
+      "yaw": 90,
+      "back": true
+    },
+    "required": [
+      "portal"
+    ]
+  },
+  {
+    "id": "N3.3",
+    "title": "Açıq sarınan sərhəd",
+    "family": "N3",
+    "rule": "Sol və sağ kənar bir-birinə tikilib. Sol kənardan SOL bas: sağdan çıxacaqsan. Bu bağlantını istifadə et, sonra A çıxışına get.",
+    "map": [
+      "......",
+      "......",
+      "......"
+    ],
+    "starts": [
+      [
+        0,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 4,
+        "z": 1
+      }
+    ],
+    "wrap": true,
+    "required": [
+      "wrap"
+    ]
+  },
+  {
+    "id": "N3.4",
+    "title": "Dəyişən bağlantı seçicisi",
+    "family": "N3",
+    "rule": "B aşağı relay-də dayananda tikiş aşağı sağ adaya gedir; başqa vaxt yuxarı adaya. Əvvəl B-ni yerləşdir, A ilə Enter bas.",
+    "map": [
+      "...  ...",
+      "...     ",
+      "...     ",
+      "...  ...",
+      "...  ..."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "goals": [
+      {
+        "x": 6,
+        "z": 4
+      },
+      {
+        "x": 1,
+        "z": 3
+      }
+    ],
+    "portal": {
+      "from": [
+        1,
+        1
+      ],
+      "to": [
+        5,
+        0
+      ],
+      "back": true,
+      "branch": {
+        "sensor": {
+          "x": 1,
+          "z": 3
+        },
+        "yes": [
+          5,
+          3
+        ],
+        "no": [
+          5,
+          0
+        ]
+      }
+    },
+    "required": [
+      "portal"
+    ]
+  },
+  {
+    "id": "N4",
+    "title": "Nisbi rezonans və bağlar",
+    "family": "N4",
+    "rule": "İki kub eyni sətirdə və ya sütunda olanda rezonans körpüsü açılır. B-ni A-nın arxasına çək, eyni sətirdə A-nı sağa keçir.",
+    "map": [
+      "... ...",
+      ".......",
+      "... ...",
+      "... ..."
+    ],
+    "starts": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1
+      },
+      {
+        "x": 0,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "a",
+        "tiles": [
+          [
+            3,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "alignment"
+        }
+      }
+    ],
+    "required": [
+      "alignment"
+    ]
+  },
+  {
+    "id": "N4.1",
+    "title": "Eyni xətt rezonansı",
+    "family": "N4",
+    "rule": "Düymə yoxdur: iki blokun nisbi xətti körpünü idarə edir. Xətt pozulanda körpü bağlanır, üstündəki blok düşür.",
+    "map": [
+      "... ...",
+      ".......",
+      "... ...",
+      "... ..."
+    ],
+    "starts": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 5,
+        "z": 1
+      },
+      {
+        "x": 0,
+        "z": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "a",
+        "tiles": [
+          [
+            3,
+            1
+          ]
+        ],
+        "rule": {
+          "type": "alignment"
+        }
+      }
+    ],
+    "required": [
+      "alignment"
+    ]
+  },
+  {
+    "id": "N4.2",
+    "title": "Sonlu məsafə bağı",
+    "family": "N4",
+    "rule": "Bağ ən çox 2 xana Manhattan məsafəsinə uzanır. A və B-ni növbə ilə yaxın apar. A sağa 6-ya, B 4-ə çatmalıdır.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "goals": [
+      {
+        "x": 6,
+        "z": 1
+      },
+      {
+        "x": 4,
+        "z": 1
+      }
+    ],
+    "tether": 2,
+    "required": [
+      "tether"
+    ]
+  },
+  {
+    "id": "N4.3",
+    "title": "Qarşılıqlı orientasiya kilidi",
+    "family": "N4",
+    "rule": "İki domino bir-birinə perpendikulyar uzananda kilid açılır. A sağa uzansın, B yuxarı uzansın, sonra A yuxarı çıxışa getsin.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 2,
+        "z": 0,
+        "dims": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "x": 4,
+        "z": 1,
+        "dims": [
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "shapes": [
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "gates": [
+      {
+        "id": "p",
+        "tiles": [
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "rule": {
+          "type": "perpendicular"
+        }
+      }
+    ],
+    "required": [
+      "perpendicular"
+    ]
+  },
+  {
+    "id": "N4.4",
+    "title": "Cüt addım bağlaması",
+    "family": "N4",
+    "rule": "L əks addım bağını açır/bağlayır. Əvvəl B-ni bir yuxarı çək ki divardan yayınsın. L bas, A-nı sağa iki dəfə yuvarla: B eyni anda sola gedəcək.",
+    "map": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "starts": [
+      [
+        1,
+        1
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "goals": [
+      {
+        "x": 3,
+        "z": 1
+      },
+      {
+        "x": 3,
+        "z": 2
+      }
+    ],
+    "walls": [
+      [
+        4,
+        3
+      ]
+    ],
+    "link": "opposite",
+    "required": [
+      "linked"
+    ]
+  }
+]

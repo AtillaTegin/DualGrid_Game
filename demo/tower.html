@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DUAL GRID · Vertikal sınaq</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="src/tower.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/">DUAL<span>GRID</span></a>
+      <a href="index.html?levels=1" class="journey-link">SƏYAHƏT XƏRİTƏSİ</a>
+      <div>MƏKAN VƏ RESURS <small>02 / PLANLAMA SINAQLARI</small></div>
+      <button id="layers">Bütün mərtəbələr</button>
+    </header>
+    <main>
+      <aside>
+        <div class="sidebar-scroll">
+          <p class="eyebrow">YENİ MƏKAN MƏNTİQİ</p>
+          <details>
+            <summary>Bütün səviyyələr və modlar</summary>
+            <nav id="levels"></nav>
+          </details>
+          <h1 id="title"></h1>
+          <p id="learning" class="learning-step"></p>
+          <p id="focus"></p>
+          <p id="intro"></p>
+          <div id="actors"></div>
+          <p id="orientation" hidden></p>
+          <p id="compass" hidden></p>
+          <p id="bond" hidden></p>
+          <p id="portal-map" hidden></p>
+          <div class="stats" id="stats"></div>
+          <p id="resources"></p>
+          <details>
+            <summary>Nişanlar və idarə</summary>
+            <p>
+              Oxlar / WASD — hərəkət<br />TAB — blok seç<br />F — lift / şalter
+              / sandıq<br />P — portal<br />Q / E — terminala qoy / götür<br />T
+              — partnyora enerji ver<br />L — cüt addımı bağla / ayır<br />K —
+              panel pultu<br />SPACE — bir faza gözlə<br />G — stansiyada böyü /
+              kiçil<br />Z — bütün vəziyyəti geri al<br />H — hazırkı mövqedən
+              həll
+            </p>
+            <p>
+              Mavi dairə: sensor · qızılı prizma: açar · şaquli relslər: lift ·
+              bənövşəyi P: portal; qızılı D: enerji terminalı. Qapı açılması və
+              lift çağırışı yalnız eyni mərtəbədə işləyir.
+            </p>
+          </details>
+          <p class="note">
+            <span id="level-total"></span>. Öyrənmə pillələri ilə ardıcıl
+            səyahət.
+          </p>
+        </div>
+        <div class="action-dock">
+          <p id="message" role="status" aria-live="polite"></p>
+          <button id="hint">H · Konkret növbəti addım</button>
+          <div class="tools">
+            <button id="undo">Z · Geri</button
+            ><button id="reset">R · Yenidən</button>
+          </div>
+        </div>
+      </aside>
+      <section id="view">
+        <canvas
+          id="canvas"
+          aria-label="Üçölçülü çoxmərtəbəli oyun meydanı"
+        ></canvas>
+        <div id="floor"></div>
+        <div class="viewnote">
+          ↑ şimal · ↓ cənub · ← qərb · → şərq<br />İşıqlı kontur seçilmiş
+          blokdur · Təkər: zoom · İki klik: sıfırla
+        </div>
+        <div id="win" hidden>
+          <h2>Yol tamamlandı</h2>
+          <p id="result"></p>
+          <button id="next">Növbəti sınaq →</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <button data-dir="up">↑</button><button data-dir="left">←</button
+      ><button data-dir="down">↓</button><button data-dir="right">→</button
+      ><button id="interact">F · Lift / şalter</button
+      ><button id="tool">X · Hərəkət</button
+      ><button data-action="link" hidden>L · Bağ</button
+      ><button data-action="panel" hidden>K · Panel</button
+      ><button data-action="wait" hidden>SPACE · Gözlə</button
+      ><button data-action="portal" hidden>P · Portal</button
+      ><button data-action="deposit" hidden>Q · Qoy</button
+      ><button data-action="withdraw" hidden>E · Götür</button
+      ><button data-action="give" hidden>T · Ötür</button
+      ><button id="resize" hidden>G · Ölçü</button
+      ><button id="select">TAB · Digər blok</button>
+    </footer>
+    <script type="module" src="src/tower-app.js"></script>
+  </body>
+</html>

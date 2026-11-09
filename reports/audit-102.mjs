@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import {campaignData} from '../demo/src/campaign-data.js';
+import {journeyLevels} from '../demo/src/journey-data.js';
+const archive=JSON.parse(fs.readFileSync(new URL('./archive-v0.6-journey.json',import.meta.url)));
+function signature(l,typed=false){
+ const p=l.map.flatMap((row,z)=>[...row].flatMap((c,x)=>c===' '?[]:[[x,z,typed?(l.specials?.[`${x},${z}`]?.type||c):'.']]));
+ return Array.from({length:8},(_,k)=>{let q=p.map(([x,z,t])=>{if(k&4)x=-x;for(let i=0;i<(k&3);i++)[x,z]=[-z,x];return[x,z,t]});let a=Math.min(...q.map(p=>p[0])),b=Math.min(...q.map(p=>p[1]));return q.map(([x,z,t])=>[x-a,z-b,t]).sort((a,b)=>a[0]-b[0]||a[1]-b[1]).map(p=>p.join(',')).join(';')}).sort()[0];
+}
+const all=[...campaignData,...archive];
+const groups=new Map();for(const l of all){const k=signature(l);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(Number(l.id));}
+const repeats=[...groups.values()].filter(g=>g.length>1);
+const rows=all.map(l=>({id:Number(l.id),title:l.title,board:`${Math.max(...l.map.map(r=>r.length))}×${l.map.length}`,actors:l.starts.length,source:l.source||'legacy',sameGeometry:groups.get(signature(l)).filter(id=>id!==Number(l.id)),mechanisms:Object.keys(l).filter(k=>['fragile','gates','doors','levers','collectibles','ceilings','reverse','resize','echo','observer','visitable','shell','plates','pads','specials','energy','seams','relation','timer','walls'].includes(k)&&l[k]!=null)}));
+fs.writeFileSync(new URL('./audit-102.json',import.meta.url),JSON.stringify({scope:'Original 1–60 and archived v0.6 61–102. Current 65–73 are separately rewritten; this is not a current-release duplicate assertion.',method:'Occupied terrain normalized under translation, reflection and four rotations. Same geometry is a review flag, not proof of same solution. Mechanic necessity and solution-graph uniqueness need separate solver checks.',count:all.length,repeatedGeometryGroups:repeats,levels:rows},null,2));
+let md='# 1–102 səviyyənin ilkin struktur auditi\n\nBu hesabat ilkin 1–60 və arxivdəki v0.6 61–102-ni əhatə edir. Hazırkı 65–73 ayrıca yenidən yazılıb; köhnə arxivlə qarışdırılmır.\n\nYoxlama başlanğıcı, hədəfi, xalları və adı nəzərə almadan xəritənin dolu xanalarını müqayisə edir; fırlanma, güzgü və sürüşdürmə yeni xəritə sayılmır. Eyni həndəsə risk siqnalıdır, eyni həllin sübutu deyil. Fərqli həndəsə də fərqli məntiqə zəmanət vermir.\n\n## Təkrar həndəsə qrupları\n\n'+repeats.map(g=>'- '+g.join(', ')).join('\n')+'\n\n## Hər səviyyə\n\n| ID | Ad | Ölçü | Blok | Eyni həndəsəli ID-lər |\n|---|---|---|---|---|\n'+rows.map(r=>`| ${r.id} | ${r.title} | ${r.board} | ${r.actors} | ${r.sameGeometry.join(', ')||'—'} |`).join('\n')+'\n\n## Qəbul qərarı\n\nİlk beş təlim saxlanıla bilər. Təkrar qruplar kampaniyaya toplu qaytarılmamalıdır. Hər namizəd üçün ayrıca maneələr, vəziyyət qrafı, məcburi mexanizm və alternativ qısa yol yoxlanmalıdır. Təkcə xəritə müqayisəsinə əsasən heç bir səviyyəyə “unikaldır” sertifikatı verilmir. Yeni ideyalar ayrıca kataloqdadır; ideya ilə işlək səviyyə eyniləşdirilmir.\n';
+fs.writeFileSync(new URL('./AUDIT-102.md',import.meta.url),md);
+console.log(JSON.stringify({reviewed:rows.length,geometryGroups:repeats.length,currentRewrites:journeyLevels.map(l=>l.id)}));

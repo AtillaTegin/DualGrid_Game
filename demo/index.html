@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0b141c" />
+    <title>DUAL GRID — Yaddaş observatoriyası</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <link rel="icon" href="favicon.svg" />
+    <div id="stage" aria-label="Üçölçülü oyun lövhəsi"></div>
+    <div class="vignette"></div>
+    <div class="grain"></div>
+    <header>
+      <button class="brand" id="brand" aria-label="Əsas menyu">
+        <svg viewBox="0 0 48 48">
+          <path d="M24 3 44 14v21L24 46 4 35V14Z M4 14l20 12 20-12M24 26v20" />
+          <path d="m24 3 0 23" /></svg
+        ><span
+          >DUAL<span class="thin">GRID</span
+          ><small>YADDAŞ OBSERVATORİYASI</small></span
+        >
+      </button>
+      <div class="header-right">
+        <button id="levels-menu" class="icon">SƏVİYYƏLƏR</button>
+        <span class="build-label">FƏRQLİ KOMBİNASİYALAR · 07</span
+        ><button
+          id="sound"
+          class="icon"
+          title="Səsi aç / bağla"
+          aria-pressed="false"
+        >
+          SƏS: BAĞLI</button
+        ><button
+          id="settings"
+          class="icon"
+          title="Görüntü və hərəkət parametrləri"
+        >
+          GÖRÜNTÜ</button
+        ><button id="fullscreen" class="icon" title="Tam ekran">⛶</button>
+      </div>
+    </header>
+    <main id="home">
+      <div class="eyebrow"><span></span> İKİ CİSİM. BİR ORTAQ YOL.</div>
+      <h1>Birlikdə<br />mümkün olan.</h1>
+      <p class="lead">
+        Boşluqda asılı qalmış bir dünya.<br />Yolunu dəyişən iki yaddaş.<br />Gücün
+        kimdə olduğunu yenidən düşün.
+      </p>
+      <button id="start" class="primary">SƏYAHƏTƏ BAŞLA <span>↗</span></button
+      ><button id="continue" class="text-btn" hidden>
+        Qaldığın yerdən davam et →
+      </button>
+      <p>
+        <a
+          href="campaign.html"
+          class="text-btn"
+          style="color: #d6b987; text-decoration: none"
+          >65–73 · Fərqli kombinasiyaları oyna →</a
+        >
+      </p>
+      <p>
+        <a
+          href="tower.html"
+          class="text-btn"
+          style="color: #8ddbd0; text-decoration: none"
+          >YENİ · Zəmin yaddaşı və yeni kombinasiyalar — 49 səviyyə →</a
+        >
+      </p>
+      <div class="home-foot">
+        <span><b id="level-count">98</b> <small>ÖYRƏNƏRƏK İRƏLİLƏ</small></span>
+        ><span>∞ <small>DÜŞÜNMƏ VAXTI</small></span>
+      </div>
+    </main>
+    <aside id="sidebar" hidden>
+      <div class="eyebrow" id="chapter"></div>
+      <h2 id="level-title"></h2>
+      <p id="subtitle"></p>
+      <div class="rule" id="instruction"></div>
+      <div class="entity-list">
+        <button class="entity" data-block="0">
+          <span class="entity-symbol cyan">◇</span
+          ><span><strong>A · AETHER</strong><small id="role-a"></small></span
+          ><span class="selection-dot"></span></button
+        ><button class="entity" data-block="1">
+          <span class="entity-symbol amber">◈</span
+          ><span><strong>B · EMBER</strong><small id="role-b"></small></span
+          ><span class="selection-dot"></span>
+        </button>
+      </div>
+      <button class="exchange" id="exchange" hidden>
+        <kbd>E</kbd> ROLLARI DƏYİŞ
+      </button>
+      <div class="stats">
+        <span><small>GEDİŞ</small><b id="moves">00</b></span
+        ><span><small>ƏN YAXŞI</small><b id="best">—</b></span>
+      </div>
+      <div class="help-tools">
+        <button class="text-btn" id="rules">▶ Qaydanı göstər</button
+        ><button class="text-btn" id="hint">
+          <kbd>H</kbd> Addım-addım kömək
+        </button>
+      </div>
+      <section id="hint-panel" hidden aria-live="polite">
+        <div class="hint-eyebrow">CARİ VƏZİYYƏTDƏN KÖMƏK</div>
+        <div id="hint-command">
+          <span id="hint-arrow">…</span
+          ><strong id="hint-title">Yol hesablanır…</strong>
+        </div>
+        <p id="hint-text"></p>
+        <button id="hint-apply" class="hint-apply" hidden>
+          Bu addımı et →
+        </button>
+        <button id="hint-close" class="text-btn">Köməyi bağla</button>
+      </section>
+      <div class="legend">
+        <span>A / B · çıxış</span><span>Halqa · seçim</span
+        ><span>○ Adi sensor</span><span>▧ Yüngül keçid</span>
+        <span id="circuit-legend" hidden
+          >1—3 · Eyni nömrə eyni körpünü idarə edir.</span
+        >
+      </div>
+    </aside>
+    <nav id="level-nav" hidden aria-label="Səviyyə seçimi"></nav>
+    <footer id="controls" hidden>
+      <div>
+        <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><span>ÇEVİR</span
+        ><kbd>TAB</kbd><span>BLOK</span
+        ><button id="undo"><kbd>Z</kbd> GERİ AL</button
+        ><button id="restart"><kbd>R</kbd> YENİDƏN</button>
+      </div>
+      <span class="footer-note">TƏLƏSMƏ. HƏR ŞEYİ GERİ ALMAQ OLAR.</span>
+    </footer>
+    <div id="touch-controls" hidden aria-label="Lövhə istiqamətləri">
+      <button data-dir="up" title="Şimal — W / ↑">↗</button
+      ><button data-dir="left" title="Qərb — A / ←">↖</button
+      ><button data-dir="down" title="Cənub — S / ↓">↙</button
+      ><button data-dir="right" title="Şərq — D / →">↘</button>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="result">
+      <div class="eyebrow" id="result-label"></div>
+      <div class="result-symbol" id="result-symbol">◇</div>
+      <h2 id="result-title"></h2>
+      <p id="result-copy"></p>
+      <button id="next" class="primary"></button
+      ><button id="result-secondary" class="text-btn"></button>
+    </dialog>
+    <dialog id="preferences">
+      <div class="eyebrow">SƏNİN RAHATLIĞIN</div>
+      <h2>Görüntü</h2>
+      <label
+        >Render keyfiyyəti<select id="quality">
+          <option value="high">Yüksək</option>
+          <option value="low">Yüngül — zəif kompüterlər</option>
+        </select></label
+      ><label class="check"
+        ><input type="checkbox" id="reduced" /> Animasiya hərəkətini
+        azalt</label
+      >
+      <p>
+        İdarə: oxlar və ya WASD · TAB / 1 / 2 blok seçimi · E mübadilə · Z geri
+        alma · R yenidən · Esc menyu.
+      </p>
+      <p>
+        Bütün səviyyələr təqdimat üçün açıqdır. Nailiyyətlər yalnız bu brauzerdə
+        saxlanır.
+      </p>
+      <button id="close-preferences" class="primary">OYUNA QAYIT ↗</button>
+    </dialog>
+    <dialog id="tutorial" aria-labelledby="tutorial-title">
+      <div class="eyebrow" id="tutorial-number"></div>
+      <h2 id="tutorial-title"></h2>
+      <canvas
+        id="tutorial-canvas"
+        aria-label="Qaydanın animasiyalı nümunəsi"
+      ></canvas>
+      <div id="tutorial-caption"></div>
+      <p id="tutorial-copy"></p>
+      <div class="lesson-controls">
+        <button id="tutorial-back" class="text-btn">← Əvvəlki</button
+        ><button id="tutorial-replay" class="text-btn">↶ Yenidən</button
+        ><button id="tutorial-pause" class="text-btn">Ⅱ DAYANDIR</button>
+      </div>
+      <button id="tutorial-next" class="primary">ÖZÜM SINAYIM ↗</button
+      ><button id="tutorial-skip" class="text-btn">
+        İzahı keç · sonra yenidən baxa bilərsən
+      </button>
+    </dialog>
+    <dialog id="campaign-menu" aria-labelledby="campaign-title">
+      <div class="eyebrow">ADDIM-ADDIM ÖYRƏN</div>
+      <h2 id="campaign-title">Səyahət xəritəsi</h2>
+      <p id="campaign-summary">
+        98 aktiv səviyyə. Bütün fəsillər və yeni modlar aşağıdadır.
+      </p>
+      <div id="campaign-shortcuts"></div>
+      <div id="campaign-grid"></div>
+      <button id="campaign-close" class="text-btn">Oyuna qayıt →</button>
+    </dialog>
+    <div id="fatal" hidden>
+      <h2>3D görüntü açıla bilmədi</h2>
+      <p>
+        Chrome və ya Edge-in yenilənmiş versiyasını və hardware acceleration
+        parametrini yoxla.
+      </p>
+      <pre id="fatal-message"></pre>
+    </div>
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>

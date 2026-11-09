@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DUAL GRID — Yeni məntiq fəsilləri</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lab.css" />
+  </head>
+  <body class="playing lab" data-mode="campaign">
+    <div id="stage" aria-label="Üçölçülü mod sınağı"></div>
+    <div class="vignette"></div>
+    <div class="grain"></div>
+    <header>
+      <a class="brand" href="index.html"
+        ><span
+          >DUAL<span class="thin">GRID</span
+          ><small>ORTA / ÇƏTİN · 65–73</small></span
+        ></a
+      >
+      <div class="header-right">
+        <button id="open-list" class="icon">SƏVİYYƏLƏR · 65–73</button
+        ><button id="pause" class="icon">SAAT: NÖVBƏLİ</button
+        ><button id="quality" class="icon">GÖRÜNTÜ: YÜKSƏK</button
+        ><button id="export" class="icon">RƏYLƏRİ YÜKLƏ</button>
+      </div>
+    </header>
+    <aside class="lab-sidebar">
+      <div class="lab-scroll">
+        <div class="eyebrow" id="case-code"></div>
+        <h2 id="case-title"></h2>
+        <p id="case-rule"></p>
+        <div class="lab-actors" id="actors"></div>
+        <div class="lab-state" id="mechanism"></div>
+        <div class="lab-objectives" id="objectives"></div>
+        <div class="lab-progress">
+          <span id="moves">0 gediş</span
+          ><span id="completion">0 / 9 yeni səviyyə</span>
+        </div>
+      </div>
+      <div class="lab-tools">
+        <button id="lesson">▶ Qayda və xəritə nişanları</button
+        ><button id="hint"><kbd>H</kbd> Konkret növbəti addım</button>
+      </div>
+      <section id="help" hidden aria-live="polite">
+        <p id="help-text"></p>
+        <button id="apply-hint" hidden>Bu addımı et →</button
+        ><button id="close-help">Bağla</button>
+      </section>
+    </aside>
+    <div id="north-guide">
+      DÜNYA İSTİQAMƏTLƏRİ <span>↑ Yuxarı · ↓ Aşağı · ← Sol · → Sağ</span
+      ><small>Oxlar kamera üzrə diaqonal yuvarlanmaya uyğundur.</small>
+    </div>
+    <div class="lab-message" id="message" role="status"></div>
+    <footer class="lab-footer">
+      <div class="lab-actions">
+        <button data-action="undo"><kbd>Z</kbd> Geri</button
+        ><button data-action="restart"><kbd>R</kbd> Yenidən</button
+        ><button data-action="wait" id="wait"><kbd>Q</kbd> Gözlə</button
+        ><button data-action="resize" id="resize"><kbd>G</kbd> Ölçü</button
+        ><button id="anchor"><kbd>X</kbd> Lövbər: sağ/aşağı</button
+        ><button data-action="transfer" id="transfer">
+          <kbd>T</kbd> Enerji</button
+        ><button data-action="portal" id="portal"><kbd>↵</kbd> Tikiş</button
+        ><button data-action="interact" id="interact">
+          <kbd>F</kbd> Şalter
+        </button>
+        <button data-action="link" id="link"><kbd>L</kbd> Bağ</button>
+      </div>
+      <div class="lab-review">
+        <span>Bu ideya:</span><button data-vote="keep">Saxla</button
+        ><button data-vote="revise">Dəyişdir</button
+        ><button data-vote="drop">Çıxar</button
+        ><button id="next">Növbəti səviyyə →</button>
+      </div>
+    </footer>
+    <dialog id="list">
+      <div class="dialog-head">
+        <div>
+          <div class="eyebrow">ƏSAS OYUNUN DAVAMI · 9 FƏRQLİ TAPMACA</div>
+          <h1>Yeni məntiq fəsilləri</h1>
+          <p>
+            Hər xəritənin öz məntiqi var. Eyni açar–xal–qapı dövrəsi bütün
+            səviyyələrə əlavə edilmir.
+          </p>
+        </div>
+        <button id="close-list" aria-label="Siyahını bağla">✕</button>
+      </div>
+      <div class="lab-filter">
+        <input
+          id="search"
+          placeholder="Modun adını və ya kodunu axtar…"
+          aria-label="Mod axtar"
+        /><select id="filter" aria-label="Sınaqları süz">
+          <option value="all">Bütün sınaqlar</option>
+          <option value="unplayed">Tamamlanmamış</option>
+          <option value="keep">Saxladıqlarım</option>
+          <option value="revise">Dəyişdirəcəklərim</option>
+          <option value="drop">Çıxardıqlarım</option>
+        </select>
+      </div>
+      <div id="case-list"></div>
+      <p class="lab-note">
+        Əsas menyuda yalnız seçilmiş, təkrarsız xəritələr var. Bu fəsildə vaxt
+        təzyiqi yoxdur; Z hər şeyi geri alır, R təmiz başlayır. Şəxsi rekordlar
+        bu brauzerdə saxlanır.
+      </p>
+    </dialog>
+    <dialog id="intro">
+      <div class="eyebrow" id="intro-code"></div>
+      <h2 id="intro-title"></h2>
+      <p id="intro-rule"></p>
+      <div class="intro-grid">
+        <section>
+          <h3>Necə oynanılır?</h3>
+          <p>
+            Oxlar / WASD: yuvarlan. Tab və ya A/B kartı: blok seç. İşıqlı A/B
+            konturları son mövqelərdir. Hər iki blok varsa, ikisi də öz yerinə
+            çatmalıdır.
+          </p>
+          <p id="undo-rule">
+            Z tam dünya vəziyyətini geri alır. R yenidən başlayır. Sınaqda
+            gördüyün hadisə və kəşf etdiyin saxta plitə yadda qalır; bu,
+            laboratoriyanın müşahidə məqsədidir.
+          </p>
+          <p>
+            H dəqiq blok və düymə göstərir. Xəritədəki ox nəticənin dünya
+            istiqamətini göstərir. Tərs zonada basılmalı düymə fərqli ola bilər.
+          </p>
+        </section>
+        <section>
+          <h3>Bu sınağın nişanları</h3>
+          <p id="legend"></p>
+          <p>
+            Koordinatlar (x,z), sol-yuxarı künc (0,0). Ölçü: en × hündürlük ×
+            dərinlik. A mavi, B kəhrəba; qırmızı gövdə təhlükəli kölgədir.
+          </p>
+          <p id="clock-rule"></p>
+        </section>
+      </div>
+      <button class="primary" id="begin">SƏVİYYƏNİ OYNA →</button>
+    </dialog>
+    <script type="module" src="src/lab-app.js"></script>
+  </body>
+</html>

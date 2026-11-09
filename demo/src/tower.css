@@ -1,0 +1,333 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #dfe9ec;
+  background: #07131c;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+  background: #07131c;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  font: inherit;
+  color: #dfe9ec;
+  border: 1px solid #38535d;
+  background: #122730;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+button:hover,
+button:focus-visible {
+  border-color: #80e5d9;
+  background: #1b3a41;
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+header {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #29404c;
+  gap: 20px;
+  flex-shrink: 0;
+}
+header a {
+  color: #e1efef;
+  text-decoration: none;
+  font-size: 23px;
+  letter-spacing: 5px;
+}
+header a span {
+  color: #75b5c0;
+}
+header div {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+small {
+  display: block;
+  color: #7b9ba8;
+  font-size: 9px;
+  margin-top: 6px;
+}
+main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+aside {
+  width: 340px;
+  min-width: 300px;
+  overflow: auto;
+  padding: 24px;
+  background: linear-gradient(140deg, #10232e, #091720);
+  border-right: 1px solid #29404c;
+}
+h1 {
+  font-size: 25px;
+  line-height: 1.25;
+  margin: 22px 0 12px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #76b4c0;
+}
+nav {
+  display: flex;
+  gap: 8px;
+}
+nav button {
+  flex: 1;
+}
+.active {
+  border-color: #82ddcf !important;
+  background: #204039 !important;
+}
+p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+#focus {
+  color: #7ed3c8;
+  font-size: 12px;
+}
+#intro {
+  color: #b2c4ce;
+}
+#actors {
+  display: flex;
+  gap: 8px;
+}
+#actors button {
+  flex: 1;
+  text-align: left;
+}
+.stats {
+  padding: 15px 0;
+  margin: 15px 0;
+  border-block: 1px solid #29404c;
+  font-size: 12px;
+  color: #93b1bd;
+}
+#message {
+  min-height: 65px;
+  color: #f0cb8b;
+}
+#hint {
+  width: 100%;
+}
+.tools {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0 20px;
+}
+.tools button {
+  flex: 1;
+}
+summary {
+  font-size: 13px;
+  cursor: pointer;
+  color: #9ec3cf;
+}
+.note {
+  font-size: 11px;
+  color: #708e9e;
+}
+#view {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 55% 40%, #183643, #07131c 75%);
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#floor {
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  letter-spacing: 2px;
+  color: #8bd6cf;
+  font-size: 12px;
+}
+.viewnote {
+  position: absolute;
+  right: 22px;
+  bottom: 24px;
+  text-align: right;
+  font-size: 11px;
+  line-height: 1.9;
+  color: #7d9ca7;
+  pointer-events: none;
+}
+#win {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  background: #102832ee;
+  border: 1px solid #79ceba;
+  text-align: center;
+  min-width: 270px;
+}
+#win[hidden] {
+  display: none;
+}
+footer {
+  min-height: 68px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #29404c;
+  background: #091720;
+  flex-wrap: wrap;
+}
+footer button {
+  font-size: 12px;
+}
+@media (max-width: 760px) {
+  header {
+    padding: 0 12px;
+  }
+  header div {
+    display: none;
+  }
+  main {
+    flex-direction: column-reverse;
+  }
+  aside {
+    width: 100%;
+    min-width: 0;
+    max-height: 35vh;
+    padding: 14px;
+  }
+  #view {
+    min-height: 35vh;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  footer {
+    gap: 4px;
+  }
+  footer button {
+    padding: 9px;
+  }
+  #message {
+    min-height: 0;
+  }
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 12px 0;
+}
+nav button {
+  font-size: 11px;
+  padding: 10px 5px;
+}
+#intro {
+  border-left: 2px solid #507b7e;
+  padding-left: 12px;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+.sidebar-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 24px;
+}
+.action-dock {
+  flex: none;
+  padding: 12px 24px;
+  background: #0d202a;
+  border-top: 1px solid #29404c;
+}
+.action-dock #message {
+  min-height: 0;
+  margin: 0 0 9px;
+}
+.action-dock .tools {
+  margin: 8px 0 0;
+}
+#resources {
+  color: #f0cb8b;
+  font-size: 12px;
+}
+#orientation {
+  white-space: pre-line;
+  font-size: 11px;
+  line-height: 1.8;
+  border: 1px solid #6b5681;
+  background: #252137;
+  padding: 10px;
+  color: #e2d3f1;
+}
+#compass {
+  white-space: pre-line;
+  font-size: 11px;
+  line-height: 1.8;
+  padding: 10px;
+  border: 1px solid #795895;
+  background: #231e35;
+  color: #e1c6fb;
+}
+.journey-link {
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  color: #91d1ca !important;
+}
+#bond {
+  white-space: pre-line;
+  padding: 10px;
+  color: #a4e8d4;
+  border: 1px solid #477d70;
+  background: #142e2b;
+  font-size: 12px;
+}
+#portal-map {
+  white-space: pre-line;
+  padding: 10px;
+  background: #232944;
+  border: 1px solid #717fb5;
+  color: #d0dbff;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.learning-step {
+  border-left: 3px solid #7dddc5;
+  padding: 10px 12px;
+  background: #16333a;
+  color: #bde8dc;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
